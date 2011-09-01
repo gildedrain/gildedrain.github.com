@@ -1,0 +1,12 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+  Steve Erwin
+  www.gildedrain.com
+
+/* THANKS */
+  Names (& URL): nathan.fixlr.org
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
