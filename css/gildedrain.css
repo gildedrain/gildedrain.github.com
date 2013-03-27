@@ -1,0 +1,69 @@
+.col1 {width:250px; margin:0;}
+.col2 {width:33%;}
+.col3 {width:49%;}
+.col4 {width:65%;}
+.col5 {width:81%;}
+.col6 {width:100%; margin:0;}
+
+.intro {}
+.nav {}
+.nav.flat {float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0;}
+.nav.flat ul {width:970px;padding:0;margin:0 auto;}
+.nav.flat li {display:inline; width:auto;}
+.nav.flat a {color:#888;background:transparent; display:inline-block;}
+.nav.flat a:hover {text-decoration:underline;}
+.nav.flat a.current {color:#fff;background:#bb0000;}
+
+.main {}
+.section {padding:10px;}
+
+.tiles {padding:0; list-style:none;}
+.tiles li {float:left; display:block; width:250px; height:250px; overflow:hidden; margin-right:10px;border:1px solid #333; box-shadow:0 0 10px 0 rgba(0,0,0,.25); background:#000;}
+.tiles img {display:inline-block; min-width:250px; min-height:250px;}
+
+.bg_banners a {outline:0;border:1px solid #333;}
+
+.design {background:#000;}
+.woodworking {background:url(../images/tile_wood3.png) repeat top left;}
+.woodworking h3 {color:rgb(168, 127, 89);}
+
+.photography {background:#000;}
+.photography h3 {color:#666;}
+
+
+.skills {}
+
+.bookshelves {}
+.bookshelf {}
+.books-design {}
+.books-woodworking {}
+.books-enrichment {}
+.books-art {}
+.books-entertainment {}
+
+.completed-works ul, .bookshelves ul {list-style:none; padding:0;}
+
+.to-be-published {}
+.to-be-published:before {content:"TO BE PUBLISHED"; color:#fff; background:#000; margin-right:.5em; font-size:.8em; padding:.25em .5em}
+.on-deck {}
+.on-deck:before {content:"ON DECK"; color:#fff; background:#1179fe; margin-right:.5em; font-size:.8em; padding:.25em .5em;}
+.in-progress {color:red;}
+.in-progress:before {content:"IN PROGRESS"; color:#fff; background:#c00; margin-right:.5em; font-size:.8em; padding:.25em .5em;}
+.completed {color:#888;}
+.completed:before {content:"COMPLETED"; color:#fff; background:#888; margin-right:.5em; font-size:.8em; padding:.25em .5em;}
+
+.work-history {}
+.employment {}
+.education {}
+.event {}
+
+#aside {margin:0;}
+.contact-info {}
+
+
+h2 {display:inline-block;  color:#fff; background:#c00; padding:.25em .5em;}
+.link-set {float:left; margin:1em 0 1em 0;}
+.labelmaker{display:inline-block;text-transform:uppercase;font-weight:200;background:#cc0000;padding:7px 5px 5px 5px;font-size:.8em;color:#fff;letter-spacing:1px;margin:0 10px 0 0;border-bottom:1px solid transparent;}
+.labelmaker:hover {background:#700;text-decoration:none;border-bottom:1px solid #FFF;}
+.more {color:#c00; font-style:italic; display:inline-block; margin-right:3px; text-shadow:0 1px 3px #000;}
+.more:after {content:" \2192"; color:#c00;}
