@@ -1,9 +1,7 @@
 body {background:url(../images/bg-wave.jpg) repeat-x -350px 0;}
-
 #header {text-align:center; width:100%; background:rgba(0,0,0,.5); margin:30px 0 200px 0; padding:.05em 0 .05em 0;}
 h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
-.aka {font-family:'cinzel'; text-transform:lowercase; margin:-1.5em 0 1.5em 0; color:#97ccda; font-weight:600;}
-
+.aka {font-family:'cinzel'; text-transform:lowercase; margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em;}
 
 .col1 {width:16%; margin:0;}
 .col2 {width:33%;}
@@ -12,8 +10,6 @@ h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; 
 .col5 {width:81%;}
 .col6 {width:100%; margin:0;}
 
-
-.intro {}
 .nav {display:none;}
 .nav.flat {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0;}
 .nav.flat ul {width:100%;padding:0;margin:0 auto;}
@@ -23,7 +19,6 @@ h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; 
 .nav.flat a.current {color:#fff;background:#bb0000;}
 .nav.flat .back-to-top {background: #000 url(../gui/images/back-to-top.png) no-repeat 5px center;border-radius:0;padding-left: 1.5em;text-transform: lowercase;letter-spacing:0;}
 
-.main {}
 .section {padding:10px;}
 
 .tiles {padding:0; list-style:none;}
@@ -31,47 +26,29 @@ h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; 
 .bg_banners li, .tiles li {float:left; display:block; width:250px; height:250px; overflow:hidden; margin:0 10px 10px 0;outline:1px solid #333; box-shadow:0 0 10px 0 rgba(0,0,0,.25); background-color:#000;}
 .bg_banners li:hover, .tiles li:hover {outline-color:#336699;}
 
-
-
 .design {background:#000;}
 .woodworking {background:url(../images/tile_wood3.png) repeat top left;}
 .photography {background:#000;}
 
 .design h3, .photography h3 {color:#97ccda;}
-.woodworking h3 {color:rgb(168, 127, 89);}
-
-.skills {}
-
-.bookshelves {}
-.bookshelf {}
-.books-design {}
-.books-woodworking {}
-.books-enrichment {}
-.books-art {}
-.books-entertainment {}
+.woodworking h3 {color:rgb(211, 166, 125);}
 
 .completed-works ul, .bookshelves ul {list-style:none; padding:0;}
 
-.to-be-published {}
-.to-be-published:before {content:"TO BE PUBLISHED"; color:#fff; background:#000; margin-right:.5em; font-size:.8em; padding:.25em .5em}
-.on-deck {}
-.on-deck:before {content:"ON DECK"; color:#fff; background:#1179fe; margin-right:.5em; font-size:.8em; padding:.25em .5em;}
-.in-progress {color:red;}
-.in-progress:before {content:"IN PROGRESS"; color:#fff; background:#c00; margin-right:.5em; font-size:.8em; padding:.25em .5em;}
-.completed {color:#888;}
-.completed:before {content:"COMPLETED"; color:#fff; background:#888; margin-right:.5em; font-size:.8em; padding:.25em .5em;}
+.status:before {color:#fff; margin-right:.5em; font-size:.6em; padding:.25em .75em .25em .5em;}
+.to-be-published:before {content:"TO BE PUBLISHED"; background:#000; }
+.on-deck:before {content:"ON DECK"; background:#1179fe;}
+.in-progress:before {content:"IN PROGRESS"; background:#c00;}
+.completed:before {content:"\2713"; color:#888;}
 
-.work-history {}
-.employment {}
-.education {}
-.event {}
+.in-progress {color:red; font-weight:600;}
+.completed {color:#888;}
 
 #aside {margin:0;}
-.contact-info {}
 
-h2, h3, h4 {font-family:'cinzel'}
-
-h2 {display:inline-block;  color:#fff; background:#c00; padding:.25em .5em;}
+h2, h3, h4, h5, h6 {font-family:'cinzel'}
+h2 {display:inline-block; color:#fff; background:#c00; padding:.25em .5em;}
+h3 {color:#fff; background:#000; padding:.25em;}
 .link-set {float:left; margin:1em 0 1em 0;}
 .labelmaker{display:inline-block;text-transform:uppercase;font-weight:200;background:#cc0000;padding:7px 5px 5px 5px;font-size:.8em;color:#fff;letter-spacing:1px;margin:0 10px 0 0;border-bottom:1px solid transparent;}
 .labelmaker:hover {background:#700;text-decoration:none;border-bottom:1px solid #FFF;}
