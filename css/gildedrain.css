@@ -13,7 +13,7 @@ body {background:url(../images/bg-wave.jpg) repeat-x -350px 0;}
 .icon-flickr {}
 
 .nav {display:none;}
-.nav.flat {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0;}
+.nav.flat {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;}
 .nav.flat ul {width:100%;padding:0;margin:0 auto;}
   .nav.flat li {display:inline; width:auto;}
     .nav.flat a {color:#888;background:transparent; display:inline-block;}
@@ -50,6 +50,7 @@ body {background:url(../images/bg-wave.jpg) repeat-x -350px 0;}
   .bar-chart {display:inline-block; position:absolute; z-index:1;}
   .skill {z-index:2; position:relative; display:inline-block; padding:0 .5em 0 .5em;}
   .skill-flag {position:absolute; z-index:2; top:7px;display:inline-block; color:#000; font-size:.6em; font-style:italic; font-weight:600; font-family:'rock salt'}
+  .skill-flag:before {content: "\2014 \2009";}
 
 .bookshelf ul {margin:0;}
 
@@ -67,4 +68,4 @@ blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;marg
   blockquote:before {display: block;content: "\201C";font-size: 5em;position: absolute;left: -20px;top: -20px;color: #97ccda;}
   blockquote:after {display: block;content: "\201D";font-size: 5em;position: absolute;right: 0;top: 10px;color: #97ccda;}
   blockquote cite {color: #aaa;font-size: .8em;display: block;margin-top: 5px;}
-  blockquote cite:before {content: "\2014 \2009";}
+  cite:before {content: "\2014 \2009";}
