@@ -3,13 +3,19 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+  Stephen Erwin
 
 # THANKS
 
-    <name>
+  Nathan Fixler
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    HTML5
+    CSS3
+    jQuery
+    Modernizr
+    HTML5 Boilerplate
+    Normalize.css
+    Zurb Awesome Buttons
+    FontAwesome
