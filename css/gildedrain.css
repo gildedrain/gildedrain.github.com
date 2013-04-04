@@ -1,27 +1,24 @@
-body {background:url(../images/bg-wave.jpg) repeat-x -350px 0;}
+html {background: url(../images/bg-wave.jpg) repeat-x -450px 0;}
 
-#header {text-align:center; width:100%; background:rgba(0,0,0,.5); margin:30px 0 0 0; padding:.05em 0 .05em 0;}
+body {background:transparent;}
+
+#header {text-align:center; background:#000; background:rgba(0,0,0,.5); margin:30px 0 0 0; padding:.05em 0 .05em 0;}
   h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
   .aka {font-family:'cinzel'; text-transform:lowercase; margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em;}
 
 .contact-info {list-style:none; padding:0; margin:10px 0 200px 0; text-align:center;}
-.contact-info li {position:relative; display:inline-block; height:50px; width:50px; background:rgba(0,0,0,.5); border-radius:50px; text-indent:100%; white-space:nowrap; overflow:hidden;}
-.icon-email {}
-.icon-github {}
-.icon-blogger {}
-.icon-lumberjocks {}
-.icon-flickr {}
+.contact-info li {position:relative; display:inline-block; background:#000; background:rgba(0,0,0,.5);}
 
 .nav {display:none;}
-.nav.flat {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;}
-.nav.flat ul {width:100%;padding:0;margin:0 auto;}
-  .nav.flat li {display:inline; width:auto;}
-    .nav.flat a {color:#888;background:transparent; display:inline-block;}
-    .nav.flat a:hover {text-decoration:underline;}
-    .nav.flat a.current {color:#fff;background:#bb0000;}
-    .nav.flat .back-to-top {background: #000 url(../gui/images/back-to-top.png) no-repeat 5px center;border-radius:0;padding-left: 1.5em;text-transform: lowercase;letter-spacing:0;}
+.flat-nav {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;}
+.flat-nav ul {width:100%;padding:0;margin:0 auto;}
+  .flat-nav li {display:inline;}
+    .flat-nav a {color:#888;background:transparent; display:inline-block;}
+    .flat-nav a:hover {text-decoration:underline;}
+    .flat-nav .current {color:#fff;background:#bb0000;}
+    .flat-nav .back-to-top {background: #000 url(../gui/images/back-to-top.png) no-repeat 5px center;border-radius:0;padding-left: 1.5em;text-transform: lowercase;letter-spacing:0;}
 
-.section {padding:10px;}
+.section {padding:10px; background:#fff;}
 
 .tiles {padding:0; list-style:none;}
   .tiles img {display:inline-block; min-width:250px; min-height:250px;}
@@ -40,11 +37,10 @@ body {background:url(../images/bg-wave.jpg) repeat-x -350px 0;}
   .to-be-published:before {content:"TO BE PUBLISHED"; background:#000; }
   .on-deck:before {content:"ON DECK"; background:#1179fe;}
   .in-progress:before {content:"IN PROGRESS"; background:#c00;}
-  .completed:before {content:"\2713"; color:#888;}
-  .in-progress {color:#c00; font-weidght:600; background-color:#FFF0BF !important;}
-  .completed {color:#999; background:#fff !important;}
+  .completed:before {content:"\2713"; color:#666;}
+  .in-progress {color:#c00;}
+  .completed {color:#666; background:#fff;}
 
-.skills {}
   .skills ul {list-style:none; padding:0; margin:0;}
   .skills li {margin-bottom:1px; position:relative;}
   .bar-chart {display:inline-block; position:absolute; z-index:1;}
@@ -62,10 +58,9 @@ body {background:url(../images/bg-wave.jpg) repeat-x -350px 0;}
 
 h2, h3, h4, h5, h6 {font-family:'cinzel'}
 h2 {display:inline-block; color:#fff; background:#c00; padding:.25em .5em;}
-h3 {padding:.25em; border-bottom:1px dashed #333; margin-bottom:0;border-bottom:1px solid #000;border-width:0 0 1px 0;-webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(0,0,0,.0)),color-stop(0.20,rgba(0,0,0,.75)),color-stop(0.80,rgba(0,0,0,.75)),color-stop(100%,rgba(0,0,0,.0))) 0 0 100 0; }
+h3 {padding:.25em; margin-bottom:0;border-bottom:1px solid #000;-webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(0,0,0,.0)),color-stop(0.20,rgba(0,0,0,.75)),color-stop(0.80,rgba(0,0,0,.75)),color-stop(100%,rgba(0,0,0,.0))) 0 0 100 0; }
 
 blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;margin: .25em .5em;;padding: .25em 40px;line-height: 1.45;position: relative;color:#567594;}
   blockquote:before {display: block;content: "\201C";font-size: 5em;position: absolute;left: -20px;top: -20px;color: #97ccda;}
-  blockquote:after {display: block;content: "\201D";font-size: 5em;position: absolute;right: 0;top: 10px;color: #97ccda;}
   blockquote cite {color: #aaa;font-size: .8em;display: block;margin-top: 5px;}
   cite:before {content: "\2014 \2009";}

@@ -82,7 +82,7 @@ $(function() {
   $('a.dialog').on('click', function(e) {
     var $link = $(this),
         $modal = $('<div id="modal" style="display:none"></div>'),
-        href = $link.attr('href').replace(/[^\/]+\.aspx/, 'box.aspx');
+        href = $link.attr('href'); //.replace(/[^\/]+\.aspx/, 'box.aspx');
 
     $modal.dialog({
       autoOpen: false,
@@ -143,7 +143,7 @@ $(document).ready(function () {
     return $(this).click(function(event) {
       hash = getLinkTarget(this);
       target = $('#' + hash);
-      scrolling_offset = $('#siteheader').height() + $('.nav.flat').height(); // if you have these, their heights are subtracted from the scrolling distance.  If you don't have these, scrolling_offset = 0.
+      scrolling_offset = $('#siteheader').height() + $('.flat-nav').height(); // if you have these, their heights are subtracted from the scrolling distance.  If you don't have these, scrolling_offset = 0.
 
       if (target.exists()) {
         target_top = target.offset().top - scrolling_offset;
@@ -161,7 +161,7 @@ $(document).ready(function () {
     intro_height = $('.intro').height();
 
     settings = $.extend({
-      'navClass': 'flat'
+      'navClass': 'flat-nav'
     }, options);
 
     flatMenu = this.first()
@@ -193,14 +193,14 @@ $(document).ready(function () {
 
   $.fn.setCurrentSection = function() {
     var target, scrolling_offset;
-    scrolling_offset = $('#siteheader').height() + $('.nav.flat').height();
+    scrolling_offset = $('#siteheader').height() + $('.flat-nav').height();
 
     if (this.is(':visible')) {
       this.find('a').each(function() {
         target = $('#' + getLinkTarget(this));
 
         if ((target.offset().top + target.height()) > ($(window).scrollTop() + scrolling_offset)) {
-          $('.nav.flat a').removeClass('current');
+          $('.flat-nav a').removeClass('current');
           $(this).addClass('current');
           return false;
         }
@@ -235,7 +235,7 @@ var getPosition = function(list, item) {
 };
 $(function() {
   var slideWidth = $('.slide').width();
-  $('.slidernav a').live('click', function(e) {
+  $('.slidernav a').on('click', function(e) {
     var clickedLink = this;
     var listPosition = getPosition($(clickedLink).closest('.slidernav').find('a'), clickedLink);
     var currentSlide = $('#' + clickedLink.href.split('#')[1]);
