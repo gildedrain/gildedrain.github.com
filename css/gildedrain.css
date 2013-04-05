@@ -1,25 +1,29 @@
 html {background: url(../images/bg-wave.jpg) repeat-x -450px 0;}
 body {background:transparent;}
 
-#header {text-align:center; background:#000; background:rgba(0,0,0,.5); margin:33px 0 0 0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; border-width:1px 0 1px 0; border-style:solid; border-color:#fff; border-color:rgba(0,230,230,.5);}
+#header {position:relative;text-align:center; background:#000; background:rgba(0,0,0,.5); margin:33px 0 0 0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; border-width:1px 0 1px 0; border-style:solid; border-color:#fff; border-color:rgba(0,230,230,.5);}
   h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
   .aka {margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em; text-shadow:0 0 2px #000;}
 
-.contact-info {list-style:none; padding:0; position:absolute; right:10px; top:30px; width:100px; background:#000;border-radius:100px;z-index:3;text-align:center;text-transform:lowercase; font-family:'cinzel';}
+.contact-info {list-style:none; padding:0; background:#000;text-align:center;text-transform:lowercase; font-family:'cinzel';}
 .contact-info:before, .contact-info:after {content:"\2013"; color:#666;}
 .contact-info a, a[href^="mailto:"] {color:#97ccda; background:none; padding:0 !important;}
+.contact-info a:hover{color:#fff;}
+.contact-info {position:relative; margin:3em auto; width:250px; border-radius:250px; font-size:1.75em;}
+#header .contact-info {position:absolute; margin-top:0; right:10px; top:10px; width:100px; border-radius:100px;z-index:3;font-size:1em;}
 
 .nav {text-align:center; background:rgba(0,0,0,.5); margin:0 0 200px 0; padding:0; border-bottom:1px solid #fff; border-color:rgba(0,230,230,.5);}
 .nav li {display:inline-block;}
 .nav a {color:#97ccda; text-shadow:0 0 2px #000;}
+.nav a:hover {color:#fff;}
 .nav .back-to-top {display:none;}
 .flat-nav {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;border-bottom:1px solid #fff; border-color:rgba(0,230,230,.5);}
-.flat-nav ul {width:100%;padding:0;margin:0 auto; text-align:center;}
-  .flat-nav li {display:inline;}
+.flat-nav ul {width:100%;padding:0;margin:0;padding:.5em 0 .5em 0;text-align:center;}
+  .flat-nav li {display:inline-block; margin:.25em 0 .2em 0;}
     .flat-nav a {color:#97ccda;background:transparent; display:inline-block;}
     .flat-nav a:hover {text-decoration:underline;}
     .flat-nav .current {color:#fff;background:#bb0000;}
-    .flat-nav .back-to-top {display:inline-block; font-size:2em; line-height:1em; color:#fff; text-shadow:0 0 10px rgba(255,255,255,.9);font-family:'mrs saint delafield'; background: #000 url(../gui/images/back-to-top.png) no-repeat 5px 6px;border-radius:0;padding-left:.75em; text-transform: lowercase;letter-spacing:0; margin:0 .5em 0 0;}
+    .flat-nav .back-to-top {display:inline-block; font-size:2em; line-height:.5em; color:#fff; text-shadow:0 0 10px rgba(255,255,255,.9);font-family:'mrs saint delafield'; background: #000 url(../gui/images/back-to-top.png) no-repeat 5px 6px;border-radius:0;padding-left:.75em; text-transform: lowercase;letter-spacing:0; margin:0 .25em 0 0;}
     .flat-nav .back-to-top:hover {color:#97ccda; text-decoration:none;}
 
 .section {padding:10px; background:#fff;}
@@ -95,8 +99,8 @@ blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;marg
   .tiles img {min-width:250px; min-height:250px; max-width:400px; max-height:400px;}
 }
 @media all and (max-width:420px){
-  .contact-info {position:fixed; left:0; top:0px; width:100%; background:#000;border-radius:0;z-index:3;text-align:center;text-transform:lowercase; font-family:'cinzel';}
-  .contact-info li {display:inline-block; margin:0 .5em 0 .5em;}
+  #header .contact-info {position:fixed; left:0; top:0px; width:100%; background:#000;border-radius:0;z-index:3;text-align:center;text-transform:lowercase; font-family:'cinzel';}
+  #header .contact-info li {display:inline-block; margin:0 .5em 0 .5em;}
   .bg_banners li, .tiles li {width:48%; height:175px;margin:0 2% 2% 0;}
   .tiles img {min-width:200px; min-height:200px; max-width:301px; max-height:301px;}
 }
