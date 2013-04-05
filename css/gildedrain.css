@@ -1,27 +1,30 @@
 html {background: url(../images/bg-wave.jpg) repeat-x -450px 0;}
 body {background:transparent;}
 
-#header {text-align:center; background:#000; background:rgba(0,0,0,.5); margin:30px 0 200px 0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; border-width:1px 0 1px 0; border-style:solid; border-color:#fff; border-color:rgba(0,230,230,.5);}
-  h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;}
-  .aka {margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em;}
-  .contact-info {list-style:none; padding:0;}
-  .contact-info:before, .contact-info:after {content:"\2013"; color:#fff; color:rgba(0,230,230,1);}
-  .contact-info li {display:inline-block; margin:.5em;}
-  .contact-info a, a[href^="mailto:"] {color:#fff; color:rgba(0,230,230,1); background:none; padding:0 !important; text-shadow:0 0 2px #000;}
+#header {text-align:center; background:#000; background:rgba(0,0,0,.5); margin:33px 0 0 0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; border-width:1px 0 1px 0; border-style:solid; border-color:#fff; border-color:rgba(0,230,230,.5);}
+  h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
+  .aka {margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em; text-shadow:0 0 2px #000;}
 
-.nav {display:none;}
+.contact-info {list-style:none; padding:0; position:absolute; right:10px; top:30px; width:100px; background:#000;border-radius:100px;z-index:3;text-align:center;text-transform:lowercase; font-family:'cinzel';}
+.contact-info:before, .contact-info:after {content:"\2013"; color:#666;}
+.contact-info a, a[href^="mailto:"] {color:#97ccda; background:none; padding:0 !important;}
+
+.nav {text-align:center; background:rgba(0,0,0,.5); margin:0 0 200px 0; padding:0; border-bottom:1px solid #fff; border-color:rgba(0,230,230,.5);}
+.nav li {display:inline-block;}
+.nav a {color:#97ccda; text-shadow:0 0 2px #000;}
+.nav .back-to-top {display:none;}
 .flat-nav {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;border-bottom:1px solid #fff; border-color:rgba(0,230,230,.5);}
 .flat-nav ul {width:100%;padding:0;margin:0 auto; text-align:center;}
   .flat-nav li {display:inline;}
-    .flat-nav a {color:#888;background:transparent; display:inline-block;}
+    .flat-nav a {color:#97ccda;background:transparent; display:inline-block;}
     .flat-nav a:hover {text-decoration:underline;}
     .flat-nav .current {color:#fff;background:#bb0000;}
-    .flat-nav .back-to-top {background: #000 url(../gui/images/back-to-top.png) no-repeat 5px center;border-radius:0;padding-left: 1.5em;text-transform: lowercase;letter-spacing:0;}
+    .flat-nav .back-to-top {display:inline-block; font-size:2em; line-height:1em; color:#fff; text-shadow:0 0 10px rgba(255,255,255,.9);font-family:'mrs saint delafield'; background: #000 url(../gui/images/back-to-top.png) no-repeat 5px 6px;border-radius:0;padding-left:.75em; text-transform: lowercase;letter-spacing:0; margin:0 .5em 0 0;}
+    .flat-nav .back-to-top:hover {color:#97ccda; text-decoration:none;}
 
 .section {padding:10px; background:#fff;}
 
 .tiles {padding:0; list-style:none; width:100%;}
-.bg_banners {padding-top:1em;}
   .bg_banners li:hover, .tiles li:hover {outline-color:#336699;}
   .bg_banners li, .tiles li {position:relative;float:left;display:block;overflow:hidden; outline:1px solid #333; box-shadow:0 0 10px 0 rgba(0,0,0,.25); background-color:#000;}
   .tiles img {display:block;margin:0 auto;}
@@ -87,10 +90,13 @@ blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;marg
   .tiles img {min-width:300px; min-height:300px; max-width:452px; max-height:452px;}
 }
 @media all and (max-width:530px){
+  h1, .aka {margin-left:-40px;}
   .bg_banners li, .tiles li {width:48.45%; height:225px;margin:0 1.5% 1.5% 0;}
   .tiles img {min-width:250px; min-height:250px; max-width:400px; max-height:400px;}
 }
 @media all and (max-width:420px){
+  .contact-info {position:fixed; left:0; top:0px; width:100%; background:#000;border-radius:0;z-index:3;text-align:center;text-transform:lowercase; font-family:'cinzel';}
+  .contact-info li {display:inline-block; margin:0 .5em 0 .5em;}
   .bg_banners li, .tiles li {width:48%; height:175px;margin:0 2% 2% 0;}
   .tiles img {min-width:200px; min-height:200px; max-width:301px; max-height:301px;}
 }
