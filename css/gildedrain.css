@@ -5,15 +5,15 @@ body {background:transparent;}
   h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
   .aka {font-family:'cinzel'; text-transform:lowercase; margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em;}
 
-.contact-info {list-style:none; padding:.5em 0 1em 0; margin:0 auto 200px auto; text-align:center;background:#000; background:rgba(0,0,0,.5);}
-.contact-info:before {content:"\2013 \2009"; color:#fff; color:rgba(0,255,255,.5);}
-.contact-info:after {content:"\2009 \2013"; color:#fff; color:rgba(0,255,255,.5);}
+.contact-info {list-style:none; padding:.5em 0 1em 0; margin:0 auto 200px auto; text-align:center;background:#000; background:rgba(0,0,0,.5); font-family:"cinzel"}
+.contact-info:before {content:"\2013"; color:#fff; color:rgba(0,255,255,.5);}
+.contact-info:after {content:"\2013"; color:#fff; color:rgba(0,255,255,.5);}
 .contact-info li {display:inline-block; margin:0 .5em 0 .5em;}
-.contact-info a, a[href^="mailto:"] {color:#fff; color:rgba(0,255,255,.5); background:none; padding:0 !important;}
+.contact-info a, a[href^="mailto:"] {color:#fff; color:rgba(0,230,230,1); background:none; padding:0 !important; text-shadow:0 0 2px #000;}
 
 .nav {display:none;}
 .flat-nav {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;}
-.flat-nav ul {width:100%;padding:0;margin:0 auto;}
+.flat-nav ul {width:100%;padding:0;margin:0 auto; text-align:center;}
   .flat-nav li {display:inline;}
     .flat-nav a {color:#888;background:transparent; display:inline-block;}
     .flat-nav a:hover {text-decoration:underline;}
