@@ -29,7 +29,7 @@
   <ul class="contact-info">
     <li><a class="icon-email" href="mailto:steve@petrock.org">Email</a></li>
     <li><a class="icon-github" href="http://github.com/gildedrain/">GitHub</a></li>
-    <li><a class="icon-blogger" href="http://gildedrain.blogspot.com">The Honey-Do Woodshop</a></li>
+    <li><a class="icon-blogger" href="http://gildedrain.blogspot.com">Blogger</a></li>
     <li><a class="icon-flickr" href="http://flickr.com/gildedrain/">Flickr</a></li>
   </ul><!-- END .contact-info -->
 
@@ -308,20 +308,22 @@
         //Flickr Integration
         $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=71169235@N00&tags=woodworking%2Csite&lang=en-us&format=json&jsoncallback=?", function(data){
             $.each(data.items, function(i,item){
+              var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
                 if(i<=11){
-                    $("<img/>").attr("src", item.media.m).appendTo("#flickr.woodworking")
+                    $("<img/>").attr("src", imgsrc).appendTo("#flickr.woodworking")
                     .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
                 }
             });
         });
         //Flickr Integration
         $.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157633100568769&nsid=71169235@N00&lang=en-us&format=json&jsoncallback=?", function(data){
-            $.each(data.items, function(i,item){
-                if(i<=11){
-                    $("<img/>").attr("src", item.media.m).appendTo("#flickr.photos")
-                    .wrap("<li><a href='" + item.link + "' target='_blank' title='" + item.title + "'></a></li>");
-                }
-            });
+          $.each(data.items, function(i,item){
+            var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
+              if(i<=11){
+                  $("<img/>").attr("src", imgsrc).appendTo("#flickr.photos")
+                  .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
+              }
+          });
         });
     });
     $(document).ready(function() {
