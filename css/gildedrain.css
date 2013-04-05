@@ -6,8 +6,10 @@ body {background:transparent;}
   .aka {font-family:'cinzel'; text-transform:lowercase; margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em;}
 
 .contact-info {list-style:none; padding:.5em 0 1em 0; margin:0 auto 200px auto; text-align:center;background:#000; background:rgba(0,0,0,.5);}
+.contact-info:before {content:"\2013 \2009"; color:#fff; color:rgba(0,255,255,.5);}
+.contact-info:after {content:"\2009 \2013"; color:#fff; color:rgba(0,255,255,.5);}
 .contact-info li {display:inline-block; margin:0 .5em 0 .5em;}
-.contact-info a, a[href^="mailto:"] {color:#fff; color:rgba(255,255,255,.35); background:none; padding:0;}
+.contact-info a, a[href^="mailto:"] {color:#fff; color:rgba(0,255,255,.5); background:none; padding:0 !important;}
 
 .nav {display:none;}
 .flat-nav {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;}
@@ -20,11 +22,13 @@ body {background:transparent;}
 
 .section {padding:10px; background:#fff;}
 
-.tiles {padding:0; list-style:none;}
-  .tiles img {display:inline-block; min-width:250px; min-height:250px; max-height:377px; max-width:377px;}
+.tiles {padding:0; list-style:none; width:100%;}
 .bg_banners {padding-top:1em;}
-  .bg_banners li, .tiles li {float:left; display:block; width:250px; height:250px; overflow:hidden; margin:0 10px 10px 0;outline:1px solid #333; box-shadow:0 0 10px 0 rgba(0,0,0,.25); background-color:#000;}
   .bg_banners li:hover, .tiles li:hover {outline-color:#336699;}
+  .bg_banners li, .tiles li {position:relative;float:left;display:block;overflow:hidden; outline:1px solid #333; box-shadow:0 0 10px 0 rgba(0,0,0,.25); background-color:#000;}
+  .tiles img {display:block;margin:0 auto;}
+
+
 
 .design {background:#000;}
 .woodworking {background:url(../images/tile_wood3.png) repeat top left;}
@@ -50,8 +54,8 @@ body {background:transparent;}
 
 .bookshelf ul {margin:0;}
 
-.link-set {float:left; margin:1em;}
-  .labelmaker{display:inline-block;text-transform:uppercase;font-weight:200;background:#cc0000;padding:7px 5px 5px 5px;font-size:.8em;color:#fff;letter-spacing:1px;margin:0 10px 0 0;border-bottom:1px solid transparent;}
+.link-set {float:left; margin:1em .5em 1em .5em;}
+  .labelmaker{display:inline-block;text-transform:uppercase;font-weight:200;background:#cc0000;padding:7px 5px 5px 5px;font-size:.8em;color:#fff;letter-spacing:1px;margin:.25em .25em .25em 0;border-bottom:1px solid transparent;}
   .labelmaker:hover {background:#700;text-decoration:none;border-bottom:1px solid #FFF;}
   .more {color:#c00; font-style:italic; display:inline-block; margin:0 3px 0 10px; text-shadow:0 1px 3px #000;}
   .more:after {content:" \2192"; color:#c00;}
@@ -64,3 +68,33 @@ blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;marg
   blockquote:before {display: block;content: "\201C";font-size: 5em;position: absolute;left: -20px;top: -20px;color: #97ccda;}
   blockquote cite {color: #aaa;font-size: .8em;display: block;margin-top: 5px;}
   cite:before {content: "\2014 \2009";}
+
+
+@media all and (min-width:1281px){
+  .bg_banners li, .tiles li {width:16.15%; height:300px; margin:0 .5% .5% 0;}
+  .tiles img {min-width:300px; min-height:300px; max-width:452px; max-height:auto;}
+}
+@media all and (max-width:1280px){
+  .bg_banners li, .tiles li {width:24.25%; height:300px;margin:0 .75% .75% 0;}
+  .tiles img {min-width:300px; min-height:300px; max-width:452px; max-height:452px;}
+}
+@media all and (max-width:1024px){
+  .bg_banners li, .tiles li {width:24.25%; height:250px;margin:0 .75% .75% 0;}
+  .tiles img {min-width:250px; min-height:250px; max-width:377px; max-height:377px;}
+}
+@media all and (max-width:800px){
+  .bg_banners li, .tiles li {width:32.3%; height:250px;margin:0 1% 1% 0;}
+  .tiles img {min-width:250px; min-height:250px; max-width:377px; max-height:377px;}
+}
+@media all and (max-width:640px){
+  .bg_banners li, .tiles li {width:48.75%; height:250px;margin:0 1.25% 1.25% 0;}
+  .tiles img {min-width:300px; min-height:300px; max-width:452px; max-height:452px;}
+}
+@media all and (max-width:530px){
+  .bg_banners li, .tiles li {width:48.45%; height:225px;margin:0 1.5% 1.5% 0;}
+  .tiles img {min-width:250px; min-height:250px; max-width:400px; max-height:400px;}
+}
+@media all and (max-width:420px){
+  .bg_banners li, .tiles li {width:48%; height:175px;margin:0 2% 2% 0;}
+  .tiles img {min-width:200px; min-height:200px; max-width:301px; max-height:301px;}
+}

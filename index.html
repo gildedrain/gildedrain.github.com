@@ -16,38 +16,30 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Mono|Mrs+Saint+Delafield|Cinzel:400,900,700|Rock+Salt|Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-  <![endif]-->
-
+  <!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
   <div id="top"></div>
   <div id="header" class="intro">
       <h1>GildedRain</span></h1>
       <p class="aka"><acronym title="Also Known As">AKA</acronym> Steve Erwin</p>
   </div><!-- END #header -->
-
   <ul class="contact-info">
     <li><a class="icon-email" href="mailto:steve@petrock.org">Email</a></li>
     <li><a class="icon-github" href="http://github.com/gildedrain/">GitHub</a></li>
     <li><a class="icon-blogger" href="http://gildedrain.blogspot.com">Blogger</a></li>
     <li><a class="icon-flickr" href="http://flickr.com/gildedrain/">Flickr</a></li>
   </ul><!-- END .contact-info -->
-
-
-    <div class="nav">
-      <ul>
-        <li><a href="#top" class="scroll back-to-top">Top</a></li>
-        <li><a href="#design" class="scroll">Design</a></li>
-        <li><a href="#woodworking" class="scroll">Woodworking</a></li>
-        <li><a href="#photography" class="scroll">Photography</a></li>
-        <li><a href="#skills" class="scroll">Skill Levels</a></li>
-        <li><a href="#self-education" class="scroll">Self-Education</a></li>
-        <li><a href="#history" class="scroll">Employment &amp; Education</a></li>
-      </ul>
-    </div><!-- END .nav -->
-
+  <div class="nav">
+    <ul>
+      <li><a href="#top" class="scroll back-to-top">Top</a></li>
+      <li><a href="#design" class="scroll">Design</a></li>
+      <li><a href="#woodworking" class="scroll">Woodworking</a></li>
+      <li><a href="#photography" class="scroll">Photography</a></li>
+      <li><a href="#skills" class="scroll">Skill Levels</a></li>
+      <li><a href="#self-education" class="scroll">Self-Education</a></li>
+      <li><a href="#history" class="scroll">Employment &amp; Education</a></li>
+    </ul>
+  </div><!-- END .nav -->
   <div class="main clearfix">
-
     <div id="completed-works">
       <h2>Completed Works</h2>
       <div class="section design clearfix" id="design">
@@ -128,7 +120,6 @@
         </ul>
       </div><!-- END .section.skills -->
     </div><!-- END #skills -->
-
     <div id="self-education">
       <h2>Self-Education</h2>
       <div class="section bookshelves">
@@ -137,7 +128,6 @@
             <cite>George R. R. Martin, A Dance With Dragons</cite>
           </footer>
         </blockquote>
-
         <div class="bookshelf books-design">
           <h3>Web &amp; Graphic Design</h3>
           <ul class="zebrarows bg-pale-blue">
@@ -298,42 +288,38 @@
       </div><!-- END .section.education -->
     </div><!-- END #history -->
   </div><!-- END .main -->
-
   <script src="gui/js/jquery.js"></script>
   <script>window.jQuery || document.write('<script src="gui/js/jquery.js"><\/script>')</script>
   <script src="gui/js/jqueryui.js"></script>
   <script src="gui/js/tools.js"></script>
   <script>
     $(document).ready(function() {
-        //Flickr Integration
-        $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=71169235@N00&tags=woodworking%2Csite&lang=en-us&format=json&jsoncallback=?", function(data){
-            $.each(data.items, function(i,item){
-              var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
-                if(i<=11){
-                    $("<img/>").attr("src", imgsrc).appendTo("#flickr.woodworking")
-                    .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
-                }
-            });
+      //Flickr Integration
+      $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=71169235@N00&tags=woodworking%2Csite&lang=en-us&format=json&jsoncallback=?", function(data){
+        $.each(data.items, function(i,item){
+          var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
+          if(i<=11){
+            $("<img/>").attr("src", imgsrc).appendTo("#flickr.woodworking")
+            .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
+          }
         });
-        //Flickr Integration
-        $.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157633100568769&nsid=71169235@N00&lang=en-us&format=json&jsoncallback=?", function(data){
-          $.each(data.items, function(i,item){
-            var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
-              if(i<=11){
-                  $("<img/>").attr("src", imgsrc).appendTo("#flickr.photos")
-                  .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
-              }
-          });
+      });
+      //Flickr Integration
+      $.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157633100568769&nsid=71169235@N00&lang=en-us&format=json&jsoncallback=?", function(data){
+        $.each(data.items, function(i,item){
+          var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
+          if(i<=11){
+            $("<img/>").attr("src", imgsrc).appendTo("#flickr.photos")
+            .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
+          }
         });
-    });
-    $(document).ready(function() {
+      });
       // bar graphs
       $('.bar-chart').each(function () {
         var level = $(this).data('level');
         $(this).css('width', level + "%");
       });
     });
-
   </script>
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
