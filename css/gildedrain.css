@@ -79,6 +79,7 @@ blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;marg
 @media all and (min-width:1281px){
   .bg_banners li, .tiles li {width:16.15%; height:300px; margin:0 .5% .5% 0;}
   .tiles img {min-width:300px; min-height:300px; max-width:452px; max-height:auto;}
+  .design .tiles img {min-width:150px; min-height:150px; max-width:640px; max-height:auto;}
 }
 @media all and (max-width:1280px){
   .bg_banners li, .tiles li {width:24.25%; height:300px;margin:0 .75% .75% 0;}
