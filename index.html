@@ -306,7 +306,7 @@
           var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
           if(i<=11){
             $("<img/>").attr("src", imgsrc).appendTo("#flickr.woodworking")
-            .wrap('<li><a class="lightview" href="' + item.link + '"  data-lightview-type="iframe"  title="' + item.title + '"></a></li>');
+            .wrap('<li><a class="lightview" href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
           }
         });
       });
@@ -316,7 +316,7 @@
           var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
           if(i<=11){
             $("<img/>").attr("src", imgsrc).appendTo("#flickr.photos")
-            .wrap('<li><a class="lightview" href="' + item.link + '"  data-lightview-type="iframe"  title="' + item.title + '"></a></li>');
+            .wrap('<li><a class="lightview" href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
           }
         });
       });
