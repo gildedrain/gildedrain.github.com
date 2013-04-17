@@ -96,12 +96,12 @@
 
 .lv_title_caption {
   position:absolute;
-  font: 11px/18px "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Tahoma, Arial, sans-serif;
+  font: 11px/18px "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Tahoma, Arial, sans-serif;
   color: #eaeaea;
 }
 .lv_title_caption_slider { position: relative; float:left; overflow-y: hidden;}
 .lv_title_caption_slide { position: relative; float: left; top: 0; left: 0; padding: 15px 0 7px 0; }
-.lv_title { font-weight: bold; }
+.lv_title { font-weight: 400; }
 .lv_title, .lv_caption {
   float: left;
   clear: both;
@@ -285,7 +285,7 @@
   height: 100%;
   float: left;
   cursor: pointer;
-  font-family: "Lucida Sans", "Lucida Grande", Tahoma, sans-serif;
+  font-family:"Open Sans", "Lucida Sans", "Lucida Grande", Tahoma, sans-serif;
   color: #d4d4d4;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -360,7 +360,7 @@
   background: url('skins/blank.gif');
 }
 .lv_slider {
-  font-family: "Lucida Sans", "Lucida Grande", Tahoma, sans-serif;
+  font-family: "Open Sans", "Lucida Sans", "Lucida Grande", Tahoma, sans-serif;
   font-size: 9px;
   height: 21px;
   line-height: 21px;
@@ -561,7 +561,7 @@
 .lv_content a,
 .lv_content a:hover {
   color: #0088cc;
-  font-weight: normal;
+  font-weight: 200;
   background: none;
   border: 0;
   text-decoration: none;
@@ -571,7 +571,7 @@
 .lv_title_caption a,
 .lv_title_caption a:hover {
   color: #b4b4b4;
-  font-weight: normal;
+  font-weight: 200;
   background: none;
   border: 0;
   text-decoration: none;
