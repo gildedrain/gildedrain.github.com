@@ -79,7 +79,7 @@ blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;marg
   blockquote cite {color: #aaa;font-size: .8em;display: block;margin-top: 5px;}
   cite:before {content: "\2014 \2009";}
 
-.highlight {background:#23697C; padding:.5em;}
+.highlight {background:#204650; padding:.5em; border-radius:5px;}
 
 @media all and (min-width:1281px){
   .bg_banners li, .tiles li {width:16.15%; height:300px; margin:0 .5% .5% 0;}

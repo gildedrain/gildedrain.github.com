@@ -127,7 +127,7 @@
 .lv_content .lv_content_wrapper {
   float: left;
   clear: both;
-  position: relative;  
+  position: relative;
 }
 .lv_update_queue .lv_content_wrapper {
   position: absolute;
@@ -383,7 +383,7 @@
 }
 
 .lv_slider_number,
-.lv_slider_number_empty { 
+.lv_slider_number_empty {
   float: left;
   position: relative;
   height: 21px;
@@ -411,7 +411,7 @@
 
 .lv_slider_number:hover {
   background-position: -95px 0px;
-  
+
 }
 .lv_slider_numbers .lv_slider_number_active,
 .lv_slider_numbers .lv_slider_number_active:hover {
@@ -437,7 +437,7 @@
   background: url('skins/light/sprite.png');
   background-repeat: no-repeat;
   /* IE6 */
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 2px;
   display: block;
@@ -493,7 +493,7 @@
   height: 92px;
   float: left;
   position: relative;
-  display: inline; 
+  display: inline;
   overflow: hidden; /* IE6 */
 }
 .lv_thumbnail_image {
@@ -509,7 +509,7 @@
   overflow: hidden;
   display: inline; /* IE6 */
   z-index: 0; /* IE8 */
-  
+
 }
 .lv_thumbnail_image img { position: absolute; }
 .lv_thumbnail_active .lv_thumbnail_image {
@@ -544,7 +544,7 @@
 .lv_thumbnail:hover .lv_thumbnail_icon_video { background-position: -36px -196px; }
 .lv_thumbnail_active:hover .lv_thumbnail_icon_video { background-position: 0px -196px; }
 
-/* 
+/*
  * Skins
  */
 /* normalization for all skins */
@@ -560,7 +560,7 @@
 
 .lv_content a,
 .lv_content a:hover {
-  color: #0088cc;
+/*  color: #0088cc;*/
   font-weight: 200;
   background: none;
   border: 0;
@@ -570,7 +570,7 @@
 
 .lv_title_caption a,
 .lv_title_caption a:hover {
-  color: #b4b4b4;
+/*  color: #b4b4b4;*/
   font-weight: 200;
   background: none;
   border: 0;
@@ -578,7 +578,7 @@
 }
 .lv_title_caption a:hover { text-decoration: underline; }
 
-/* 
+/*
  * skin: 'light'
  */
 /* title/caption */
@@ -602,7 +602,7 @@
 .lv_controls_top_skin_light .lv_icon,
 .lv_controls_top_close_skin_light .lv_controls_top_close_button,
 .lv_thumbnails_skin_light .lv_thumbnail_icon {
-  background-image: url('skins/light/sprite.png') !important;  
+  background-image: url('skins/light/sprite.png') !important;
   background-image: url('skins/light/sprite_ie_lt_7.png'); /* IE < 7 */
 }
 
@@ -661,7 +661,7 @@
 .lv_controls_top_skin_dark .lv_icon_disabled:hover { color: #575757; }
 
 
-/* 
+/*
  * skin: 'mac'
  */
 /* title/caption */
