@@ -47,20 +47,22 @@
       <div class="section design clearfix" id="design">
         <h3>Web &amp; Graphic Design</h3>
         <ul class="tiles">
-          <li><img src="images/gui.jpg" height="250" alt="" /><a class="white" href="http://gui.sunyocc.edu/gui/reference/">GUI Framework</a></li>
-          <li><img src="images/occ-homepage.jpg" height="250" alt="" /><a class="white" href="http://www.sunyocc.ed">Onondaga Community College</a></li>
-          <li><img src="images/occ-adults.jpg" height="250" alt="" /><a class="white" href="http://www.sunyocc.edu/adult">Adult Learners</a></li>
-          <li><img src="images/occ-community.jpg" height="250" alt="" /><a class="white" href="http://www.sunyocc.edu/community">Community</a></li>
-          <li><img src="images/occ-mobile.jpg" height="250" alt="" /><a class="white" href="http://m.sunyocc.edu">Mobile</a></li>
-          <li><img src="images/occ-admission.jpg" height="250" alt="" /><a class="white" href="http://admission.sunyocc.edu">Office of Admission</a></li>
-          <li><img class="logo" src="images/logo-altavault.jpg" height="250" alt="" /><a class="white dialog" href="altavault.htmk">Altavault</a></li>
-          <li><img class="logo" src="images/logo-christinehanna.jpg" height="250" alt="" /><a class="white dialog christine.html" href="#">Christina Hanna Yoga &amp; Bellydance</a></li>
-          <li><img class="logo" src="images/logo-ee.jpg" height="250" alt="" /><a class="white dialog" href="ee.html">Erwin Enterprises</a></li>
-          <li><img src="images/occ-employees.jpg" height="250" alt="" /><a class="white" href="https://employees.sunyocc.edu">Employee Intranet</a></li>
-          <li><img src="images/occ-students.jpg" height="250" alt="" /><a class="white" href="http://students.sunyocc.edu">Student Intranet</a></li>
-          <li><img class="logo" src="images/logo-sandbox.jpg" height="250" alt="" /><a class="white dialog" href="sandbox.html">Sandbox</a></li>
+          <li><a class="lightview" href="#gui"><img src="images/gui.jpg" height="250" alt="" />GUI Framework</a></li>
+          <li><a class="lightview" href="#occ-homepage"><img src="images/occ-homepage.jpg" height="250" alt="" />Onondaga Community College</a></li>
+          <li><a class="lightview" href="#occ-adults"><img src="images/occ-adults.jpg" height="250" alt="" />Adult Learners</a></li>
+          <li><a class="lightview" href="#occ-community"><img src="images/occ-community.jpg" height="250" alt="" />Community</a></li>
+          <li><a class="lightview" href="#occ-mobile"><img src="images/occ-mobile.jpg" height="250" alt="" />Mobile</a></li>
+          <li><a class="lightview" href="#occ-admission"><img src="images/occ-admission.jpg" height="250" alt="" />Office of Admission</a></li>
+          <li><a class="lightview" href="#altavault"><img class="logo" src="images/logo-altavault.jpg" height="250" alt="" />Altavault</a></li>
+          <li><a class="lightview" href="#christinehanna"><img class="logo" src="images/logo-christinehanna.jpg" height="250" alt="" />Christina Hanna Yoga &amp; Bellydance</a></li>
+          <li><a class="lightview" href="#occ-employees"><img src="images/occ-employees.jpg" height="250" alt="" />Employee Intranet</a></li>
+          <li><a class="lightview" href="#occ-students"><img src="images/occ-students.jpg" height="250" alt="" />Student Intranet</a></li>
+          <li><a class="lightview" href="#sandbox"><img class="logo" src="images/logo-sandbox.jpg" height="250" alt="" />Sandbox</a></li>
         </ul>
         <div class="link-set"><span class="more font-grunge">More or Less</span> <a href="https://github.com/gildedrain" class="labelmaker">GitHub</a></div>
+        <div id="gui" style="display:none">
+          Hello World!
+        </div>
       </div>
       <p class="dots">&nbsp;</p>
       <div class="section woodworking clearfix" id="woodworking">
@@ -306,7 +308,7 @@
           var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
           if(i<=11){
             $("<img/>").attr("src", imgsrc).appendTo("#flickr.woodworking")
-            .wrap('<li><a class="lightview" href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
+            .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
           }
         });
       });
@@ -316,7 +318,7 @@
           var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
           if(i<=11){
             $("<img/>").attr("src", imgsrc).appendTo("#flickr.photos")
-            .wrap('<li><a class="lightview" href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
+            .wrap('<li><a href="' + item.link + '" target="_blank" title="' + item.title + '"></a></li>');
           }
         });
       });
