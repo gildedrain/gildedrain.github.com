@@ -1,5 +1,5 @@
 html {background: url(../images/bg-wave.jpg) repeat-x -450px 0;}
-body {background:transparent;}
+body {background:transparent; font-weight:200;}
 
 #header {position:relative;text-align:center; background:#000; background:rgba(0,0,0,.5); margin:33px 0 0 0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; border-width:1px 0 1px 0; border-style:solid; border-color:#fff; border-color:rgba(0,230,230,.5);}
   h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
@@ -38,7 +38,7 @@ body {background:transparent;}
 
 .lightview-content {display:none;}
 .lightview-content img {max-width:300px; float:left;}
-.description {float:left; width:300px; padding:2em 0; margin:50px; background:#222;}
+.description {float:left; width:300px; padding:2em; margin:1em; background:#222; font-size:.8em;}
 
 .design {background:#000;}
 .woodworking {background:url(../images/tile_wood3.png) repeat top left;border:1px solid #663E23; border-width:1px 0 1px 0;}
