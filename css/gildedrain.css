@@ -38,7 +38,7 @@ body {background:transparent; font-weight:200;}
 
 .lightview-content {display:none;}
 .lightview-content img {max-width:300px; float:left;}
-.description {float:left; width:300px; padding:2em; margin:1em; background:#222; font-size:.9em; border-radius:0 0 150px 0;}
+.description {float:left; width:300px; padding:2em; margin:1em; background:#222; font-size:.9em;}
 
 .design {background:#000;}
 .woodworking {background:url(../images/tile_wood3.png) repeat top left;border:1px solid #663E23; border-width:1px 0 1px 0;}
@@ -79,7 +79,7 @@ blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;marg
   blockquote cite {color: #aaa;font-size: .8em;display: block;margin-top: 5px;}
   cite:before {content: "\2014 \2009";}
 
-.highlight {background:#204650; padding:.5em; border-radius:5px;}
+.highlight {background:#204650; padding:.5em; line-height:2.5;}
 
 @media all and (min-width:1281px){
   .bg_banners li, .tiles li {width:16.15%; height:300px; margin:0 .5% .5% 0;}
