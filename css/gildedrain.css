@@ -36,7 +36,7 @@ body {background:transparent; font-weight:200;}
 
 .lightview-content {display:none;}
 .screenshot {float:left; width:30%;}
-.lightview-content img {width:auto; height:auto;}
+.screenshot img {width:10%; height:auto;}
 .description {float:left; width:30%; font-size:.9em;}
 
 .design {background:#000;}
