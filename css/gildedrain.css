@@ -35,9 +35,8 @@ body {background:transparent; font-weight:200;}
     .tiles img {display:block;margin:0 auto;}
 
 .lightview-content {display:none;}
-.screenshot {float:left; width:50%;}
 .lightview-content img {width:auto; max-width:1000px; height:auto;}
-.description {float:left; width:40%; padding:2.5%; margin:2.5%; font-size:.9em;}
+.description {font-size:.9em;}
 
 .design {background:#000;}
 .woodworking {background:url(../images/tile_wood3.png) repeat top left;border:1px solid #663E23; border-width:1px 0 1px 0;}
