@@ -18,4 +18,3 @@
     HTML5 Boilerplate
     Normalize.css
     Zurb Awesome Buttons
-    FontAwesome

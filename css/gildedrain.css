@@ -36,7 +36,7 @@ body {background:transparent; font-weight:200;}
 .lightview-content {display:none;}
 .screenshot {float:left; max-width:500px;}
 .screenshot img {max-width:500px; height:auto;}
-.description {floats:left; max-width:10%; font-size:.9em; margin:0 2em 0 2em;}
+.description {float:left; max-width:300px; font-size:.9em; margin:0 2em 0 2em;}
 
 .design {background:#000;}
 .woodworking {background:url(../images/tile_wood3.png) repeat top left;border:1px solid #663E23; border-width:1px 0 1px 0;}

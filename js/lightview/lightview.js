@@ -22,7 +22,7 @@
 };
 
 Lightview.Skins = {
-  // every possible property is defined on the base skin 
+  // every possible property is defined on the base skin
   // all other skins inherit from this skin
   'base': {
     ajax: {
@@ -109,7 +109,7 @@ Lightview.Skins = {
     thumbnail: { icon: false },
     viewport: 'scale',
     wrapperClass: false,
-    
+
     initialTypeOptions: {
       ajax: {
         keyboard: false,
@@ -168,7 +168,7 @@ Lightview.Skins = {
 
   // reserved for resetting options on the base skin
   'reset': { },
-  
+
   // the default skin
   'dark': {
     border: {
@@ -198,7 +198,7 @@ Lightview.Skins = {
       color: '#333'
     }
   },
-  
+
   'mac': {
     background: '#fff',
     border: {
