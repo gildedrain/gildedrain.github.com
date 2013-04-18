@@ -34,8 +34,8 @@ body {background:transparent; font-weight:200;}
     .tiles img {display:block;margin:0 auto;}
 
 .lightview-content {display:none;}
-.screenshot {float:left; max-width:700px;}
-.screenshot img {max-width:450px; height:auto;}
+.screenshot {float:left; max-width:500px;}
+.screenshot img {max-width:500px; height:auto;}
 .description {float:left; max-width:300px; font-size:.9em; margin:0 2em 0 2em;}
 
 .design {background:#000;}
