@@ -33,18 +33,21 @@ body {background:transparent; font-weight:200;}
   .tiles li {position:relative;float:left;display:block;overflow:hidden;outline:1px solid #333; box-shadow:0 0 10px 0 rgba(0,0,0,.25); background-color:#000;}
     .tiles img {display:block;margin:0 auto;}
 
-.lightview-content {display:none;}
-.screenshot {float:left; max-width:500px;}
-.screenshot img {max-width:100px; height:auto;}
-.description {float:left; max-width:300px; font-size:.9em; margin:0 2em 0 2em;}
+.design {background:#fff;}
+  .design h3 {color:#5D99C0; background:transparent; border:0;}
+  #accordion h4 {border-top:1px solid #ddd; padding-top:.5em;}
+  h4 span {float:right;}
+  .description {float:left;width:35%; margin-right:5%;}
+  .screenshots {float:left; width:45%;}
 
-.design {background:#000;}
 .woodworking {background:url(../images/tile_wood3.png) repeat top left;border:1px solid #663E23; border-width:1px 0 1px 0;}
-.photography {background:#000;}
-  .design h3, .photography h3 {color:#97ccda; background:transparent; border:0;}
   .woodworking h3 {color:rgb(211, 166, 125); background:transparent; border:0;}
 
-.completed-works ul, .bookshelves ul {list-style:none; padding:0;}
+.photography {background:#000;}
+  .photography h3 {color:#97ccda; background:transparent; border:0;}
+
+.bookshelves ul {list-style:none; padding:0;}
+  .bookshelf ul {margin:0;}
   .status:before {color:#fff; margin-right:.75em; font-size:.6em; padding:.25em .75em .25em .5em;}
   .to-be-published:before {content:"TO BE PUBLISHED"; background:#000; }
   .on-deck:before {content:"ON DECK"; background:#1179fe;}
@@ -53,14 +56,12 @@ body {background:transparent; font-weight:200;}
   .in-progress {color:#c00;}
   .completed {color:#666; background:#fff;}
 
-  .skills ul {list-style:none; padding:0; margin:0;}
+.skills ul {list-style:none; padding:0; margin:0;}
   .skills li {margin-bottom:1px; position:relative;}
   .bar-chart {display:inline-block; position:absolute; z-index:1;}
   .skill {z-index:2; position:relative; display:inline-block; padding:0 .5em 0 .5em;}
   .skill-flag {position:absolute; z-index:2; top:7px;display:inline-block; color:#000; font-size:.6em; font-style:italic; font-weight:600; font-family:'rock salt'}
   .skill-flag:before {content: "\2014 \2009";}
-
-.bookshelf ul {margin:0;}
 
 .link-set {float:left; margin:1em .5em 1em .5em;}
   .labelmaker{display:inline-block;text-transform:uppercase;font-weight:200;background:#cc0000;padding:7px 5px 5px 5px;font-size:.8em;color:#fff;letter-spacing:1px;margin:.25em .25em .25em 0;border-bottom:1px solid transparent;}
@@ -71,13 +72,11 @@ body {background:transparent; font-weight:200;}
 h2, h3, h4, h5, h6 {font-family:'cinzel'}
 h2 {display:inline-block; color:#fff; background:#c00; padding:.25em .5em;}
 h3 {padding:.25em; margin-bottom:0;border-bottom:1px solid #000;-webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(0,0,0,.0)),color-stop(0.20,rgba(0,0,0,.75)),color-stop(0.80,rgba(0,0,0,.75)),color-stop(100%,rgba(0,0,0,.0))) 0 0 100 0; }
-
+.highlight {background:#97ccda;}
 blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;margin: .25em .5em;;padding: .25em 40px;line-height: 1.45;position: relative;color:#567594;}
   blockquote:before {display: block;content: "\201C";font-size: 5em;position: absolute;left: -20px;top: -20px;color: #97ccda;}
   blockquote cite {color: #aaa;font-size: .8em;display: block;margin-top: 5px;}
   cite:before {content: "\2014 \2009";}
-
-.highlight {background:#97ccda; padding:.5em; line-height:2.5;}
 
 @media all and (min-width:1281px){
   .bg_banners li, .tiles li {width:16.15%; height:300px; margin:0 .5% .5% 0;}

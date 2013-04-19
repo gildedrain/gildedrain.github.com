@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="gui/css/normalize.css">
   <link rel="stylesheet" href="css/gildedrain.css">
   <script src="gui/js/modernizr.js"></script>
-  <link rel="stylesheet" type="text/css" href="../css/lightview/lightview.css" />
+  <link rel="stylesheet" type="text/css" href="css/lightview/lightview.css" />
+  <link rel="stylesheet" type="text/css" href="gui/css/cupertino/jqueryui.css" />
 
   <link href='http://fonts.googleapis.com/css?family=PT+Mono|Mrs+Saint+Delafield|Cinzel:400,900,700|Rock+Salt|Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
 </head>
@@ -46,7 +47,7 @@
       <h2>Completed Works</h2>
       <div class="section design clearfix" id="design">
         <h3>Web &amp; Graphic Design</h3>
-        <ul class="tiles">
+        <ul class="tiles hide">
           <li><a class="lightview" data-lightview-group="group1" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'" href="#gui"><img src="images/gui.jpg" height="250" alt="GUI Framework" /></a></li>
           <li><a class="lightview" data-lightview-group="group1" href="#occ-homepage"><img src="images/occ-homepage.jpg" height="250" alt="Onondaga Community College" /></a></li>
           <li><a class="lightview" data-lightview-group="group1" href="#occ-adults"><img src="images/occ-adults.jpg" height="250" alt="Adult Learners" /></a></li>
@@ -59,244 +60,115 @@
           <li><a class="lightview" data-lightview-group="group1" href="#occ-students"><img src="images/occ-students.jpg" height="250" alt="Student Intranet" /></a></li>
           <li><a class="lightview" data-lightview-group="group1" href="#sandbox"><img class="logo" src="images/logo-sandbox.jpg" height="250" alt="Sandbox" /></a></li>
         </ul>
-        <div class="link-set"><span class="more font-grunge">More or Less</span> <a href="https://github.com/gildedrain" class="labelmaker">GitHub</a></div>
-        <div id="gui" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/gui.jpg"/>
-            <p><a href="/gui/refernce/index.html" class="button small bg-dark-red">View Site</a></p>
+        <div class="link-set hide"><span class="more font-grunge">More or Less</span> <a href="https://github.com/gildedrain" class="labelmaker">GitHub</a></div>
+        <div id="accordion">
+          <h4>GUI Framework <span>2010 &ndash; present</span></h4>
+          <div>
+            <div class="description">
+              <p>In the days before <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>, I built a CSS and Javascript framework made up of reusable tool classes.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects just by calling the classnames.</p>
+              <p>Twitter began their framework shortly after I finished mine.  Several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. It's not perfect, but it's my personal toolbox and I'm continually adding to and improving it. </p>
+              <p><span class="highlight">That said, I still think it's worthwhile for <em>every</em> designer and programmer to attempt to create their own framework.  The knowledge and experience you gain along the way is priceless.</span></p>
+              <p><a class="button bg-dark-red small" href="http://gui.sunyocc.edu/gui/reference/index.html">Go to Site</a></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview" data-lightview-group="group1" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'" href="#gui"><img src="images/gui.jpg" width="100%" alt="GUI Framework" /></a>
+            </div>
           </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>, I put together my own custom CSS and Javascript framework.  GUI is made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects just by calling the classnames.</p>
-            <p>Twitter began writing their framework shortly after I deployed GUI at OCC and several intelligent frameworks have been released since. Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. It's not perfect, but it's my personal toolbox and I'm continually adding to and improving it. </p>
-            <p><span class="highlight">All of that being said, I think it's worthwhile for <em>every</em> designer or programmer to attempt to create their own framework.  The knowledge and experience you gain along the way is priceless.</span></p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
+          <h4>Adult Learners <span>2013</span></h4>
+          <div>
+            <div class="description">
+              <p class="font-typewriter light-grey"><strong class="dark-blue">Sitelet:</strong> <em class="medium-orange">noun;</em> the computed result of the addition of a menu parameter to the index.aspx template file in order to override the global stylesheet with a local one of the same name as the menu's title in the CMS database, thus creating a custom look and feel without necessitating any manual code development.</p>
+              <p>Marketing has various priorities throughout the year where they need to advertise certain special programs in a unique way to a unique audience.  To date, I've created several sitelets for OCC.  Adult Learners is just one example. </p>
+              <p>The real achievement here is in the template file logic and proxy rules allowing GUI to integrate with the entire family of OCC websites.  It isn't until something as simple as a sitelet is built that the value of all of this back-end work is really apparent.  <span class="highlight">We've been able to satisfy 90% of Marketing's requests by using sitelets, freeing up more of our time for continuous improvement and new development.</span></p>
+              <p><a class="button bg-dark-red small" href="http://www.sunyocc.edu/adult">Go to Site</a></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group2" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'" href="#occ-adults"><img src="images/occ-adults.jpg" width="100%" alt="Adult Learners" /></a>
+            </div>
           </div>
-        </div>
-        <div id="occ-homepage" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/occ-homepage.jpg"/>
-            <p><a href="http://www.sunyocc.edu/" class="button small bg-dark-red">View Site</a></p>
+          <h4>Homepage <span>2012</span></h4>
+          <div>
+            <div class="description">
+              <p>This project was <strong>much</strong> more than just a new look for the College homepage.</p>
+              <p>I restructured the entire information architecture and back-end systems that drive <em>all</em> of OCC's websites. Research and planning took several months.  Thousands of lines of code were removed, redundancies were eradicated, objects were created for reuse and deployed, and finally, a unified visual language for an entire family of websites was created.</p>
+              <p><span class="highlight">With the launch of this site, OCC finally had what they needed all along: flexibility for change and adaptability for growth.</span></p>
+              <p><a class="button bg-dark-red small" href="http://www.sunyocc.edu/">Go to Site</a></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
+          <h4>Community Education <span>2012</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-        </div>
-        <div id="occ-adults" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/occ-adults.jpg" />
-            <p><a href="http://www.sunyocc.edu/adult" class="button small bg-dark-red">View Site</a></p>
+          <h4>Mobile <span>2011</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
+          <h4>Office of Admission<span>2010</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-        </div>
-        <div id="occ-community" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/occ-community.jpg" />
-            <p><a href="http://www.sunyocc.edu/community" class="button small bg-dark-red">View Site</a></p>
+          <h4>Altavault Logo<span>2009</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
+          <h4>Christine Hanna Yoga &amp; Bellydance Logo<span>2009</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-        </div>
-        <div id="occ-mobile" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/occ-mobile.jpg" />
-            <p><a href="http://m.sunyocc.edu/" class="button small bg-dark-red">View Site</a></p>
+          <h4>Employee Intranet<span>2008, 2007, 2006</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
+          <h4>Student Intranet<span>2008, 2007, 2006</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
-        </div>
-        <div id="occ-admission" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/occ-admission.jpg" />
-            <p><a href="http://admission.sunyocc.edu/" class="button small bg-dark-red">View Site</a></p>
-          </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
-          </div>
-        </div>
-        <div id="altavault" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/logo-altavault.jpg" />
-          </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
-          </div>
-        </div>
-        <div id="christinehanna" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/logo-christinehanna.jpg" />
-          </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>, I put together my own custom CSS and Javascript framework.  GUI is made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects just by calling the classnames.</p>
-            <p>Twitter released their framework shortly after I deployed GUI at OCC and several intelligent frameworks have been released since. Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. It's not perfect, but it's my personal sandbox and I'm continually adding to and improving it. </p>
-            <p class="highlight">All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
-          </div>
-        </div>
-        <div id="occ-employees" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/occ-employees.jpg" />
-            <p><a href="https://employees.sunyocc.edu/" class="button small bg-dark-red">View Site</a></p>
-          </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
-          </div>
-        </div>
-        <div id="occ-students" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/occ-students.jpg" />
-            <p><a href="http://students.sunyocc.edu/" class="button small bg-dark-red">View Site</a></p>
-          </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
-          </div>
-        </div>
-        <div id="sandbox" class="lightview-content">
-          <div class="screenshot">
-            <img src="images/logo-sandbox.jpg" />
-          </div>
-          <div class="description">
-            <h4>GUI Framework</h4>
-            <p>In the days before Twitter Bootstrap, I put together my own custom built CSS and Javascript framework made up of reusable tool classes and simple scripts that can be applied to any HTML.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects by calling the classnames.</p>
-            <p>How was I to know that Twitter was going to release their framework no sooner than I finished mine?  Not only that, but several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. OCC has been using GUI for a few years now and seems very satisfied with the power it gives them. GUI isn't perfect, but it's a labor of love and I'm continually adding to and improving it. </p>
-            <p>All of that being said, I think it's worthwhile for any designer or programmer to attempt to create their own framework.  The knowledge and experience you learn along the way is priceless.</p>
-            <ul class="tags">
-              <li>CSS1/2/3</li>
-              <li>XHTML 1.0 Strict / HTML5</li>
-              <li>JQuery</li>
-              <li>Object Oriented CSS</li>
-              <li><acronym title="Don't Repeat Yourself">DRY</li>
-              <li>GitHub</li>
-              <li>HTML5 Boilerplate</li>
-              <li>Zurb Awesome Buttons</li>
-            </ul>
+          <h4>Sandbox Logo <span>2005</span></h4>
+          <div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="screenshots">
+              <a class="lightview"  data-lightview-group="group3" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="#occ-homepage"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College" /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -530,12 +402,13 @@
   </div><!-- END .main -->
   <script src="gui/js/jquery.js"></script>
   <script>window.jQuery || document.write('<script src="gui/js/jquery.js"><\/script>')</script>
+  <script src="gui/js/jqueryui.js"></script>
   <script src="gui/js/tools.js"></script>
   <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="../js/spinners/spinners.min.js"></script>
-  <script type="text/javascript" src="../js/lightview/lightview.js"></script>
+  <script type="text/javascript" src="js/spinners/spinners.min.js"></script>
+  <script type="text/javascript" src="js/lightview/lightview.js"></script>
   <script>
     $(document).ready(function() {
       //Flickr Integration
@@ -563,6 +436,11 @@
         var level = $(this).data('level');
         $(this).css('width', level + "%");
       });
+    });
+  </script>
+  <script>
+    $(function() {
+      $( "#accordion" ).accordion();
     });
   </script>
   <script>
