@@ -35,6 +35,7 @@ body {background:transparent; font-weight:200;}
 
 .design {background:#fff;}
   .design h3 {color:#5D99C0; background:transparent; border:0;}
+	.design h4:hover {background:#97ccda;}
   #accordion h4 {border-top:1px solid #ddd; padding-top:.5em;}
   h4 span {float:right;}
   .description {float:left;width:35%; margin-right:5%;}
