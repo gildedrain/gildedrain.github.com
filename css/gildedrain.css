@@ -1,5 +1,5 @@
 html {
-  background: black url(../images/bg-pixels2.png) fixed repeat 0px 10px; }
+  background: black url(../images/bg-pixels2.png) fixed repeat 0 10px; }
 
 body {
   background: transparent;
@@ -49,9 +49,14 @@ h1 {
 
 .contact-info {
   position: relative;
-  margin: 0em auto;
+  margin: 1em auto;
   width: 250px;
+  border-radius: 250px;
+  background: #000;
   font-size: 1.75em; }
+
+.contact-info:hover {
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.9) inset; }
 
 #header .contact-info {
   position: absolute;
@@ -91,11 +96,11 @@ h1 {
   margin: 0;
   z-index: 4;
   border-bottom: 1px solid #fff;
+  border-color: #97ccda;
   border-color: rgba(0, 230, 230, 0.5); }
 
 .flat-nav ul {
   width: 100%;
-  padding: 0;
   margin: 0;
   padding: .5em 0 .5em 0;
   text-align: center; }
@@ -162,11 +167,6 @@ h1 {
 .design {
   background: #fff; }
 
-.design h3 {
-  color: #5D99C0;
-  background: transparent;
-  border: 0; }
-
 .design h4:hover {
   background: #97ccda; }
 
@@ -190,11 +190,6 @@ h4 span {
   background: url(../images/tile_wood3.png) repeat top left;
   border: 1px solid #663E23;
   border-width: 1px 0 1px 0; }
-
-.woodworking h3 {
-  color: #d3a67d;
-  background: transparent;
-  border: 0; }
 
 .photography {
   background: #000; }
@@ -445,7 +440,7 @@ a {
   #header .contact-info {
     position: fixed;
     left: 0;
-    top: 0px;
+    top: 0;
     width: 100%;
     background: #000;
     border-radius: 0;
