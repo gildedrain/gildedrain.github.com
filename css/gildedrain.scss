@@ -82,7 +82,10 @@ body {background:transparent; font-weight:200;}
 
 h2, h3, h4, h5, h6 {font-family:'cinzel'}
 h2 {display:inline-block; color:#fff; background:#c00; padding:.25em .5em;}
-h3 {padding:.25em; margin-bottom:0;border-bottom:1px solid #000;-webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(0,0,0,.0)),color-stop(0.20,rgba(0,0,0,.75)),color-stop(0.80,rgba(0,0,0,.75)),color-stop(100%,rgba(0,0,0,.0))) 0 0 100 0; }
+h3 {padding:.25em .5em; margin:.5em 0 0 0; background:#003151; display:inline-block; color:#fff;}
+h4 {padding-top:.25em; border-top:1px solid #ddd; margin-top:0;}
+h5 {}
+h6 {}
 .highlight {background:#B8E1FF;}
 blockquote {font-family: Georgia, serif;font-size: 1.3em;font-style: italic;margin: .25em .5em;;padding: .25em 40px;line-height: 1.45;position: relative;color:#567594;}
   blockquote:before {display: block;content: "\201C";font-size: 5em;position: absolute;left: -20px;top: -20px;color: #97ccda;}

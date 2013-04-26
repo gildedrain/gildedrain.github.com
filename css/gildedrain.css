@@ -334,10 +334,16 @@ h2 {
   padding: .25em .5em; }
 
 h3 {
-  padding: .25em;
-  margin-bottom: 0;
-  border-bottom: 1px solid #000;
-  -webkit-border-image: -webkit-gradient(linear, left center, right center, from(rgba(0, 0, 0, 0)), color-stop(0.2, rgba(0, 0, 0, 0.75)), color-stop(0.8, rgba(0, 0, 0, 0.75)), color-stop(100%, rgba(0, 0, 0, 0))) 0 0 100 0; }
+  padding: .25em .5em;
+  margin: .5em 0 0 0;
+  background: #003151;
+  display: inline-block;
+  color: #fff; }
+
+h4 {
+  padding-top: .25em;
+  border-top: 1px solid #ddd;
+  margin-top: 0; }
 
 .highlight {
   background: #B8E1FF; }
