@@ -267,10 +267,24 @@
         <p><strong>Claims Representative I</strong> &mdash; 2003&ndash;2005</p>
         <h4>Blue Willow Designs &mdash; Syracuse, NY</h4>
         <p><strong>Co-Founder, Designer</strong> &mdash; 2000&ndash;2004</p>
+        <ul>
+          <li>established web and graphic design firm out of Central NY</li>
+          <li>managed business, marketing, and customer service efforts</li>
+          <li>directed, designed, and constructed all related creative media for several small business websites</li>
+        </ul>
         <h4>SUNY Upstate Medical University &mdash; Syracuse, NY</h4>
         <p><strong>Web Intern</strong> &mdash; 2000</p>
+        <ul>
+          <li>assisted in a complete University website overhaul</li>
+          <li>introduced CSS to the University web team</li>
+        </ul>
         <h4>SUNY Geneseo &mdash; Geneseo, NY</h4>
         <p><strong>Web Assistant, Publicity Manager, Graphic Designer</strong> &mdash; 1999&ndash;2002</p>
+        <ul>
+          <li>developed and maintained 5 department websites</li>
+          <li>designed, produced, and advertised 4 seasons of publicity materials for the Schools of Performing &amp; Fine Arts</li>
+          <li>trained and supported the campus community in web design concepts and tools</li>
+        </ul>
         <h4>HSBC Bank USA &mdash; Liverpool, NY</h4>
         <p><strong>Customer Service Representative</strong> &mdash; 1999&ndash;2003</p>
       </div><!-- END.section.work-history-->
@@ -434,7 +448,7 @@
           var imgsrc = (item.media.m).replace('_m.jpg', '_b.jpg');
           if(i<=11){
             $("<img/>").attr("src", imgsrc).appendTo("#flickr.photos")
-            .wrap('<li><a class="lightview" data-lightview-group="photos" data-lightview-group-options="skin: \'mac\', controls: \'top\', viewport: \'scale\'" data-lightview-title="' + item.title + '" data-lightview-caption="' + item.description + '" href="' + imgsrc + '" title="' + item.title + '"></a></li>');
+            .wrap('<li><a class="lightview" data-lightview-group="photos" data-lightview-group-options="skin: \'mac\', controls: \'top\', viewport: \'scale\'" data-lightview-title="' + item.title + '" href="' + imgsrc + '" title="' + item.title + '"></a></li>');
           }
         });
       });
