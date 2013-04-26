@@ -1,30 +1,19 @@
-html {background: url(../images/bg-wave.jpg) repeat-x -450px 0;}
+html {background:#000 url(../images/bg-pixels2.png) fixed repeat 0px 10px;}
 body {background:transparent; font-weight:200;}
-
-@mixin radial-shadow {
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-#header {position:relative;text-align:center; margin:0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; @include radial-shadow;}
+#header {position:relative;text-align:center; margin:0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; background:#000;}
   h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
   .aka {margin:-1.75em 0 1.5em 8em; color:#97ccda; font-size:.8em; text-shadow:0 0 2px #000;}
 
-.contact-info {list-style:none; padding:0; background:#000;text-align:center;text-transform:lowercase; font-family:'cinzel';}
+.contact-info {list-style:none; padding:0; text-align:center;text-transform:lowercase; font-family:'cinzel';}
 .contact-info:before, .contact-info:after {content:"\2013"; color:#666;}
 .contact-info a, a[href^="mailto:"] {color:#97ccda; background:none; padding:0 !important;}
 .contact-info a:hover{color:#fff;}
-.contact-info {position:relative; margin:3em auto; width:250px; border-radius:250px; font-size:1.75em;}
-#header .contact-info {position:absolute; margin-top:0; right:10px; top:10px; width:100px; border-radius:100px;z-index:3;font-size:1em;}
+.contact-info {position:relative; margin:0em auto; width:250px; font-size:1.75em;}
+#header .contact-info {position:absolute; margin-top:0; right:10px; top:10px; width:100px; z-index:3;font-size:1em;}
 
-.nav {text-align:center; margin:0 0 100px 0; padding:0; background:#000; background:rgba(0,0,0,.2);}
+.nav {text-align:center; margin:0 0 100px 0; padding:0; background:#000;}
 .nav li {display:inline-block;}
-.nav a {color:#97ccda; text-shadow:0 0 2px #000;}
+.nav a {color:#97ccda;}
 .nav a:hover {color:#fff;}
 .nav .back-to-top {display:none;}
 .flat-nav {display:block;float:none;width:100%;position:fixed;top:0;padding:0;background:#000;margin:0; z-index:4;border-bottom:1px solid #fff; border-color:rgba(0,230,230,.5);}
@@ -82,7 +71,7 @@ body {background:transparent; font-weight:200;}
 
 h2, h3, h4, h5, h6 {font-family:'cinzel'}
 h2 {display:inline-block; color:#fff; background:#c00; padding:.25em .5em;}
-h3 {padding:.25em .5em; margin:.5em 0 0 0; background:#003151; display:inline-block; color:#fff;}
+h3 {padding:.25em .5em; margin:.5em 0 0 0; background:#444; color:#fff;}
 h4 {padding-top:.25em; border-top:1px solid #ddd; margin-top:0;}
 h5 {}
 h6 {}

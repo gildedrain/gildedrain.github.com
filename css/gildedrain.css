@@ -1,5 +1,5 @@
 html {
-  background: url(../images/bg-wave.jpg) repeat-x -450px 0; }
+  background: black url(../images/bg-pixels2.png) fixed repeat 0px 10px; }
 
 body {
   background: transparent;
@@ -12,20 +12,7 @@ body {
   padding: .05em 0 .05em 0;
   font-family: "cinzel";
   text-transform: lowercase;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-  /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-  /* IE10+ */
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  background: #000; }
 
 h1 {
   font-family: 'mrs saint delafield';
@@ -44,7 +31,6 @@ h1 {
 .contact-info {
   list-style: none;
   padding: 0;
-  background: #000;
   text-align: center;
   text-transform: lowercase;
   font-family: 'cinzel'; }
@@ -63,9 +49,8 @@ h1 {
 
 .contact-info {
   position: relative;
-  margin: 3em auto;
+  margin: 0em auto;
   width: 250px;
-  border-radius: 250px;
   font-size: 1.75em; }
 
 #header .contact-info {
@@ -74,7 +59,6 @@ h1 {
   right: 10px;
   top: 10px;
   width: 100px;
-  border-radius: 100px;
   z-index: 3;
   font-size: 1em; }
 
@@ -82,15 +66,13 @@ h1 {
   text-align: center;
   margin: 0 0 100px 0;
   padding: 0;
-  background: #000;
-  background: rgba(0, 0, 0, 0.2); }
+  background: #000; }
 
 .nav li {
   display: inline-block; }
 
 .nav a {
-  color: #97ccda;
-  text-shadow: 0 0 2px #000; }
+  color: #97ccda; }
 
 .nav a:hover {
   color: #fff; }
@@ -336,8 +318,7 @@ h2 {
 h3 {
   padding: .25em .5em;
   margin: .5em 0 0 0;
-  background: #003151;
-  display: inline-block;
+  background: #444;
   color: #fff; }
 
 h4 {
