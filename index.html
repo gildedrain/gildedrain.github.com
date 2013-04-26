@@ -77,7 +77,7 @@
           <h4>Adult Learners <span>2013</span></h4>
           <div>
             <div class="description">
-              <p class="font-typewriter light-grey"><strong class="dark-blue">Sitelet:</strong> <em class="medium-orange">noun;</em> the rendered result of the addition of a menu parameter to the index.aspx template file in order to override the global stylesheet with a local one of the same name as the menu's title in the CMS database, thus creating a custom look and feel without necessitating any manual code development.</p>
+              <p class="font-serif light-grey"><strong class="dark-blue">Sitelet:</strong> <em class="medium-orange">noun;</em> the rendered result of the addition of a menu parameter to the index.aspx template file in order to override the global stylesheet with a local one of the same name as the menu's title in the CMS database, thus creating a custom look and feel without necessitating any manual code development.</p>
               <p>Marketing has various priorities throughout the year where they need to advertise certain special programs in a unique way to a unique audience.  To date, I've created several sitelets for <acronym title="Onondaga Community College">OCC</acronym>.  Adult Learners is just one example. </p>
               <p>The real achievement here is in the template file logic and proxy rules allowing GUI to integrate with the entire family of <acronym title="Onondaga Community College">OCC</acronym> websites.  It isn't until something as simple as a sitelet is built that the value of all of this back-end work is really apparent.  <span class="highlight">We've been able to satisfy 90% of Marketing's requests by using sitelets, freeing up more of our time for continuous improvement and new development.</span></p>
               <p><a class="button bg-dark-red small" href="http://www.sunyocc.edu/adult">Visit Site</a>  <a class="lightview button small bg-dark-blue"  data-lightview-group="adults" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-adults-jpgs.jpg">View JPEG progression</a></p>
@@ -451,7 +451,7 @@
           var imgsrc = (item.media.m).replace('_m.jpg', '_z.jpg');
           if(i<=11){
             $("<img/>").attr("src", imgsrc).appendTo("#flickr.photos")
-            .wrap('<li><a class="lightview" data-lightview-group="photos" href="' + item.media.b + '" target="_blank" title="' + item.title + '"></a></li>');
+            .wrap('<li><a class="lightview" data-lightview-group="photos" href="' + item.media.b + '" title="' + item.title + '"></a></li>');
           }
         });
       });
