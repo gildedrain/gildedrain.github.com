@@ -1,10 +1,10 @@
 html {
-  background-image: url(../images/bg-pixels3.png);
+  background-image: url(../images/bg-pixels4.png);
   background-repeat: repeat;
   background-position: 0 0;
-  animation: html 24s linear infinite;
-  -ms-animation: html 24s linear infinite;
-  -moz-animation: html 24s linear infinite;
+  animation: html 30s linear infinite;
+  -ms-animation: html 30s linear infinite;
+  -moz-animation: html 30s linear infinite;
   -webkit-animation: html 24s linear infinite; }
 
 @keyframes html {
