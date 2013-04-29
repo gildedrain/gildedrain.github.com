@@ -1,5 +1,39 @@
 html {
-  background: black url(../images/bg-pixels2.png) fixed repeat 0 10px; }
+  background-image: url(../images/bg-pixels3.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  animation: html 24s linear infinite;
+  -ms-animation: html 24s linear infinite;
+  -moz-animation: html 24s linear infinite;
+  -webkit-animation: html 24s linear infinite; }
+
+@keyframes html {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 0 977px; } }
+
+@-webkit-keyframes html {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 0 977px; } }
+
+@-ms-keyframes html {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 0 977px; } }
+
+@-moz-keyframes html {
+  from {
+    background-position: 0 0; }
+
+  to {
+    background-position: 0 977px; } }
 
 body {
   background: transparent;

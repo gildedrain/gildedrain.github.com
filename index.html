@@ -436,15 +436,15 @@
   <script>
     $(document).ready(function() {
       //Flickr Integration
-      $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=71169235@N00&tags=woodworking%2Csite&lang=en-us&format=json&jsoncallback=?", function(data){
-        $.each(data.items, function(i,item){
-          var imgsrc = (item.media.m).replace('_m.jpg', '_b.jpg');
-          if(i<=11){
-            $("<img/>").attr("src", imgsrc).appendTo("#flickr.woodworking")
-            .wrap('<li><a class="lightview" data-lightview-group="woodworking" data-lightview-group-options="skin: \'mac\', controls: \'top\', viewport: \'scale\'" data-lightview-title="' + item.title + '" href="' + imgsrc + '" title="' + item.title + '"></a></li>');
-          }
-        });
-      });
+      // $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=71169235@N00&tags=woodworking%2Csite&lang=en-us&format=json&jsoncallback=?", function(data){
+      //   $.each(data.items, function(i,item){
+      //     var imgsrc = (item.media.m).replace('_m.jpg', '_b.jpg');
+      //     if(i<=11){
+      //       $("<img/>").attr("src", imgsrc).appendTo("#flickr.woodworking")
+      //       .wrap('<li><a class="lightview" data-lightview-group="woodworking" data-lightview-group-options="skin: \'mac\', controls: \'top\', viewport: \'scale\'" data-lightview-title="' + item.title + '" href="' + imgsrc + '" title="' + item.title + '"></a></li>');
+      //     }
+      //   });
+      // });
       //Flickr Integration
       $.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157633100568769&nsid=71169235@N00&lang=en-us&format=json&jsoncallback=?", function(data){
         $.each(data.items, function(i,item){

@@ -1,4 +1,16 @@
-html {background:#000 url(../images/bg-pixels2.png) fixed repeat 0 10px;}
+html {background-image:url(../images/bg-pixels3.png); background-repeat:repeat; background-position:0 0;
+	animation: html 24s linear infinite;
+	-ms-animation: html 24s linear infinite;
+	-moz-animation: html 24s linear infinite;
+	-webkit-animation: html 24s linear infinite;
+}
+@keyframes html {from {background-position:0 0; } to { background-position: 0 977px;}}
+@-webkit-keyframes html {from {background-position:0 0; } to { background-position: 0 977px;}}
+@-ms-keyframes html {from {background-position:0 0; } to { background-position: 0 977px;}}
+@-moz-keyframes html {from {background-position:0 0; } to { background-position: 0 977px;}}
+
+
+
 body {background:transparent; font-weight:200;}
 #header {position:relative;text-align:center; margin:0; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase; background:#000;}
   h1 {font-family:'mrs saint delafield'; text-transform:lowercase; font-size:5em; color:#fff; margin:.25em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}
