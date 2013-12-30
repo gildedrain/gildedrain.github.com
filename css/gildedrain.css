@@ -1,43 +1,19 @@
 html {
-  background-image: url(../images/bg-pixels.png);
-  background-repeat: repeat;
-  background-position: 0 0;
-  animation: html 30s linear infinite;
-  -ms-animation: html 30s linear infinite;
-  -moz-animation: html 30s linear infinite;
-  -webkit-animation: html 24s linear infinite; }
-
-@keyframes html {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 0 977px; } }
-
-@-webkit-keyframes html {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 0 977px; } }
-
-@-ms-keyframes html {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 0 977px; } }
-
-@-moz-keyframes html {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 0 977px; } }
+  min-height: 100%;
+  background: black url(../images/bg/wood.jpg) fixed repeat top center; }
 
 body {
-  background: transparent;
-  font-weight: 200; }
+  min-height: 100%;
+  font-weight: 200;
+  color: #ffffcc;
+  font-size: 1.1em;
+  background: -moz-radial-gradient(top, circle cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%) fixed;
+  background: -webkit-gradient(radial, top center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7))) fixed;
+  background: -webkit-radial-gradient(top, circle cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%) fixed;
+  background: -o-radial-gradient(top, circle cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%) fixed;
+  background: -ms-radial-gradient(top, circle cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%) fixed;
+  background: radial-gradient(circle at top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.7) 100%) fixed;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); }
 
 #header {
   position: relative;
@@ -45,314 +21,250 @@ body {
   margin: 0;
   padding: .05em 0 .05em 0;
   font-family: "cinzel";
-  text-transform: lowercase;
-  background: #000; }
+  text-transform: lowercase; }
 
 h1 {
-  font-family: 'mrs saint delafield';
-  text-transform: lowercase;
+  font-family: 'Amatic SC';
+  text-transform: none;
   font-size: 5em;
   color: #fff;
-  margin: .25em 0 0 0;
+  margin: .25em 0 .5em 0;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); }
 
+.variant1 {
+  font-family: 'Amatic SC'; }
+
+.variant2 {
+  font-family: 'Cabin Sketch'; }
+
+.variant3 {
+  font-family: 'Fredericka the Great'; }
+
+.variant4 {
+  font-family: 'Princess Sofia'; }
+
+.e {
+  font-family: 'Romanesco'; }
+
+.f {
+  font-family: 'Lova Ya Like A Sister'; }
+
+.g {
+  font-family: 'Sarina'; }
+
+.i {
+  font-family: 'Euphoria Script'; }
+
+.j {
+  font-family: 'La Belle Aurore'; }
+
+.l {
+  font-family: 'Ultra'; }
+
+.m {
+  font-family: 'Great Vibes'; }
+
+.n {
+  font-family: 'Patua One'; }
+
+.o {
+  font-family: 'Meriena One'; }
+
+.p {
+  font-family: 'Alex Brush'; }
+
+.q {
+  font-family: 'Oswald'; }
+
+.r {
+  font-family: 'Mr De Haviland'; }
+
+.s {
+  font-family: 'Rokkitt'; }
+
+.t {
+  font-family: 'Kaushan Script'; }
+
+.u {
+  font-family: 'Cutive'; }
+
+.w {
+  font-family: 'Lorinda Sketch'; }
+
+.x {
+  font-family: 'Handlee'; }
+
+.y {
+  font-family: 'Press Start 2P'; }
+
+.z {
+  font-family: 'Seaweed Script'; }
+
+.z1 {
+  font-family: 'Stint Ultra Condensed'; }
+
+.z2 {
+  font-family: 'Allura'; }
+
+.z3 {
+  font-family: 'Flavors'; }
+
+.z4 {
+  font-family: 'Lemon'; }
+
+.z5 {
+  font-family: 'Raleway Dots'; }
+
+.z6 {
+  font-family: 'Cinzel Decorative'; }
+
+.z7 {
+  font-family: 'Tienne'; }
+
+.z9 {
+  font-family: 'Stoke'; }
+
+.z10 {
+  font-family: 'Roboto Slab'; }
+
+.z11 {
+  font-family: 'Nothing You Could Do'; }
+
+.z12 {
+  font-family: 'Mrs Saint Delafield'; }
+
+.z13 {
+  font-family: 'Cinzel'; }
+
+.z14 {
+  font-family: 'Rock Salt'; }
+
+.z15 {
+  font-family: 'Open Sans'; }
+
 .aka {
-  margin: -1.75em 0 1.5em 8em;
+  margin: 0em 0 1.5em 0em;
   color: #97ccda;
-  font-size: .8em;
-  text-shadow: 0 0 2px #000; }
+  font-size: 3em;
+  text-shadow: 0 0 2px #000;
+  text-transform: none; }
 
-.contact-info {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  text-transform: lowercase;
-  font-family: 'cinzel'; }
-
-.contact-info:before, .contact-info:after {
-  content: "\2013";
-  color: #666; }
-
-.contact-info a, a[href^="mailto:"] {
-  color: #97ccda;
-  background: none;
-  padding: 0 !important; }
-
-.contact-info a:hover {
-  color: #fff; }
-
-.contact-info {
-  position: relative;
-  margin: 1em auto;
-  width: 250px;
-  border-radius: 250px;
-  background: #000;
-  font-size: 1.75em; }
-
-.contact-info:hover {
-  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.9) inset; }
-
-#header .contact-info {
-  position: absolute;
-  margin-top: 0;
-  right: 10px;
-  top: 10px;
-  width: 100px;
-  z-index: 3;
-  font-size: 1em; }
-
-.nav {
-  text-align: center;
-  margin: 0 0 100px 0;
-  padding: 0;
-  background: #000; }
-
-.nav li {
-  display: inline-block; }
-
-.nav a {
-  color: #97ccda; }
-
-.nav a:hover {
-  color: #fff; }
-
-.nav .back-to-top {
-  display: none; }
-
-.flat-nav {
+.aka span:nth-child(1) {
   display: block;
-  float: none;
-  width: 100%;
-  position: fixed;
-  top: 0;
+  margin: 0 0 0 0em; }
+
+.aka span:nth-child(2) {
+  display: block;
+  clear: both;
+  margin: -.4em 0 0 1em; }
+
+.aka span:nth-child(3) {
+  display: block;
+  margin: -.5em 0 0 3.5em; }
+
+.contact-info ul {
   padding: 0;
-  background: #000;
-  margin: 0;
-  z-index: 4;
-  border-bottom: 1px solid #fff;
-  border-color: #97ccda;
-  border-color: rgba(0, 230, 230, 0.5); }
+  list-style: none; }
 
-.flat-nav ul {
-  width: 100%;
-  margin: 0;
-  padding: .5em 0 .5em 0;
-  text-align: center; }
-
-.flat-nav li {
+.contact-info li {
+  background-color: rgba(255, 255, 255, 0.1);
   display: inline-block;
-  margin: .25em 0 .2em 0; }
+  border-radius: 1em; }
 
-.flat-nav a {
-  color: #97ccda;
-  background: transparent;
-  display: inline-block; }
-
-.flat-nav a:hover {
-  text-decoration: underline; }
-
-.flat-nav .current {
+.contact-info a {
+  display: block;
+  width: 120px;
+  height: auto;
   color: #fff;
-  background: #bb0000; }
+  padding: 6.5em 1em 1em 1em;
+  font-size: 1.4em;
+  background-repeat: no-repeat;
+  background-position: center 1em; }
 
-.flat-nav .back-to-top {
-  display: inline-block;
-  font-size: 2em;
-  line-height: .5em;
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-  font-family: 'mrs saint delafield';
-  background: black url(../gui/images/back-to-top.png) no-repeat 5px 6px;
-  border-radius: 0;
-  padding-left: .75em;
-  text-transform: lowercase;
-  letter-spacing: 0;
-  margin: 0 .25em 0 0; }
+.contact-info li:hover {
+  background-color: rgba(255, 255, 255, 0.2); }
 
-.flat-nav .back-to-top:hover {
-  color: #97ccda;
-  text-decoration: none; }
+.email a {
+  background-image: url(../images/email.png); }
+
+.github a {
+  background-image: url(../images/github.png); }
+
+.blogger a {
+  background-image: url(../images/blogger.png); }
+
+.flickr a {
+  background-image: url(../images/flickr.png); }
 
 .section {
-  padding: 10px;
-  background: #fff; }
+  width: 960px;
+  margin: 0 auto 2em auto; }
 
-.tiles {
-  padding: 0;
-  list-style: none;
-  width: 100%; }
-
-.tiles li:hover {
-  outline-color: #336699; }
-
-.tiles li {
-  position: relative;
-  float: left;
-  display: block;
-  overflow: hidden;
-  outline: 1px solid #333;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-  background-color: #000; }
-
-.tiles img {
-  display: block;
-  margin: 0 auto; }
-
-.design {
-  background: #fff; }
-
-.design h4:hover {
-  background: #97ccda; }
-
-#accordion h4 {
-  border-top: 1px solid #ddd;
-  padding-top: .5em; }
-
-h4 span {
-  float: right; }
-
-.description {
-  float: left;
-  width: 35%;
-  margin-right: 5%; }
-
-.screenshots {
-  float: left;
-  width: 45%; }
-
-.woodworking {
-  background: url(../images/tile_wood3.png) repeat top left;
-  border: 1px solid #663E23;
-  border-width: 1px 0 1px 0; }
-
-.photography {
-  background: #000; }
-
-.photography h3 {
-  color: #97ccda;
-  background: transparent;
-  border: 0; }
-
-.bookshelves ul {
+.tiles, .wood, .work {
   list-style: none;
   padding: 0; }
 
-.bookshelf ul {
-  margin: 0; }
+.tiles li, .wood li {
+  display: inline-block; }
+
+.bookshelves ul {
+  list-style: none;
+  padding: 0 0 0 3em; }
+
+.bookshelves li {
+  margin: 0 0 .75em 0;
+  line-height: 1.1; }
+
+.bookshelves a {
+  color: #ffffcc;
+  display: inline-block;
+  padding-left: .5em; }
 
 .status:before {
   color: #fff;
-  margin-right: .75em;
+  margin: 0 0 0 -5em;
   font-size: .6em;
-  padding: .25em .75em .25em .5em; }
+  padding: .25em;
+  display: inline-block;
+  width: 3.5em;
+  vertical-align: top;
+  font-weight: bold;
+  text-align: center;
+  color: #000; }
 
-.to-be-published:before {
-  content: "TO BE PUBLISHED";
-  background: #000; }
+.soon:before {
+  content: "SOON";
+  background: #97ccda; }
 
-.on-deck:before {
-  content: "ON DECK";
-  background: #1179fe; }
-
-.in-progress:before {
-  content: "IN PROGRESS";
-  background: #c00; }
+.active:before {
+  content: "ACTIVE";
+  background: #fc0; }
 
 .completed:before {
   content: "\2713";
-  color: #666; }
-
-.in-progress {
-  color: #c00; }
-
-.completed {
-  color: #666;
-  background: #fff; }
-
-.skills ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-.skills li {
-  margin-bottom: 1px;
-  position: relative; }
-
-.bar-chart {
-  display: inline-block;
-  position: absolute;
-  z-index: 1; }
-
-.skill {
-  z-index: 2;
-  position: relative;
-  display: inline-block;
-  padding: 0 .5em 0 .5em; }
-
-.skill-flag {
-  position: absolute;
-  z-index: 2;
-  top: 7px;
-  display: inline-block;
-  color: #000;
-  font-size: .6em;
-  font-style: italic;
-  font-weight: 600;
-  font-family: 'rock salt'; }
-
-.skill-flag:before {
-  content: "\2014 \2009"; }
-
-.link-set {
-  float: left;
-  margin: 1em .5em 1em .5em; }
-
-.labelmaker {
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 200;
-  background: #cc0000;
-  padding: 7px 5px 5px 5px;
-  font-size: .8em;
   color: #fff;
-  letter-spacing: 1px;
-  margin: .25em .25em .25em 0;
-  border-bottom: 1px solid transparent; }
-
-.labelmaker:hover {
-  background: #700;
-  text-decoration: none;
-  border-bottom: 1px solid #FFF; }
-
-.more {
-  color: #c00;
-  font-style: italic;
-  display: inline-block;
-  margin: 0 3px 0 10px;
-  text-shadow: 0 1px 3px #000; }
-
-.more:after {
-  content: " \2192";
-  color: #c00; }
+  text-align: right; }
 
 h2, h3, h4, h5, h6 {
   font-family: 'cinzel'; }
 
 h2 {
+  padding: .25em .5em;
+  margin: 1.5em 0 0 0;
+  text-align: center;
+  color: #fff;
+  font-size: 3em; }
+
+h3 {
   display: inline-block;
   color: #fff;
   background: #c00;
-  padding: .25em .5em; }
-
-h3 {
   padding: .25em .5em;
-  margin: .5em 0 0 0;
-  background: #444;
-  color: #fff; }
+  margin-bottom: 0; }
 
 h4 {
   padding-top: .25em;
-  border-top: 1px solid #ddd;
+  border-top: 1px dashed #ddd;
   margin-top: 0; }
 
 .highlight {
@@ -360,140 +272,40 @@ h4 {
 
 blockquote {
   font-family: Georgia, serif;
-  font-size: 1.3em;
+  font-size: 1.15em;
   font-style: italic;
-  margin: .25em .5em;
-  padding: .25em 40px;
-  line-height: 1.45;
+  margin: -2em .5em -4em .5em;
+  padding: 0px;
+  line-height: 1;
   position: relative;
   color: #567594; }
 
 blockquote:before {
-  display: block;
+  display: inline-block;
   content: "\201C";
   font-size: 5em;
-  position: absolute;
-  left: -20px;
-  top: -20px;
-  color: #97ccda; }
+  color: #97ccda;
+  position: relative;
+  top: 30px;
+  left: -15px; }
+
+blockquote:after {
+  display: inline-block;
+  content: "\201D";
+  font-size: 5em;
+  color: #97ccda;
+  position: relative;
+  top: -.9em;
+  right: -100%; }
 
 blockquote cite {
   color: #aaa;
   font-size: .8em;
   display: block;
-  margin-top: 5px; }
+  margin: 0px; }
 
 cite:before {
   content: "\2014 \2009"; }
 
 a {
   color: #c00; }
-
-@media all and (min-width: 1281px) {
-  .bg_banners li, .tiles li {
-    width: 16.15%;
-    height: 300px;
-    margin: 0 .5% .5% 0; }
-
-  .tiles img {
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 452px;
-    max-height: auto; }
-
-  .design .tiles img {
-    min-width: 150px;
-    min-height: 500px;
-    max-width: 640px;
-    max-height: auto; }
-
-  .design .tiles img.logo {
-    min-width: 150px;
-    min-height: 100px;
-    max-width: 640px;
-    max-height: auto; } }
-@media all and (max-width: 1280px) {
-  .bg_banners li, .tiles li {
-    width: 24.25%;
-    height: 300px;
-    margin: 0 .75% .75% 0; }
-
-  .tiles img {
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 452px;
-    max-height: 452px; } }
-@media all and (max-width: 1024px) {
-  .bg_banners li, .tiles li {
-    width: 24.25%;
-    height: 250px;
-    margin: 0 .75% .75% 0; }
-
-  .tiles img {
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 377px;
-    max-height: 377px; } }
-@media all and (max-width: 800px) {
-  .bg_banners li, .tiles li {
-    width: 32.3%;
-    height: 250px;
-    margin: 0 1% 1% 0; }
-
-  .tiles img {
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 377px;
-    max-height: 377px; } }
-@media all and (max-width: 640px) {
-  .bg_banners li, .tiles li {
-    width: 48.75%;
-    height: 250px;
-    margin: 0 1.25% 1.25% 0; }
-
-  .tiles img {
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 452px;
-    max-height: 452px; } }
-@media all and (max-width: 530px) {
-  h1, .aka {
-    margin-left: -40px; }
-
-  .bg_banners li, .tiles li {
-    width: 48.45%;
-    height: 225px;
-    margin: 0 1.5% 1.5% 0; }
-
-  .tiles img {
-    min-width: 250px;
-    min-height: 250px;
-    max-width: 400px;
-    max-height: 400px; } }
-@media all and (max-width: 420px) {
-  #header .contact-info {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background: #000;
-    border-radius: 0;
-    z-index: 3;
-    text-align: center;
-    text-transform: lowercase;
-    font-family: 'cinzel'; }
-
-  #header .contact-info li {
-    display: inline-block;
-    margin: 0 .5em 0 .5em; }
-
-  .bg_banners li, .tiles li {
-    width: 48%;
-    height: 175px;
-    margin: 0 2% 2% 0; }
-
-  .tiles img {
-    min-width: 200px;
-    min-height: 200px;
-    max-width: 301px;
-    max-height: 301px; } }

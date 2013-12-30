@@ -1,0 +1,4 @@
+@for $i from 1 through 100
+  .chart#{$i}
+    +transform(rotate(($i*6)+deg))
+    

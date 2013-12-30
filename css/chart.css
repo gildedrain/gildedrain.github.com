@@ -1,0 +1,42 @@
+/*
+Syntax error: Invalid CSS after "...m 1 through 100": expected "{", was ".chart#{$i}"
+        on line 2 of chart.scss
+
+1: @for $i from 1 through 100
+2:   .chart#{$i}
+3:     +transform(rotate(($i*6)+deg))
+
+Backtrace:
+chart.scss:2
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:1148:in `expected'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:1084:in `expected'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:1079:in `tok!'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:534:in `block'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:241:in `for_directive'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:175:in `special_directive'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:147:in `directive'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:553:in `block_child'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:543:in `block_contents'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/scss/parser.rb:27:in `parse'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/engine.rb:342:in `_to_tree'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/plugin.rb:107:in `method_missing'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/exec.rb:452:in `watch_or_update'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/exec.rb:315:in `process_result'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/exec.rb:41:in `parse'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/lib/sass/exec.rb:21:in `parse!'
+/Users/steve/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/sass-3.2.8/bin/sass:9:in `<top (required)>'
+/Users/steve/.rbenv/versions/1.9.3-p392/bin/sass:23:in `load'
+/Users/steve/.rbenv/versions/1.9.3-p392/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...m 1 through 100\": expected \"{\", was \".chart#{$i}\"\A         on line 2 of chart.scss\A \A 1: @for $i from 1 through 100\A 2:   .chart#{$i}\A 3:     +transform(rotate(($i*6)+deg))"; }

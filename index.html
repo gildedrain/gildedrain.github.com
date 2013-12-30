@@ -16,414 +16,277 @@
   <link rel="stylesheet" type="text/css" href="css/lightview/lightview.css" />
   <link rel="stylesheet" type="text/css" href="gui/css/cupertino/jqueryui.css" />
 
-  <link href='http://fonts.googleapis.com/css?family=PT+Mono|Mrs+Saint+Delafield|Cinzel:400,900,700|Rock+Salt|Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Mono|Fenix|Tangerine|Rogue+Script|Romanesco|Love+Ya+Like+A+Sister|Sarina|Princess+Sofia|Euphoria+Script|La+Belle+Aurore|Amatic+SC|Ultra|Great+Vibes|Patua+One|Meriena+One|Alex+Brush|Oswald|Mr+De+Haviland|Rokkitt|Kaushan+Script|Cutive|Cabin+Sketch|Lorinda+Sketch|Handlee|Press+Start+2P|Seaweed+Script|Stint+Ultra+Condensed|Allura|Flavors|Lemon|Raleway+Dots|Cinzel+Decorative|Tienne|Fredericka+the+Great|Stoke|Roboto+Slab|Nothing+You+Could+Do|Mrs+Saint+Delafield|Cinzel:400,900,700|Rock+Salt|Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
-  <div id="top"></div>
-  <div id="header" class="intro">
-    <h1>GildedRain</span></h1>
-    <p class="aka"><acronym title="Also Known As">AKA</acronym> Steve Erwin</p>
-    <ul class="contact-info">
-      <li><a href="mailto:steve@petrock.org">Email</a></li>
-      <li><a href="http://github.com/gildedrain/">GitHub</a></li>
-      <li><a href="http://gildedrain.blogspot.com">Blogger</a></li>
-      <li><a href="http://flickr.com/gildedrain/">Flickr</a></li>
-    </ul><!-- END .contact-info -->
-  </div><!-- END #header -->
-  <div class="nav">
-    <ul>
-      <li><a href="#top" class="scroll back-to-top">gildedrain</a></li>
-      <li><a href="#design" class="scroll">Design</a></li>
-      <li><a href="#woodworking" class="scroll">Woodworking</a></li>
-      <li><a href="#photography" class="scroll">Photography</a></li>
-      <li><a href="#skills" class="scroll">Skill Levels</a></li>
-      <li><a href="#curriculum-vitae" class="scroll">Curriculum vitae</a></li>
-      <li><a href="#self-education" class="scroll">Self-Education</a></li>
-    </ul>
-  </div><!-- END .nav -->
+	<div id="top"></div>
+	<div id="header" class="intro">
+		<h1 class="variant4">Steve Erwin</h1>
+		<p class="aka variant3 textcenter"><span>Designer,</span> <span>Thinker,</span> <span>Craftsman</span></p>
+    <div class="contact-info section">
+			<h2 class="variant1">Where I can be found</h2>
+			<ul>
+	      <li class="email"><a href="mailto:steve@petrock.org">E-mail</a></li>
+	      <li class="github"><a href="http://github.com/gildedrain/">GitHub</a></li>
+	      <li class="blogger"><a href="http://gildedrain.blogspot.com">Blogger</a></li>
+	      <li class="flickr"><a href="http://flickr.com/gildedrain/">Flickr</a></li>
+	    </ul>
+		</div><!-- END .contact-info -->
+	</div>
+
+
   <div class="main clearfix">
-    <div id="design">
-      <h2>Design</h2>
-      <div class="section design clearfix">
-        <div id="accordion">
-          <h4>GUI Framework <span>2010&ndash;present</span></h4>
-          <div>
-            <div class="description">
-              <p>In the days before <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>, I built a CSS and Javascript framework made up of reusable tool classes.  The overall intent is for someone with minimal familiarity with HTML and CSS syntax to be able to apply these visual effects just by calling the class names.</p>
-              <p>Twitter began their framework shortly after I finished mine.  Several intelligent frameworks have been released since I came up with the idea for GUI.  Many of them are better at what they do and the open source community has really accelerated their development and quality. <acronym title="Onondaga Community College">OCC</acronym> has been using GUI for a few years now and seems very satisfied with the power it gives them. It's not perfect, but it's my personal toolbox and I'm continually adding to and improving it. </p>
-              <p><span class="highlight">That said, I still think it's worthwhile for <em>every</em> designer and programmer to attempt to create their own framework.  The knowledge and experience you gain along the way is priceless.</span></p>
-              <p><a class="button bg-dark-red small" href="http://gui.sunyocc.edu/gui/reference/index.html">Visit Site</a> <a class="button bg-dark-red small" href="https://github.com/gildedrain/gui">View on GitHub</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview" data-lightview-group="gui" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'" href="images/gui.jpg"><img src="images/gui.jpg" width="100%" alt="GUI Framework" /></a>
-            </div>
-          </div>
-          <h4>Adult Learners <span>2013</span></h4>
-          <div>
-            <div class="description">
-              <p class="font-serif light-grey"><strong class="dark-blue">Sitelet:</strong> <em class="medium-orange">noun;</em> the rendered result of the addition of a menu parameter to the index.aspx template file in order to override the global stylesheet with a local one of the same name as the menu's title in the CMS database, thus creating a custom look and feel without necessitating any manual code development.</p>
-              <p>Marketing has various priorities throughout the year where they need to advertise certain special programs in a unique way to a unique audience.  To date, I've created several sitelets for <acronym title="Onondaga Community College">OCC</acronym>.  Adult Learners is just one example. </p>
-              <p>The real achievement here is in the template file logic and proxy rules allowing GUI to integrate with the entire family of <acronym title="Onondaga Community College">OCC</acronym> websites.  It isn't until something as simple as a sitelet is built that the value of all of this back-end work is really apparent.  <span class="highlight">We've been able to satisfy 90% of Marketing's requests by using sitelets, freeing up more of our time for continuous improvement and new development.</span></p>
-              <p><a class="button bg-dark-red small" href="http://www.sunyocc.edu/adult">Visit Site</a>  <a class="lightview button small bg-dark-blue"  data-lightview-group="adults" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-adults-jpgs.jpg">View JPEG progression</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="adults" href="images/occ-adults.jpg"><img src="images/occ-adults.jpg" width="100%" alt="Onondaga Community College - Adult Learners Sitelet" /></a>
-            </div>
-          </div>
-          <h4>Homepage <span>2012</span></h4>
-          <div>
-            <div class="description">
-              <p>This project was <strong>much</strong> more than just a new look for the College homepage.</p>
-              <p>I restructured the entire information architecture and back-end systems that drive <em>all</em> of <acronym title="Onondaga Community College">OCC</acronym>'s websites. Research and planning took several months.  Thousands of lines of code were removed, redundancies were eradicated, objects were created for reuse and deployed, and finally, a unified visual language for an entire family of websites was created.</p>
-              <p><span class="highlight">With the launch of this site, <acronym title="Onondaga Community College">OCC</acronym> finally had what they needed all along: flexibility for change and adaptability for growth.</span></p>
-              <p><a class="button bg-dark-red small" href="http://www.sunyocc.edu/">Visit Site</a> <a class="lightview button small bg-dark-blue"  data-lightview-group="homepage" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-homepage-jpgs.jpg">View JPEG progression</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="homepage"  href="images/occ-homepage.jpg"><img src="images/occ-homepage.jpg" width="100%" alt="Onondaga Community College - Homepage" /></a>
-            </div>
-          </div>
-          <h4>Community Education <span>2012</span></h4>
-          <div>
-            <div class="description">
-              <p>This is another example of a sitelet that relies heavily on the GUI Framework (Typography, Colors, BG_Banners, Grid, Modal, Verty, et al).</p>
-              <p>The previous version of the Community Education site had an unnecessarily obfuscated information architecture.  I chose to flatten this one to increase the speed of the user finding the course they wanted.  No longer do they have to know if Defensive Driving is filed under Personal Development or Youth Programs.  I can list it in both places without any extra clicks.</p>
-              <p><a class="button bg-dark-red small" href="http://www.sunyocc.edu/community">Visit Site</a>  <a class="lightview button small bg-dark-blue"  data-lightview-group="community" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-community-jpgs.jpg">View JPEG progression</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="community" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-community.jpg"><img src="images/occ-community.jpg" width="100%" alt="Onondaga Community College - Community Education Sitelet" /></a>
-            </div>
-          </div>
-          <h4>Mobile <span>2011</span></h4>
-          <div>
-            <div class="description">
-              <p>The College asked for a dedicated mobile-friendly site to show that they were addressing the need. My long-term plan was to go straight into a Responsive Design approach, where every site would become device agnostic, but the College didn't want to wait.</p>
-              <p>We took the most frequently accessed tools from the Student site analytics as our starting point and created this pared down, task-oriented UI, focusing on speed and minimizing page sizes as much as possible.</p>
-              <p><a class="button bg-dark-red small" href="http://m.sunyocc.edu/">Visit Site</a> <a class="lightview button small bg-dark-blue" data-lightview-group="mobile" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'" href="images/occ-mobile-jpgs.jpg">View JPEG progression</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="mobile" href="images/occ-mobile.jpg"><img src="images/occ-mobile.jpg" width="32%" alt="Onondaga Community College - Mobile Site" /></a>
-              <a class="lightview"  data-lightview-group="mobile" href="images/occ-mobile2.jpg"><img src="images/occ-mobile2.jpg" width="32%" alt="Onondaga Community College - Mobile Site" /></a>
-              <a class="lightview"  data-lightview-group="mobile" href="images/occ-mobile3.jpg"><img src="images/occ-mobile3.jpg" width="32%" alt="Onondaga Community College - Mobile Site" /></a>
-            </div>
-          </div>
-          <h4>Office of Admission<span>2010</span></h4>
-          <div>
-            <div class="description">
-              <p>We spent several weeks analyizing an overly complicated admission process, working through dozens of whiteboard sessions to simplify things for the user. <span class="highlight">Whenever possible, we strove for simplicity. In the absence of simplicity we aimed for clarity.</span></p>
-              <p>In the end, this was more of a negotiation than a design project. Veteran college administrators have a hard time letting go of their mental models and it takes a bit of convincing for them to realize that the needs of the user are quite a bit different than their own.</p>
-              <p>This was the first <acronym title="Onondaga Community College">OCC</acronym> site to use the GUI Framework. Since its launch we've found and solved several new puzzles. It's showing its age and is scheduled for a redesign in Spring 2014.</p>
-              <p><a class="button bg-dark-red small" href="http://admission.sunyocc.edu/">Visit Site</a>  <a class="lightview button small bg-dark-blue"  data-lightview-group="admission" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-admission-jpgs.jpg">View JPEG progression</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="admission" href="images/occ-admission.jpg"><img src="images/occ-admission.jpg" width="100%" alt="Onondaga Community College - Office of Admission" /></a>
-            </div>
-          </div>
-          <h4>Altavault Logo<span>2009</span></h4>
-          <div>
-            <div class="description">
-              <p>From the client: <em class="highlight">"Altavault is secure cloud storage. We place particular emphasis on data integrity, accountability, and reliability. Iron Mountain in-the-cloud."</em></p>
-              <p><a href="images/logo-altavault-jpgs.jpg" class="lightview" data-lightview-group="altavault" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"><img src="images/logo-altavault-jpgs.jpg" width="100%" alt="Altavault Concept Sketches"/></a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="altavault" href="images/logo-altavault.jpg"><img src="images/logo-altavault.jpg" width="100%" alt="Altavault Logo" /></a>
-            </div>
-          </div>
-          <h4>Christine Hanna Yoga &amp; Bellydance Logo<span>2009</span></h4>
-          <div>
-            <div class="description">
-              <h5>Via email&#8230;</h5>
-              <p><strong>Christine</strong>: <em class="medium-red">"The way I drew it is the "C" is like the left side of a heart while the line of the "H"" connects to the bottom of the "C" and bends around to make the other side of the heart, but the bottom of the "H" extends farther down so you can see the definition on the "C" and "H". [&#8230;] the top portion on the "om" symbol at the top of it."</em></p>
-              <h5>A few minutes of sketching&#8230;</h5>
-              <p><strong>Me</strong>: <em class="medium-blue">// I think I've got it&#8230; for the most part&#8230; am I close? //</em></p>
-              <p><a href="images/logo-christinehanna-sketch.jpg" class="lightview" data-lightview-group="christine" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"><img src="images/logo-christinehanna-sketch.jpg" width="50%" alt="" /></a></p>
-              <p><strong>Christine</strong>: <em class="medium-red">"Oh my goodness. I am in love, IN LOVE with that design! You took something that was in my head and made it so much better than I could even imagine! WOOWY WOW! I am so freakin excited! I don't even know what to say. I love it!"</em></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="christine" href="images/logo-christinehanna.jpg"><img src="images/logo-christinehanna.jpg" width="100%" alt="Christine Hanna Yoga &amp; Bellydance Logo" /></a>
-            </div>
-          </div>
-          <h4>Employee Intranet<span>2008, 2007, 2006</span></h4>
-          <div>
-            <div class="description">
-              <p>Similar to the student site, we recognized the need for a location to store all of the information applicable to, or utilized by, College employees.</p>
-              <p>This site is due for a redesign in Fall 2013.  We've learned a lot since it first launched and pulling it into the GUI Framework will give it a lot of flexibility and functionality that it currently lacks.</p>
-              <p><a class="lightview button small bg-dark-blue"  data-lightview-group="employees" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-employees-jpgs.jpg">View JPEG progression</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="employees" href="images/occ-employees.jpg"><img src="images/occ-employees.jpg" width="100%" alt="Onondaga Community College - Employee Intranet" /></a>
-            </div>
-          </div>
-          <h4>Student Intranet<span>2008, 2007, 2006</span></h4>
-          <div>
-            <div class="description">
-              <p>When the College hired an outside designer in 2005 for a rebranding, they asked her to design a new website for the prospective student audience.  During the build we realized that she forgot to find a place for all of the information pertaining to existing students and staff.</p>
-              <p>We threw together a quick single-page index of student tools and information and improved on that basic functionality as the years progressed. When this version of the site launched it received a very positive 80% satisfaction rating from students and staff.</p>
-              <p>The student site has gone through several iterations since 2005 and is the oldest site in the current family of <acronym title="Onondaga Community College">OCC</acronym> sites.  We have it scheduled for a long overdue redesign in Fall 2013.</p>
-              <p><a class="button bg-dark-red small" href="http://students.sunyocc.edu/">Visit Site</a>  <a class="lightview button small bg-dark-blue"  data-lightview-group="students" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-students-jpgs.jpg">View JPEG progression</a></p>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="students" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/occ-students.jpg"><img src="images/occ-students.jpg" width="100%" alt="Onondaga Community College - Student Intranet" /></a>
-            </div>
-          </div>
-          <h4>Sandbox Logo <span>2005</span></h4>
-          <div>
-            <div class="description">
-              <p>I designed this logo for <a href="http://nathan.fixler.org">a friend's</a> work project. He described it as a <em>"distributed, web-based text editor used for configuration and content management by academic librarians."</em></p>
-              <p>The branding is a bit off target as a sand box has nothing to do with what he described, but naming things is hard.  The only other flaw I can find is that I ended up with the wrong kind of shovel for playing in a sand box.  Despite being my own worst critic, I still kinda like the end result.</p>
-              <a class="lightview"  data-lightview-group="sandbox" data-lightview-group-options="skin: 'mac', controls: 'top', viewport: 'scale'"  href="images/logo-sandbox2.jpg"><img src="images/logo-sandbox2.jpg" width="150" alt="Sandbox Concept #3" /></a>
-              <a class="lightview"  data-lightview-group="sandbox" href="images/logo-sandbox1.jpg"><img src="images/logo-sandbox1.jpg" width="150" alt="Sandbox Concept #2" /></a>
-            </div>
-            <div class="screenshots">
-              <a class="lightview"  data-lightview-group="sandbox" href="images/logo-sandbox.jpg"><img src="images/logo-sandbox.jpg" width="100%" alt="Sandbox Logo" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="link-set"><span class="more font-grunge">More or Less</span> <a href="https://github.com/gildedrain" class="labelmaker">GitHub</a></div>
-      </div>
-    </div><!-- END #design -->
-    <p class="dots">&nbsp;</p>
-    <div id="woodworking">
-      <h2>Woodworking</h2>
-      <div class="section woodworking clearfix">
-        <ul id="flickr" class="woodworking tiles"></ul>
-        <div class="link-set"><span class="more font-grunge">More</span> <a href="http://www.flickr.com/photos/gildedrain/sets/72157623312170339/" class="labelmaker">Flickr Set</a> <a href="http://gildedrain.blogspot.com" class="labelmaker">Blog</a> <a href="http://lumberjocks.com/gildedrain" class="labelmaker">Lumberjocks</a></div>
-      </div>
-    </div>
-    <p class="dots">&nbsp;</p>
-    <div id="photography">
-      <h2>Photography</h2>
-      <div class="section photography clearfix">
-        <ul id="flickr" class="photos tiles"></ul>
-        <div class="link-set"><span class="more font-grunge">More</span> <a href="http://www.flickr.com/photos/gildedrain/" class="labelmaker">Flickr Stream</a></div>
-      </div>
-    </div>
-    <p class="dots">&nbsp;</p>
-    <div id="skills">
-      <h2>Skill Levels</h2>
-      <div class="section skills clearfix">
-        <h3>Conceptualization</h3>
-        <ul>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Empathy for the User</span><span class="skill-flag">&ldquo;I fight for the users&rdquo; <cite>Tron</cite></span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill"><acronym title="User Interface">UI</acronym> Page-Flow/State Sketching</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Information Architecture</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Rough Concept Sketching</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Hi-Fidelity <acronym title="User Interface / User Experience">UI/UX</acronym> Design</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Adobe Creative Suite</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Sketchup</span></li>
-        </ul>
-        <h3>Design Implementation</h3>
-        <ul>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">HTML5</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">CSS3</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Web Accessibility (508, 504, W3C)</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Cross-Browser/Platform Debugging</span></li>
-          <li><span data-level="100" class="bar-chart bg-light-blue">&nbsp;</span><span class="skill">Usability Testing</span></li>
-          <li><span data-level="90" class="bar-chart bg-pale-blue">&nbsp;</span><span class="skill">Responsive Design</span><span class="skill-flag">Workin' on it</span></li>
-          <li><span data-level="75" class="bar-chart bg-pale-blue">&nbsp;</span><span class="skill">Textmate</span></li>
-          <li><span data-level="30" class="bar-chart bg-pale-grey">&nbsp;</span><span class="skill">SCSS</span><span class="skill-flag">Workin' on it</span></li>
-        </ul>
-        <h3>Front-End Programming</h3>
-        <ul>
-          <li><span data-level="75" class="bar-chart bg-pale-blue">&nbsp;</span><span class="skill">Thinks Like a Programmer</span></li>
-          <li><span data-level="75" class="bar-chart bg-pale-blue">&nbsp;</span><span class="skill">Understands Relational Database Concepts</span></li>
-          <li><span data-level="60" class="bar-chart bg-pale-blue">&nbsp;</span><span class="skill">jQuery</span><span class="skill-flag">Workin' on it</span></li>
-          <li><span data-level="50" class="bar-chart bg-pale-blue">&nbsp;</span><span class="skill">Chrome Inspector</span><span class="skill-flag">Workin' on it</span></li>
-          <li><span data-level="50" class="bar-chart bg-pale-blue">&nbsp;</span><span class="skill">Git/GitHub</span><span class="skill-flag">Workin' on it</span></li>
-          <li><span data-level="30" class="bar-chart bg-pale-grey">&nbsp;</span><span class="skill">Terminal</span></li>
-          <li><span data-level="10" class="bar-chart bg-pale-grey">&nbsp;</span><span class="skill">Ruby Views</span></li>
-        </ul>
-        <h3>Other</h3>
-        <ul>
-          <li><span data-level="40" class="bar-chart bg-pale-grey">&nbsp;</span><span class="skill">Plays Classical Gas on guitar</span></li>
-          <li><span data-level="10" class="bar-chart bg-pale-grey">&nbsp;</span><span class="skill">Plays the 3<sup>rd</sup> Movement of the Moonlight Sonata</span></li>
-          <li><span data-level="1" class="bar-chart bg-pale-grey">&nbsp;</span><span class="skill">Runs a 5k while fighting off zombies</span></li>
-        </ul>
-      </div><!-- END .section.skills -->
-    </div><!-- END #skills -->
-    <div id="curriculum-vitae">
-      <h2>Curriculum vitae</h2>
-      <div class="section employment">
-        <h3>Employment</h3>
-        <h4>Onondaga Community College &mdash; Syracuse, NY</h4>
-        <p><strong>Internet Systems Specialist, Web Team Leader</strong> &mdash; 2005&ndash;Present</p>
-        <ul>
-          <li>leader of a 3-man web team consisting of a <a class="tooltip">designer/manager <span>(me)</span></a>, a .NET programmer, and a content manager</li>
-          <li>responsible for:
-            <ul class="circle">
-              <li>information architecture</li>
-              <li>user experience</li>
-              <li>visual design</li>
-              <li>front-end development</li>
-              <li>cross-browser/platform testing</li>
-              <li>project management</li>
-              <li>content management</li>
-              <li>strategic planning</li>
-            </ul></li>
-          <li>planned and successfully led a complete web infrastructure overhaul&ndash;creating or redesigning/redeveloping 26 separate websites and applications</li>
-          <li>created <a href="https://github.com/gildedrain/gui">a CSS Framework</a> and a series of jQuery scripts to enhance and support global visuals and interactions across a family of websites</li>
-          <li>implemented a code and content organization strategy for universal, global, local, and local-override CSS objects</li>
-          <li>collaborated on template logic to maximize code reuse and design flexibility to counter the limitations of a <acronym title="contenet management system">CMS</acronym></li>
-          <li>guided other teams on issues of usability, design and accessibility</li>
-        </ul>
-        <h4>GMAC Insurance &mdash; Liverpool, NY</h4>
-        <p><strong>Claims Representative I</strong> &mdash; 2003&ndash;2005</p>
-        <h4>Blue Willow Designs &mdash; Syracuse, NY</h4>
-        <p><strong>Co-Founder, Designer</strong> &mdash; 2000&ndash;2004</p>
-        <ul>
-          <li>established web and graphic design firm out of Central NY</li>
-          <li>managed business, marketing, and customer service efforts</li>
-          <li>directed, designed, and constructed all related creative media for several small business websites</li>
-        </ul>
-        <h4>SUNY Upstate Medical University &mdash; Syracuse, NY</h4>
-        <p><strong>Web Intern</strong> &mdash; 2000</p>
-        <ul>
-          <li>assisted in a complete University website overhaul</li>
-          <li>introduced CSS to the University web team</li>
-        </ul>
-        <h4>SUNY Geneseo &mdash; Geneseo, NY</h4>
-        <p><strong>Web Assistant, Publicity Manager, Graphic Designer</strong> &mdash; 1999&ndash;2002</p>
-        <ul>
-          <li>developed and maintained 5 department websites</li>
-          <li>designed, produced, and advertised 4 seasons of publicity materials for the Schools of Performing &amp; Fine Arts</li>
-          <li>trained and supported the campus community in web design concepts and tools</li>
-        </ul>
-        <h4>HSBC Bank USA &mdash; Liverpool, NY</h4>
-        <p><strong>Customer Service Representative</strong> &mdash; 1999&ndash;2003</p>
-      </div><!-- END.section.work-history-->
-      <div class="section education">
-        <h3>Education</h3>
-        <div class="event">
-          <h4>SUNY Geneseo &mdash; Geneseo, NY</h4>
-          <p><strong>Bachelor of Arts</strong> &mdash; <em>magna cum laude</em> &mdash; 2002</p>
-          <p><strong>Major:</strong> Art</p>
-          <p><strong>Minors:</strong> Art History, Geography</p>
-        </div>
-      </div><!-- END .section.education -->
-    </div><!-- END #currciulum-vitae -->
-    <div id="self-education">
-      <h2>Self-Education</h2>
-      <div class="section bookshelves">
-        <blockquote>A reader lives a thousand lives before he dies&hellip; The man who never reads lives only one.
-          <footer>
-            <cite>George R. R. Martin, A Dance With Dragons</cite>
-          </footer>
-        </blockquote>
-        <div class="bookshelf books-design">
-          <h3>Web &amp; Graphic Design</h3>
-          <ul class="zebrarows bg-pale-blue">
-            <li class="status on-deck">Remote: Office Not Required&ndash;Jason Fried, David Heinemeier Hansson</li>
-            <li class="status on-deck">Rework&ndash;Jason Fried</li>
-            <li class="status on-deck">The Visual Display of Quantitative Information&ndash;Edward R. Tufte</li>
-            <li class="status on-deck">Beautiful Evidence&ndash;Edward R. Tufte</li>
-            <li class="status on-deck">Visual Explanations: Images and Quantities, Evidence and Narrative&ndash;Edward R. Tufte</li>
-            <li class="status on-deck">The Elements of Typographic Style&ndash;Robert Bringhurst</li>
-            <li class="status on-deck">Meggs' History of Graphic Design&ndash;Philip B. Meggs, Alston W. Purvis</li>
-            <li class="status in-progress">Living with Complexity&ndash;Donald A. Norman</li>
-            <li class="status in-progress">Envisioning Information&ndash;Edward R. Tufte</li>
-            <li class="status completed">Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences&ndash;Stephen P. Anderson</li>
-            <li class="status completed">Thinking with Type&ndash;Ellen Lupton</li>
-            <li class="status completed">Mobile Design and Development&ndash;Brian Fling</li>
-            <li class="status completed">Search Patterns&ndash;Peter Morville, Jeffery Callender</li>
-            <li class="status completed">Content Strategy for the Web&ndash;Kristina Halvorson</li>
-            <li class="status completed">HTML5 for Web Designers&ndash;Jeremy Keith</li>
-            <li class="status completed">Designing the Obvious: A Common Sense Approach to Web Application Design&ndash;Robert Hoekman, Jr.</li>
-            <li class="status completed">Designing the Moment: Web Interface Design Concepts in Action&ndash;Robert Hoekman, Jr.</li>
-            <li class="status completed">The Design of Future Things&ndash;Donald A. Norman</li>
-            <li class="status completed">Logo Design&ndash;Taschen</li>
-            <li class="status completed">Web Form Design&ndash;Luke Wroblewski</li>
-            <li class="status completed">Emotional Design: Why We Love or Hate Everyday Things&ndash;Donald A. Norman</li>
-            <li class="status completed">About Face 2.0: The Essentials of Interaction Design - Alan Cooper, Robert Reimann, David Cronin</li>
-            <li class="status completed">Don't Make Me Think: A Common Sense Approach to Web Usability, 2nd Edition&ndash;Steve Krug</li>
-            <li class="status completed">The Design of Everyday Things&ndash;Donald A. Norman</li>
-          </ul>
-        </div><!-- END .bookshelf -->
-        <div class="bookshelf books-art">
-          <h3>Drawing &amp; Visual Narrative</h3>
-          <ul class="zebrarows bg-pale-blue">
-            <li class="status on-deck">The Illusion of Life: Disney Animation&ndash;Ollie Johnston, Frank Thomas</li>
-            <li class="status completed">Graphic Storytelling and Visual Narrative&ndash;Will Eisner</li>
-            <li class="status completed">Comics and Sequential Art&ndash;Will Eisner</li>
-            <li class="status completed">Reinventing Comics: How Imagination and Technology are Revolutionizing an Art Form&ndash;Scott McCloud</li>
-            <li class="status completed">Making Comics: Storytelling Secrets of Comics, Manga, and Graphic Novels&ndash;Scott McCloud</li>
-            <li class="status completed">Understanding Comics: The Invisible Art&ndash;Scott McCloud</li>
-            <li class="status completed">The Artist's Complete Guide to Facial Expression&ndash;Gary Faigan</li>
-            <li class="status completed">Cartooning the Head and Figure&ndash;Jack Hamm</li>
-            <li class="status completed">Perspective! for Comic Book Artists: How to Achieve a Professional Look in your Artwork&ndash;David Chelsea</li>
-            <li class="status completed">Constructive Anatomy&ndash;George B. Bridgman</li>
-          </ul>
-        </div><!-- END .bookshelf -->
-        <div class="bookshelf books-woodworking">
-          <h3>Woodworking</h3>
-          <ul class="zebrarows bg-pale-blue">
-            <li class="status to-be-published">To Make As Perfectly As Possible, Furniture Making&ndash;Andre Roubo</li>
-            <li class="status to-be-published">Furniture of Necessity&ndash;Christopher Schwarz</li>
-            <li class="status to-be-published">By Hand &amp; Eye&ndash;George Walker, Jim Tolpin</li>
-            <li class="status on-deck">Mouldings in Practice&ndash;Matt Bickford</li>
-            <li class="status on-deck">The Essential Woodworker&ndash;Robert Wearing</li>
-            <li class="status on-deck">The New Traditional Woodworker: From Tool Set to Skill Set to Mind Set&ndash;Jim Tolpin</li>
-            <li class="status on-deck">The Foundations of Better Woodworking: How to use your body, tools and materials to do your best work&ndash;Jeff Miller</li>
-            <li class="status in-progress">The Joiner and Cabinet Maker&ndash;Christopher Schwarz, Joel Moskowitz</li>
-            <li class="status completed">The Anarchist's Toolchest&ndash;Christopher Schwarz</li>
-            <li class="status completed">Made by Hand&ndash;Tom Fidgen</li>
-            <li class="status completed">John Gay, Or Work for Boys&ndash;Jacob Abbot</li>
-            <li class="status completed">The Perfect Edge: The Ultimate Guide to Sharpening for Woodworkers&ndash;Ron Hock</li>
-            <li class="status completed">The Workbench Book: A Craftsman's Guide to Workbenches for Every Type of Woodworking&ndash;Scott Landis</li>
-            <li class="status completed">The Workbench: A Complete Guide to Creating Your Perfect Bench&ndash;Lon Schleining</li>
-            <li class="status completed">Joint Book: The Complete Guide to Wood Joinery&ndash;Terrie Noll</li>
-            <li class="status completed">Understanding Wood Finishing: How to Select and Apply the Right Finish&ndash;Bob Flexner</li>
-          </ul>
-        </div><!-- END .bookshelf -->
-        <div class="bookshelf books-enrichment">
-          <h3>Personal Enrichment</h3>
-          <ul class="zebrarows bg-pale-blue">
-            <li class="status completed">Eat, Sleep, Poop: A Common Sense Guide to Your Baby's First Year&ndash;Scott W. Cohen</li>
-            <li class="status completed">Investing for Dummies&ndash;Eric Tyson</li>
-            <li class="status completed">The Bogleheads' Guide to Investing&ndash;Taylor Larimore, Mel Lindauer, Michael LeBoefu, John C. Bogle</li>
-            <li class="status completed">The Intelligent Investor: The Definitive Book on Value Investing. A Book of Practical Counsel&ndash;Benjamin Graham</li>
-            <li class="status completed">The Millionaire Next Door: The Surprising Secrets of America's Wealthy&ndash;Thomas J. Stanley</li>
-            <li class="status completed">The Way of Zen&ndash;Alan W. Watts</li>
-            <li class="status completed">The Art of Happiness&ndash;Dalai Lama</li>
-            <li class="status completed">The Art of Happiness at Work&ndash;Dalai Lama</li>
-            <li class="status completed">The Miracle of Mindfulness: The Classic Guide to Meditation by the World's Most Revered Master&ndash;Thich Nhat Hanh</li>
-            <li class="status completed">Tao Te Ching&ndash;Lao Tsu</li>
-            <li class="status completed">The Cruising Life: A Commonsense Guide for the Would-Be Voyager&ndash;Jim Trefethen</li>
-          </ul>
-        </div><!-- END .bookshelf -->
-        <div class="bookshelf books-entertainment">
-          <h3>Entertainment</h3>
-          <ul class="zebrarows bg-pale-blue">
-            <li class="status on-deck">A Memory of Light (The Wheel of Time)&ndash;Robert Jordan</li>
-            <li class="status in-progress">A Dance with Dragons (A Song of Ice and Fire)&ndash;George R. R. Martin</li>
-            <li class="status completed">The Prince of Nothing trilogy&ndash;R. Scott Bakkar</li>
-            <li class="status completed">The Way of Kings&ndash;Brandon Sanderson</li>
-            <li class="status completed">A Song of Ice and Fire series&ndash;George R. R. Martin</li>
-            <li class="status completed">The Complete Sherlock Holmes: All 4 Novels and 56 Short Stories&ndash;Sir Arthur Conan Doyle</li>
-            <li class="status completed">Tarzan of the Apes&ndash;Edgar Rice Burroughs</li>
-            <li class="status completed">The Old Man and the Sea&ndash;Ernest Hemingway</li>
-            <li class="status completed">The Murders in the Rue Morgue&ndash;Edgar Allan Poe</li>
-            <li class="status completed">Robinson Crusoe&ndash;Daniel Dafoe</li>
-            <li class="status completed">Frankenstein&ndash;Mary Shelley</li>
-            <li class="status completed">The Giver&ndash;Lois Lowry</li>
-            <li class="status completed">1984&ndash;George Orwell</li>
-            <li class="status completed">Watchmen&ndash;Alan Moore</li>
-            <li class="status completed">V for Vendetta&ndash;Alan Moore</li>
-            <li class="status completed">From Hell&ndash;Alan Moore</li>
-            <li class="status completed">Adrift on a Sea of Blue Light&ndash;Peter Mullenburg</li>
-            <li class="status completed">His Dark Materials trilogy&ndash;Philip Pullman</li>
-            <li class="status completed">The Mists of Avalon series&ndash;Marion Zimmer Bradley</li>
-            <li class="status completed">The Wheel of Time series&ndash;Robert Jordan</li>
-          </ul>
-        </div><!-- END .bookshelf-->
-      </div><!-- END .section.bookshelves -->
-    </div><!-- END #bookshelves -->
-    <ul class="contact-info">
-      <li><a href="mailto:steve@petrock.org">Email</a></li>
-      <li><a href="http://github.com/gildedrain/">GitHub</a></li>
-      <li><a href="http://gildedrain.blogspot.com">Blogger</a></li>
-      <li><a href="http://flickr.com/gildedrain/">Flickr</a></li>
-    </ul><!-- END .contact-info -->
-  </div><!-- END .main -->
+		
+		<h2 class="variant1">Projects I've designed</h2>
+		<div class="design section clearfix">
+			<ul class="tiles">
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+			</ul>
+
+		<h2 class="variant1">Furniture I've built</h2>
+		<div class="wood">
+			<ul class="tiles">
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+			</ul>
+		</div>
+	
+		<h2 class="variant1">Photos I've taken</h2>
+		<div class="wood">
+			<ul class="tiles">
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+				<li><img src="http://placekitten.com/g/310/310" alt="" /></li>
+			</ul>
+		</div>
+				
+		<div class="bookshelves section clearfix">
+			<h2 class="variant1">Information I've gathered</h2>
+      <blockquote>A reader lives a thousand lives before he dies. The man who never reads lives only one.
+        <footer>
+          <cite>George R. R. Martin, A Dance With Dragons</cite>
+        </footer>
+      </blockquote>
+			<div class="col3">
+				<h3>Design</h3>
+				<ul>
+	        <li class="status active"><a href="#">Living with Complexity</a></li>
+	        <li class="status soon"><a href="#">Remote: Office Not Required</a></li>
+	        <li class="status soon"><a href="#">Rework</a></li>
+	        <li class="status soon"><a href="#">Beautiful Evidence</a></li>
+	        <li class="status soon"><a href="#">JQuery Succinctly</a></li>
+	        <li class="status soon"><a href="#">Visual Explanations</a></li>
+	        <li class="status soon"><a href="#">The Elements of Typographic Style</a></li>
+	        <li class="status soon"><a href="#">Meggs' History of Graphic Design</a></li>
+	        <li class="status soon"><a href="#">The Illusion of Life: Disney Animation</a></li>
+	        <li class="status completed"><a href="#">Research into IT Portfolio Management</a></li>
+	        <li class="status completed"><a href="#">Envisioning Information</a></li>
+	        <li class="status completed"><a href="#">Seductive Interaction Design</a></li>
+	        <li class="status completed"><a href="#">Thinking with Type</a></li>
+	        <li class="status completed"><a href="#">Mobile Design and Development</a></li>
+	        <li class="status completed"><a href="#">Search Patterns</a></li>
+	        <li class="status completed"><a href="#">Content Strategy for the Web</a></li>
+	        <li class="status completed"><a href="#">HTML5 for Web Designers</a></li>
+	        <li class="status completed"><a href="#">Designing the Obvious</a></li>
+	        <li class="status completed"><a href="#">Designing the Moment</a></li>
+	        <li class="status completed"><a href="#">The Design of Future Things</a></li>
+	        <li class="status completed"><a href="#">Logo Design</a></li>
+	        <li class="status completed"><a href="#">Web Form Design</a></li>
+	        <li class="status completed"><a href="#">Emotional Design</a></li>
+	        <li class="status completed"><a href="#">About Face 2.0</a></li>
+	        <li class="status completed"><a href="#">Don't Make Me Think</a></li>
+	        <li class="status completed"><a href="#">The Design of Everyday Things</a></li>
+	        <li class="status completed"><a href="#">Graphic Storytelling and Visual Narrative</a></li>
+	        <li class="status completed"><a href="#">Comics and Sequential Art</a></li>
+	        <li class="status completed"><a href="#">Reinventing Comics</a></li>
+	        <li class="status completed"><a href="#">Making Comics</a></li>
+	        <li class="status completed"><a href="#">Understanding Comics</a></li>
+	        <li class="status completed"><a href="#">The Artist's Complete Guide to Facial Expression</a></li>
+	        <li class="status completed"><a href="#">Cartooning the Head and Figure</a></li>
+	        <li class="status completed"><a href="#">Perspective! for Comic Book Artists</a></li>
+	        <li class="status completed"><a href="#">Constructive Anatomy</a></li>
+				</ul>
+				<h3>Quality of Life</h3>
+				<ul>
+          <li class="status completed"><a href="#">Eat, Sleep, Poop</a></li>
+          <li class="status completed"><a href="#">Wheat Belly</a></li>
+          <li class="status completed"><a href="#">4 Hour Body</a></li>					
+          <li class="status completed"><a href="#">Investing for Dummies</a></li>
+          <li class="status completed"><a href="#">The Bogleheads' Guide to Investing</a></li>
+          <li class="status completed"><a href="#">The Intelligent Investor</a></li>
+          <li class="status completed"><a href="#">The Millionaire Next Door</a></li>
+          <li class="status completed"><a href="#">The Way of Zen</a></li>
+          <li class="status completed"><a href="#">The Art of Happinessa</a></li>
+          <li class="status completed"><a href="#">The Art of Happiness at Work</a></li>
+          <li class="status completed"><a href="#">The Miracle of Mindfulness</a></li>
+          <li class="status completed"><a href="#">Tao Te Ching</a></li>
+          <li class="status completed"><a href="#">The Cruising Life</a></li>
+				</ul>
+				<h3>Just for Fun</h3>
+				<ul>
+		      <li class="status active"><a href="#">Walden</a></li>
+		      <li class="status active"><a href="#">The Blade Itself</a></li>
+          <li class="status completed"><a href="#">The Prince of Nothing</a></li>
+          <li class="status completed"><a href="#">The Way of Kings</a></li>
+          <li class="status completed"><a href="#">A Song of Ice and Fire</a></li>
+          <li class="status completed"><a href="#">The Complete Sherlock Holmes</a></li>
+          <li class="status completed"><a href="#">Tarzan of the Apes</a></li>
+          <li class="status completed"><a href="#">The Old Man and the Sea</a></li>
+          <li class="status completed"><a href="#">The Murders in the Rue Morgue</a></li>
+          <li class="status completed"><a href="#">Robinson Crusoe</a></li>
+          <li class="status completed"><a href="#">Frankenstein</a></li>
+          <li class="status completed"><a href="#">The Giver</a></li>
+          <li class="status completed"><a href="#">1984</a></li>
+          <li class="status completed"><a href="#">Watchmen</a></li>
+          <li class="status completed"><a href="#">V for Vendetta</a></li>
+          <li class="status completed"><a href="#">From Hell</a></li>
+          <li class="status completed"><a href="#">Adrift on a Sea of Blue Light</a></li>
+          <li class="status completed"><a href="#">His Dark Materials</a></li>
+          <li class="status completed"><a href="#">The Mists of Avalon</a></li>
+          <li class="status completed"><a href="#">The Wheel of Time</a></li>
+				</ul>
+			</div>
+			<div class="col3">
+				<h3>Woodworking</h3>
+				<ul>
+	        <li class="status active"><a href="#">The Joiner and Cabinet Maker</a></li>
+					<li class="status soon"><a href="#">To Make As Perfectly As Possible</a></li>
+	        <li class="status soon"><a href="#">Furniture of Necessity</a></li>
+	        <li class="status soon"><a href="#">By Hand &amp; Eye</a></li>
+	        <li class="status soon"><a href="#">Mouldings in Practice</a></li>
+	        <li class="status soon"><a href="#">The Essential Woodworker</a></li>
+	        <li class="status soon"><a href="#">The New Traditional Woodworker</a></li>
+	        <li class="status soon"><a href="#">The Foundations of Better Woodworking</a></li>
+	        <li class="status completed"><a href="#">The Anarchist's Toolchest</a></li>
+	        <li class="status completed"><a href="#">Made by Hand</a></li>
+	        <li class="status completed"><a href="#">John Gay, Or Work for Boys</a></li>
+	        <li class="status completed"><a href="#">The Perfect Edge</a></li>
+	        <li class="status completed"><a href="#">The Workbench Book</a></li>
+	        <li class="status completed"><a href="#">The Workbench</a></li>
+	        <li class="status completed"><a href="#">Joint Book</a></li>
+	        <li class="status completed"><a href="#">Understanding Wood Finishing</a></li>
+	      </ul>
+				<h3>Photography</h3>
+				<ul>
+	        <li class="status completed"><a href="#">The Moment it Clicks</a></li>
+	        <li class="status completed"><a href="#">Hot Shoe Diaries</a></li>
+	        <li class="status completed"><a href="#">Understanding Exposure</a></li>
+					<li class="status completed"><a href="#">Sketching Light</a></li>
+				</ul>
+				<h3>Cooking</h3>
+				<ul>
+	        <li class="status soon"><a href="#">The Bread Baker's Apprentice</a></li>
+	        <li class="status soon"><a href="#">Il cuchiaio d'argento</a></li>
+	        <li class="status completed"><a href="#">How Long Should I Let My Dough Cold Ferment?</a></li>
+	        <li class="status completed"><a href="#">DIY Baking Steel</a></li>
+	        <li class="status completed"><a href="#">The Baking Steel Delivers</a></li>
+	        <li class="status completed"><a href="#">The Best Surface for Baking Pizza</a></li>
+	        <li class="status completed"><a href="#">New York Style Pizza at Home</a></li>
+				</ul>
+				<h3>Music</h3>
+				<ul>
+					<li class="status active"><a href="#">Justin's Beginners Guitar</a></li>
+					<li class="status active"><a href="#">Mason Williams &ndash; Classical Gas</a></li>					
+					<li class="status active"><a href="#">Beethoven &ndash; Piano Sonana No.14 III. Presto agitato</a></li>
+					<li class="status completed"><a href="#">Beethoven &ndash; Piano Sonana No.14 II. Allegretto</a></li>
+					<li class="status completed"><a href="#">Beethoven &ndash; Piano Sonana No.14 I. Adagio sostenuto</a></li>
+					<li class="status completed"><a href="#">Beethoven &ndash; Bagatelle No.25 in A minor</a></li>
+					<li class="status completed"><a href="#">Chopin &ndash; Prelude in E minor, Op.28 No.4</a></li>
+					<li class="status completed"><a href="#">Chopin &ndash; Prelude No.4</a></li>
+					<li class="status completed"><a href="#">Chopin &ndash; Prelude No.20</a></li>
+					<li class="status completed"><a href="#">Bach &ndash; Prelude No.1</a></li>
+				</ul>
+				<h3>Aquascaping</h3>
+				<ul>
+					<li class="status completed"><a href="#">Pressurized CO<sub>2</sub> Guide</a></li>
+					<li class="status completed"><a href="#">Newbi Guide to PPS-Pro</a></li>
+					<li class="status completed"><a href="#">Estimative Index vs. PPS-Pro</a></li>
+					<li class="status completed"><a href="#">Lighting Guide</a></li>
+					<li class="status completed"><a href="#">Algae</a></li>
+					<li class="status completed"><a href="#">Planted Tank</a></li>
+
+				</ul>
+			</div>
+			
+			
+		</div><!-- end .bookshelves -->
+		
+		<h2 class="variant1">Places I've worked</h2>
+		<div class="work section clearfix">
+	    <h3>Onondaga Community College &mdash; Syracuse, NY</h3>
+	    <p><strong>Internet Systems Specialist, Web Team Leader</strong> &mdash; 2005&ndash;Present</p>
+	    <ul>
+	      <li>leader of a 3-man web team consisting of a designer/manager, a .NET programmer, and a content manager</li>
+	      <li>mainly responsible for:
+	        <ul class="circle">
+	          <li>strategic planning &amp; analysis</li>
+	          <li>information architecture</li>
+	          <li>user experience</li>
+	          <li>visual design</li>
+	          <li>front-end development</li>
+	          <li>cross-browser/platform testing &amp; debugging</li>
+	          <li>project management</li>
+	          <li>content management</li>
+						<li>finding simple explanations of complicated ideas by drawing on whiteboards</li>
+	        </ul></li>
+	      <li>planned and led a complete web infrastructure overhaul &ndash; redesigning &amp; redeveloping 26 separate websites and web apps</li>
+	      <li>created <a href="https://github.com/gildedrain/gui">a CSS Framework</a> and a series of jQuery scripts to enhance and support global visuals and interactions across a family of websites</li>
+	      <li>planned and implemented a code &amp; content organization strategy for universal, global, local, and local-override CSS objects</li>
+	      <li>collaborated on template logic to maximize code-reuse and design flexibility to counter the limitations of a <acronym title="contenet management system">CMS</acronym></li>
+	      <li>guided other teams on issues of usability, design and accessibility</li>
+	    </ul>
+	    <h3>GMAC Insurance &mdash; Liverpool, NY</h3>
+	    <p><strong>Claims Representative I, Insurance Adjuster</strong> &mdash; <em>better than HSBC</em> &mdash; 2003&ndash;2005</p>
+	    <h3>Blue Willow Designs &mdash; Syracuse, NY</h3>
+	    <p><strong>Co-Founder, Designer</strong> &mdash; <em>it was worth a shot</em> &mdash; 2000&ndash;2004</p>
+	    <ul>
+	      <li>established web and graphic design firm out of Central NY</li>
+	      <li>managed business, marketing, and customer service efforts</li>
+	      <li>directed, designed, and constructed all related creative media for several small business websites</li>
+	    </ul>
+	    <h3>HSBC Bank USA &mdash; Liverpool, NY</h3>
+	    <p><strong>Customer Service Representative</strong> &mdash; <em>job betweem semesters at college</em> &mdash; 1999&ndash;2003</p>
+	    <h3>SUNY Geneseo &mdash; Geneseo, NY</h3>
+	    <p><strong>Bachelor of Arts</strong> &mdash; Computer Art &amp; Graphic Design &ndash; <em>magna cum laude</em> &mdash; 2002</p>
+	    <p><strong>Web Assistant, Publicity Manager, Graphic Designer</strong> &mdash; <em>jobs during semesters at college</em> &mdash; 1999&ndash;2002</p>
+	    <ul>
+	      <li>developed and maintained multiple department websites</li>
+	      <li>designed, produced, and advertised several seasons of publicity materials for the Schools of Performing &amp; Fine Arts</li>
+	      <li>trained and supported the campus community in web design concepts and tools</li>
+	    </ul>
+	    <h3>SUNY Upstate Medical University &mdash; Syracuse, NY</h3>
+	    <p><strong>Web Intern</strong> &mdash; <em>summer internship</em> &mdash; 2000</p>
+	    <ul>
+	      <li>assisted in a complete University website overhaul</li>
+	      <li>introduced CSS to the University web team</li>
+	    </ul>
+	  </div><!-- END .work -->
+
+	</div><!-- end .main -->
+	
+	
   <script src="gui/js/jquery.js"></script>
   <script>window.jQuery || document.write('<script src="gui/js/jquery.js"><\/script>')</script>
   <script src="gui/js/jqueryui.js"></script>
@@ -431,8 +294,8 @@
   <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas/excanvas.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="js/spinners/spinners.min.js"></script>
-  <script type="text/javascript" src="js/lightview/lightview.js"></script>
+  <script src="js/spinners/spinners.min.js"></script>
+  <script src="js/lightview/lightview.js"></script>
   <script>
     $(document).ready(function() {
       //Flickr Integration
@@ -470,6 +333,7 @@
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+	</script>
+
 </body>
 </html>
