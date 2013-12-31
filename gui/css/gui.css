@@ -171,7 +171,7 @@ Depending on the situation,you may need to apply some combination of:- .first to
 /* LINKS.CSS */
 .anchor{position:absolute;margin-top:-50px;margin-left:-9999em;text-decoration:none;text-shadow:none;}
 a.noicon{background:transparent none !important;padding:0;margin:0;}
-.external_link,a[href^="mailto:"],.file_pdf,.file_doc,.file_txt,.file_event,.file_vcard,.file_xls,.file_rss,.file_aim,.file_image,.file_video,.file_audio,.file_voice,.file_rss,.file_im{background-image:url(../images/16px_icons.png);background-repeat:no-repeat;background-position:0 0;}
+.external_link,.file_pdf,.file_doc,.file_txt,.file_event,.file_vcard,.file_xls,.file_rss,.file_aim,.file_image,.file_video,.file_audio,.file_voice,.file_rss,.file_im{background-image:url(../images/16px_icons.png);background-repeat:no-repeat;background-position:0 0;}
 /* IE browser bug required this addition */
 .external_link{background-image:url(../images/16px_icons.png) !important;background-repeat:no-repeat !important;background-position:100% -50px !important;padding:2px 18px 2px 0 !important;margin:0 3px 0 0 !important;}
 .file_pdf{background-position:100% -950px;padding:2px 18px 2px 0;margin:0 3px 0 0 !important;}
