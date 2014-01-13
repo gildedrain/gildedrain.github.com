@@ -1,5 +1,7 @@
+/* GUI OVERRIDES */
+
 html {min-height:100%; background:#000 url(../images/bg/wood.jpg) fixed repeat top center;}
-body {min-height:100%; font-weight:200; color:#ffffcc; font-size:1.1em;
+body {min-height:100%; font-weight:200; color:#fff; font-size:1.1em;
 	background: -moz-radial-gradient(top, circle cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.7) 100%) fixed;
 	background: -webkit-gradient(radial, top center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.7))) fixed;
 	background: -webkit-radial-gradient(top, circle cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%) fixed;
@@ -8,45 +10,48 @@ body {min-height:100%; font-weight:200; color:#ffffcc; font-size:1.1em;
 	background: radial-gradient(circle at top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%) fixed;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
 }
+.main {width:960px; margin:0 auto;}
 
-#header {position:relative; margin:0 auto 3em auto; width:960px; padding:.05em 0 .05em 0;font-family:"cinzel";text-transform:lowercase;}
-  h1 {font-family:'Princess Sofia'; text-transform:none; font-size:5em; color:#fff; margin:1em 0 0 0; text-shadow:0 0 10px rgba(255,255,255,.9);}	
-	
-	
-	
-  .aka {margin:.5em 0 3em 2em; color:#97ccda; font-size:1em; font-weight:200; text-shadow:0 0 2px #000; text-transform:none; font-family:'Julius Sans One'; text-align:centder;}
-	.nav li {display:inline-block;}
-	.nav {display:none;}
-	.flat-nav {display:normal; padding-bottom:0;}
 
-.section {width:960px; margin:1em auto; padding:1em 0 1em 0;}
-	h2 {padding:.25em 0; margin:0; color:#fff; font-size:3em; font-family:'Amatic SC';}
-	h3 {display:inline-block; color:#fff; background:#c00; padding:.5em .5em .25em .5em; margin-bottom:0; font-family:'cinzel';}
+.badge-container {float:left; width:50%;}
+	.gravatar {margin:1em auto -11em 18em; z-index:99; position:relative; background:url(../images/gravatar.png) no-repeat center center; display:block; width:250px; height:250px; border-radius:100%; box-shadow:0 0 100px rgba(255,255,255,.25);}
+	.sticker {position:relative; font-family:open sans; text-align:center; margin:0 auto; -webkit-transform:rotate(-5deg);}
+	  .hello {font-size:2em; text-transform:uppercase; font-weight:600; margin:1em 0 0 0; border-radius:1em 1em 0 0; background:#c00; padding:0;} 	
+		.mynameis {font-size:1.25em; padding:0 0 .5em 0; margin:-.5em 0 0 0; background:#c00; }
+		h1 {color:#000; background:#fff; padding:1em 0 .75em 0; margin-bottom:0; font-family:'Sint Ultra Expanded'; border-bottom:.25em solid #c00; border-radius:0 0 .25em .25em;}
+			.var1 {font-family:Reenie Beanie; font-size:5em;}
+			.var2 {font-family:la belle aurore; font-size:5em;}
+			.var3 {font-family:loved by the king; font-size:5em;}
+			.var4 {font-family:fredericka the great; font-size:4.5em;}
 
-	.tiles, .wood, .work {list-style:none; padding:0;}
-	.tiles li, .wood li {display:inline-block;}
+	.about {float:left; width:37.5%; margin:10em 0 0 5.5em;}
+		.cvar4 {font-family:nixie one;}
 
-	.modal {position:relative; margin-top:-960px; background-color:rgba(0,0,0,.9);}
+	.links {margin:0 0 5em 0; padding:0; clear:left;}
+		.links li {list-style:none; display:inline-block; margin:1em 0 0 0;}
+			.links a {
+				-moz-box-flex:1.0; /* Firefox */
+				-webkit-box-flex:1.0; /* Safari and Chrome */
+				-ms-flex:1.0; /* Internet Explorer 10 */
+				box-flex:1.0;
+				font-family:cinzel;
+				
+				display:inline-block; background-repeat:no-repeat; background-position:center center; width:310px; height:310px; border-radius:100%; margin-right:-50%; vertical-align:middle;}
+			.web a {background-image:url(../images/www.png); background-position:-0px 0px;}
+			.code a {background-image:url(../images/gui.jpg); background-position:-150px -200px;}
+			.wood a {background-image:url(../images/wood.png); background-position:-40px -10px;}
+			.photos a {background-image:url(../images/photos.jpg);}
+			.baking a {background-image:url(../images/baking.png); background-position:-180px -0px;}
+			.reviews a {background-image:url(../images/guis.jpg);}
+			.aquascapes a {background-image:url(../images/aquascapes.jpg);}
+			.boardgames a {background-image:url(../images/guis.jpg);}
+				.links span {display:inline-block; padding:.5em; margin:40% 0 0 .5em; border-radius:1em; color:#fff; font-size:1em; background:rgba(0,0,0,.8);}
 
-.knowledge ul {list-style:none; padding:0 0 0 3em;}
-	.knowledge li {margin:0 0 .75em 0; line-height:1.1;}
-		.knowledge a {color:#ffffcc; display:inline-block; padding-left:.5em;}
-		.status:before {color:#fff; margin:0 0 0 -5em; font-size:.6em; padding:.25em; display:inline-block; width:3.5em; vertical-align:top;font-weight:bold; text-align:center; color:#000;}
-		.soon:before {content:"SOON"; background:#97ccda;}
-		.active:before {content:"ACTIVE"; background:#fc0; }
-		.completed:before {content:"\2713"; color:#fff; text-align:right;}
 
-.bubble {margin-top:-3.75em; display:block; float:right; border-radius:1em; background:rgba(255,255,255,.1); font-family:'cinzel'; color:#fff; padding:1em; margin-right:1em;}
-
-.highlight {background:#B8E1FF;}
-
-blockquote {font-family: Georgia, serif; font-size: 1.15em;font-style: italic; margin:-2em .5em -4em .5em; padding:0px;line-height: 1;position: relative;color:#567594;}
-  blockquote:before {display: inline-block;content: "\201C";font-size: 5em; color: #97ccda; position:relative; top:30px; left:-15px;}
-  blockquote:after {display: inline-block;content: "\201D";font-size: 5em; color: #97ccda; position:relative; top:-.9em; right:-90%;}
-  blockquote cite {color: #aaa;font-size: .8em;display: block;margin: 0px;}
-  cite:before {content: "\2014 \2009";}
+.bubble {display:inline-block; border-radius:1em; background:rgba(255,255,255,.1); font-family:'cinzel'; color:#fff; padding:.5em;}
+.highlight {}
 a {color:#c00;}
-a:hover {background-color:rgba(0,200,255,.2);}
+a:hover, a:hover span {background-color:rgba(10,51,63,.8);}
 
 @media all and (min-width:1281px){
 }
