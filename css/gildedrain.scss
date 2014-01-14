@@ -1,69 +1,53 @@
-/* GUI OVERRIDES */
-
-html {min-height:100%; background:#000 url(../images/bg/wood.jpg) fixed repeat top center;}
-body {min-height:100%; font-weight:200; color:#fff; font-size:1.1em;
-	background: -moz-radial-gradient(top, circle cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.7) 100%) fixed;
-	background: -webkit-gradient(radial, top center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(30%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.7))) fixed;
-	background: -webkit-radial-gradient(top, circle cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%) fixed;
-	background: -o-radial-gradient(top, circle cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%) fixed;
-	background: -ms-radial-gradient(top, circle cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%) fixed;
-	background: radial-gradient(circle at top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0.7) 100%) fixed;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
-}
+html {min-height:100%; background:#000 url(../images/bg_wood.jpg) fixed repeat top center;}
+body {min-height:100%; font-weight:200; color:#fff; font-size:1.1em; background:inherit;font-family:nixie one;}
 .main {width:960px; margin:0 auto;}
-
-
-.badge-container {float:left; width:50%;}
-	.gravatar {margin:1em auto -11em 18em; z-index:99; position:relative; background:url(../images/gravatar.png) no-repeat center center; display:block; width:250px; height:250px; border-radius:100%; box-shadow:0 0 100px rgba(255,255,255,.25);}
-	.sticker {position:relative; font-family:open sans; text-align:center; margin:0 auto; -webkit-transform:rotate(-5deg);}
-	  .hello {font-size:2em; text-transform:uppercase; font-weight:600; margin:1em 0 0 0; border-radius:1em 1em 0 0; background:#c00; padding:0;} 	
-		.mynameis {font-size:1.25em; padding:0 0 .5em 0; margin:-.5em 0 0 0; background:#c00; }
-		h1 {color:#000; background:#fff; padding:1em 0 .75em 0; margin-bottom:0; font-family:'Sint Ultra Expanded'; border-bottom:.25em solid #c00; border-radius:0 0 .25em .25em;}
-			.var1 {font-family:Reenie Beanie; font-size:5em;}
-			.var2 {font-family:la belle aurore; font-size:5em;}
-			.var3 {font-family:loved by the king; font-size:5em;}
-			.var4 {font-family:fredericka the great; font-size:4.5em;}
-
-	.about {float:left; width:37.5%; margin:10em 0 0 5.5em;}
-		.cvar4 {font-family:nixie one;}
-
-	.links {margin:0 0 5em 0; padding:0; clear:left;}
-		.links li {list-style:none; display:inline-block; margin:1em 0 0 0;}
-			.links a {
-				-moz-box-flex:1.0; /* Firefox */
-				-webkit-box-flex:1.0; /* Safari and Chrome */
-				-ms-flex:1.0; /* Internet Explorer 10 */
-				box-flex:1.0;
-				font-family:cinzel;
-				
-				display:inline-block; background-repeat:no-repeat; background-position:center center; width:310px; height:310px; border-radius:100%; margin-right:-50%; vertical-align:middle;}
-			.web a {background-image:url(../images/www.png); background-position:-0px 0px;}
-			.code a {background-image:url(../images/gui.jpg); background-position:-150px -200px;}
-			.wood a {background-image:url(../images/wood.png); background-position:-40px -10px;}
-			.photos a {background-image:url(../images/photos.jpg);}
-			.baking a {background-image:url(../images/baking.png); background-position:-180px -0px;}
-			.reviews a {background-image:url(../images/guis.jpg);}
-			.aquascapes a {background-image:url(../images/aquascapes.jpg);}
-			.boardgames a {background-image:url(../images/guis.jpg);}
-				.links span {display:inline-block; padding:.5em; margin:40% 0 0 .5em; border-radius:1em; color:#fff; font-size:1em; background:rgba(0,0,0,.8);}
-
-
-.bubble {display:inline-block; border-radius:1em; background:rgba(255,255,255,.1); font-family:'cinzel'; color:#fff; padding:.5em;}
-.highlight {}
+.badge-container {float:left; width:40%;}
+.gravatar {margin:1em auto -35% 70%; z-index:99; position:relative; background:url(../images/gravatar.png) no-repeat center center; display:block; width:200px; height:200px; border-radius:100%; box-shadow:0 0 100px rgba(255,255,255,.25);}
+.sticker {position:relative; text-align:center; margin:0 auto; -webkit-transform:rotate(-5deg);}
+.hello {font-size:2em; text-transform:uppercase; font-weight:600; margin:0; border-radius:1em 1em 0 0; background:#c00; padding:0;} 	
+.mynameis {font-size:1.25em; padding:0 0 .5em 0; margin:-.5em 0 0 0; background:#c00; }
+h1 {line-height:1.4;color:#000; background:#fff; font-size:2.25em; padding:1.5em 0 1.5em 0; margin-bottom:0; font-family:'rock salt'; border-bottom:.5em solid #c00; border-radius:0 0 .5em .5em;}
+.about {float:left; width:50%; margin:4em 0 0 10%; font-size:1.25em;} 
+.swipe {display:inline-block; background:url(../images/swipe.png) no-repeat center center;}
+.highlight {display:inline-block; background:#c00; color:#fff; padding:0 .5em 0 .5em; border-radius:1em;}
+.links {margin:0 0 5em 0; padding:0 0 10em 0; clear:left; text-align:center;padding-top:2em;background:url(../images/yoga-light.png) no-repeat bottom center;}
+.links li {list-style:none; display:inline-block; margin:0; text-align:center;}
+.links a {-moz-box-flex:1.0; /* Firefox */-webkit-box-flex:1.0; /* Safari and Chrome */-ms-flex:1.0; /* Internet Explorer 10 */box-flex:1.0; display:inline-block; background-repeat:no-repeat; background-position:center center; width:310px; height:310px; border-radius:100%; vertical-align:middle; text-align:left;}
+.web a {background-image:url(../images/www.png); background-position:-140px -40px;}
+.code a {background-image:url(../images/code.png); background-position:0px -15px;}
+.wood a {background-image:url(../images/wood.png); background-position:-40px -10px;}
+.photos a {background-image:url(../images/photos.jpg);}
+.baking a {background-image:url(../images/baking.png); background-position:-180px -0px;}
+.boardgames a {background-image:url(../images/carc.png); background-position:-50px -10px;}
+.reviews a {background-image:url(../images/guis.jpg);}
+.links span {display:inline-block; padding:0 .5em 0 .5em; margin:40% 0 0 0; border-radius:1em; color:#fff; font-size:1em; background:rgba(0,0,0,.8);}
 a {color:#c00;}
-a:hover, a:hover span {background-color:rgba(10,51,63,.8);}
-
-@media all and (min-width:1281px){
-}
-@media all and (max-width:1280px){
-}
-@media all and (max-width:1024px){
+a:hover, a.highlight:hover, a:hover span {background-color:rgba(204,0,0,.8); box-shadow:0 0 100px rgba(255,255,255,.2);}
+@media all and (max-width:960px){
+	.main {width:100%;}
+	.badge-container {margin-left:2%;}
+	.about {width:35%; margin-left:15%;}
 }
 @media all and (max-width:800px){
+	.badge-container {margin:3em auto 1em auto; float:none; width:70%;}
+	.gravatar {margin-bottom:-6em;}
+	.about {float:none;width:80%; margin:4em auto 2em auto;}
+	.links a {width:250px; height:250px;}	
 }
 @media all and (max-width:640px){
+	.badge-container {margin:1em auto; float:none; width:70%;}
+	.about {float:none;width:80%; margin:4em auto 2em auto;}
+	.links a {width:250px; height:250px;}	
 }
 @media all and (max-width:530px){
+	.about {float:none;width:80%; margin:4em auto 2em auto;}
 }
 @media all and (max-width:420px){
+	.gravatar {margin:1em auto;}
+	.about {float:none;width:80%; margin:4em auto 2em auto;}
+	.links a {width:280px; height:280px;}
+}
+@media all and (max-width:320px){
+	.about {float:none;width:80%; margin:4em auto 2em auto;}
+	.links a {width:230px; height:230px;}
 }
