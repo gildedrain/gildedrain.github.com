@@ -3,7 +3,7 @@ body {min-height:100%;font-weight:200;color:#fff;font-size:1.1em;background:inhe
 .main {width:960px;margin:0 auto;}
 .badge-container {float:left;width:40%;}
 .gravatar {margin:1em auto -35% 70%;z-index:99;position:relative;background:url(../images/gravatar.png) no-repeat center center;display:block;width:200px;height:200px;border-radius:100%;box-shadow:0 0 100px rgba(255,255,255,.25);}
-.sticker {position:relative;text-align:center;margin:0 auto;-webkit-transform:rotate(-5deg);}
+.sticker {position:relative;text-align:center;margin:0 auto;-webkit-transform:rotate(-5deg);transform:rotate(-5deg);-ms-transform:rotate(-5deg);}
 .hello {display:block;font-size:2em;text-transform:uppercase;font-weight:600;margin:0;border-radius:1em 1em 0 0;background:#c00;padding:0;} 	
 .mynameis {display:block;font-size:1.25em;padding:0 0 .5em 0;margin:-.25em 0 -1em 0;background:#c00;}
 h1 {line-height:1.4;color:#000;background:#fff;font-size:2.25em;padding:1.5em 0 1.5em 0;margin:0;font-family:'rock salt';border-bottom:.5em solid #c00;border-radius:0 0 .5em .5em;}
