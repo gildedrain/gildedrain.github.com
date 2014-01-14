@@ -1,3 +1,0 @@
-h1.  Purpose
-
-The overall intent is that a non-designer (a programmer) should be able to drop the /gui/ folder into their website project, create some HTML, and quickly apply the grid and some of the tool classes to make something that doesn't end up looking like a programmer designed it.
