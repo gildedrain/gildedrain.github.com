@@ -13,8 +13,5 @@
 
     HTML5
     CSS3
-    jQuery
     Modernizr
     HTML5 Boilerplate
-    Normalize.css
-    Zurb Awesome Buttons
