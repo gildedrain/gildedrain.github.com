@@ -32,6 +32,9 @@
 	.logo {
 		margin-bottom:1em;
 	}
+	.logo p {
+		font-size:1.25em;
+	}
 	.quote {
 		font-size:2em;
 	}
@@ -44,10 +47,12 @@
 		display:block;
 		margin-bottom:2em;
 	}
-	
 }
 
 @media all and (max-width:595px) {
+	.logo p {
+		font-size:1em;
+	}
 	.container {
 		width: 98%;
 		padding:0 1% 0 1%;
