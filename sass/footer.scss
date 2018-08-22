@@ -1,0 +1,63 @@
+@import "compass/css3";
+// FOOTER STYLES ----------------------------
+.footer {
+	width:100%;
+	text-align:center;
+}
+.footer ul {
+	height:300px;
+	display:flex;
+	align-items:flex-start;
+	justify-content: center;
+	margin:0;
+	padding:0;
+	list-style:none;
+	background-color: #333333; // Old browsers
+	@include filter-gradient(#333333, #253950, vertical); // IE6-9
+	@include background-image(linear-gradient(top, #333333 0%,#253950 100%));
+}
+.footer li {
+	display:inline-block;
+	padding:0;
+}
+.footer a {
+	display:flex;
+	height:100px;
+	width:100px;
+	margin:20px;
+	padding:0;
+	border:0;
+	fill:#FFF;
+	background-color:transparent; 
+	background-repeat: no-repeat; 
+	background-position:0 0;
+	transition:fill .25s, background .25s, border-radius .25s;
+	align-items:center;
+	text-align:center;
+	
+}
+.footer a:hover {
+	box-shadow:none;
+	border-radius:none;
+	padding:0;
+	background-color:transparent;
+	border-radius:100%;
+}
+.footer a:hover .tooltip {
+	display:block;
+}
+.footer svg {
+	display:inline-block;
+	height:50px;
+	margin:0 auto;
+}
+.sketchup svg {
+	height:35px;
+}
+.footer .email {
+	fill:#61abff;
+}
+.footer a:hover {
+	fill:black;
+	background:#fff;
+}

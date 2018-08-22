@@ -1,0 +1,74 @@
+@import "compass/css3";
+
+
+
+@media all and (max-width:970px) {
+	.container {
+		width: 90%;
+		padding:0 5% 0 5%;
+	}
+	.slides a {
+		width:28vw;
+		height:28vw;
+	}
+	.slides .triple {
+		width:100vw;
+	}
+	.rss-item {
+		width:92%;
+	}
+	.rss-item img {
+		width:50%;
+		float:left;
+		margin-right:1em;
+	}
+	.footer ul {
+		display:block;
+		height:auto;
+	}
+}
+
+@media all and (max-width:750px) {
+	.logo {
+		margin-bottom:1em;
+	}
+	.quote {
+		font-size:2em;
+	}
+	.slides a {
+		width:27vw;
+		height:27vw;
+	}
+	.rotating-words {
+		width:60vw;
+		display:block;
+		margin-bottom:2em;
+	}
+	
+}
+
+@media all and (max-width:595px) {
+	.container {
+		width: 98%;
+		padding:0 1% 0 1%;
+	}
+	.process {
+		display:block;
+	}
+	#rss-feed {
+		display:block;
+	}
+	.rss-item {
+		width:88%;
+	}
+	.rss-item img {
+		float:none;
+		margin-bottom:1em;
+		margin-right:0;
+	}
+	.left {
+		float:none;
+		display:block;
+		margin:0 auto;
+	}
+}

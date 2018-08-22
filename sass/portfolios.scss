@@ -1,0 +1,91 @@
+@import "compass/css3";
+// PORTFOLIO styles ---------------------------
+.process {
+	display:flex;
+	margin-bottom:2em;
+}
+.process-step {
+	margin:0 1em;
+}
+.process-step span {
+	@extend %circled;
+	@extend %link-background;
+	display:block;
+	width:100px;
+	height:85px;
+	text-align:center;
+	font-size:2em;
+	font-weight:200;
+	padding-top:15px;
+}
+.process-step1 {
+	flex-grow:2;
+}
+.slides {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+	align-content:space-between;
+	align-items:flex-start;
+}
+.slides a {
+	display:block;
+	flex:auto;
+	flex-grow:0;
+	margin:0 10px 10px 0;
+	border:0;
+	background-size:100%;
+	width:310px;
+	height:310px;
+	text-indent:-1000em;
+	background-repeat:no-repeat;
+	background-color:#FFF;
+}
+.slides a:hover {
+	padding:0;
+	background-color:#FFF;
+	box-shadow:none;
+}
+.slides .triple {
+	width:940px;
+}
+.notes {
+	background:#FFF;
+	padding:1em 2em 1em 2em;
+	margin:1em auto;
+}
+.project h1 {
+	background:#FFF;
+	padding:.5em;
+	display:inline-block;
+	margin-bottom:0;
+}
+// PROJECT backgrounds ------------------------
+.mainsite {
+	background:url(../images/bg_sitemap.jpg) no-repeat top left;
+	background-size:cover;
+}
+.sitelets {
+	background:url(../images/bg_sitelets.jpg) no-repeat top left;
+	background-size:cover;
+}
+.intranet {
+	background:url(../images/bg_campus.png) no-repeat top left;
+	background-size:cover;
+}
+.timberframe {
+	background:url(../images/bg_blueprints.jpg) no-repeat top left;
+	background-size:cover;
+}
+.jewelry {
+	background:url(../images/bg_jewelry.png) no-repeat top left;
+	background-size:cover;
+}
+.bench {
+	background:url(../images/bg_lumber.jpg) no-repeat top left;
+	background-size:cover;	
+}
+.boardgaming {
+	background:url(../images/bg_clans.jpg) no-repeat top left;
+	background-size:cover;	
+}

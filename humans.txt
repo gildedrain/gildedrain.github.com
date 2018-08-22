@@ -8,10 +8,13 @@
 # THANKS
 
   Nathan Fixler
+  fancyapps.com
+  github.com/sdepold/jquery-rss
+  kazzkiq.github.io/balloon.css/
 
 # TECHNOLOGY COLOPHON
 
-    HTML5
-    CSS3
-    Modernizr
-    HTML5 Boilerplate
+  HTML
+  CSS3
+  jQuery
+    
