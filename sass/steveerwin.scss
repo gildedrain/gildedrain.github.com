@@ -2,126 +2,134 @@
 // MAIN STRUCTURE ----------------------------
 body {
 margin:0 auto;
-background:#fff url(../images/bg_greywood.png) no-repeat top center;
+background:#fff;
 color:#222;
-font-family:'Open Sans', sans-serif;
+font-family:'Averia Serif Libre','Antic','noto serif tc', 'Sorts Mill Goudy', 'Glegoo', sans-serif;
 font-weight:300;
-margin-top:5em;
+margin-top:3rem;
 }
-.container {
-	width:960px;
-	margin:0 auto;
-}
-.logo {
-	margin-bottom:6em;
-	text-align:center;
-}
-.logo svg {
-	width:45%;
-}
-.logo p {
-	font-family:'nexa rust sans', 'open sans', sans-serif;
-	font-size:1.5em;
-	margin:-1em 0 0 0;
-}
-@import "footer";
-@import "tooltip";
-@import "rotating-words";
-
 // CORE TYPOGRAPHY ---------------------------
-h1, h2, h3 {
-	font-weight:200;
-	margin-bottom:1em;
+.intro {
+	font-size:1.5rem;
 }
-hr {
-	margin:0;
-	border-color: rgba(17,57,104,.25);
-	border-width:1px 0 0 0;
-	border-style:solid;
-	height:1px;
+.hello {
+	display:block; 
+	text-align:center;
+	margin:0 auto 0 auto;
 }
 .intro p {
-	font-size:1.5em;
+	width:35%;
+	line-height:1.25;
+	margin:1rem auto 1rem auto;
+	clear:both;
 }
-p {
-	font-size:1.25em;
-	line-height:1.4;
+.offset {
+	width:45%;
+	margin:0 auto;
 }
-%link-background {
-	color:#FFF;
-	fill: #FFF;
-	background-color:#113968;
-	@include filter-gradient(#113968, #3f7375, horizontal); // IE6-9 fallback on horizontal gradient
-	@include background-image(linear-gradient(left top, #113968 0%,#3f7375 100%));	
+h1 {
+	font-size:3rem;
+	text-align:center;
+	margin-top:0;
+}
+h2 {
+	font-size:2rem;
+}
+h3 {
+	margin:.5rem 0 .5rem 0;
+	font-size:2rem;
+	font-family:'amatic sc', sans-serif;
+	clear:both;
+}
+.underline {
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-position:0 25px;
+	background-size:120%;
+	padding-bottom:15px;
+	background-image:url(../images/underline3.gif);
 }
 a {
+	display:inline-block;
 	color:#4576AE;
 	text-decoration:none;
 	border-bottom:1px solid #4576AE;
-	background:transparent;
-  -webkit-transition: color .25s, background .25s, padding .25s; /* For Safari 3.1 to 6.0 */
-	transition: color .25s, background .25s, padding .25s;
+	padding-bottom:1px;	
 }
-a:hover, .nav-item.current {
-	border-bottom-width:0;
-	padding:3px 10px;
-	border-radius:3px;
-	box-shadow:0 2px 2px rgba(0,0,0,.5);
-	@extend %link-background;
+a:hover {
+	border-bottom-width:2px;
+	padding-bottom:0px;
 }
-.nav {
-	margin:4em 0 0 0;
-	text-align:center;
-	width:100%;
+
+// ------------------------------- // 
+hr {
+	display:block;
+	margin:5em 0 0em 0;
+	border-color: rgba(17,57,104,.25);
+	border-width:5px 0 0 0;
+	border-style:dotted;
 }
-.nav .container {
+// ------------------------------- // 
+
+.section {
+	padding-top:2rem;
+	padding-bottom:2rem;
+	width:45%;
+	margin:0 auto;
+	font-size:1.15rem;
+}
+.subsection {
 	display:flex;
-	flex-wrap:wrap;
-	list-style:none;
-	margin-bottom:2em;
-	padding:0;
-	align-items:flex-start;
-	justify-content:center;
+	flex-flow:row nowrap;
 }
-.nav-item {
+.section p {
+	line-height:1.4;
+}
+.left {
 	display:block;
-	padding:3px 10px;
-	margin:0 1vw 1vw 1vw;
-	font-family:'Rock Salt', sans-serif;
-	font-size:1.5em;
-	background-color:#FFF;
-	border:1px solid rgba(17,57,104,.25);
-	border-width:1px;
+	float:left;
+	margin-right:1em;
+	height:350px;
 }
-.subpage .nav-item {
-	font-size:1em;
-}
-.nav .email svg {
-	display:block;
-	top:-5px;
-	width:38px;
-	fill:#4576AE;
-}
-.nav .email:hover svg {
-	fill:#fff;
+ul {
+	padding-left:2rem;
 }
 .quote {
-	font-size: 4em;
-	font-family: 'herr von muellerhoff', serif;
+	font-size: 2rem;
+	font-family: 'shadows into light';
 	color:#516690;
-	margin-top:1em;
-	padding:1em;
+	padding:0em 0 1em 0;
+	width:35%;
 }
 .quote-author {
 	display:block;
 	text-align:right;
 }
+
+
+
+
+
+
+
 // UTILITY CLASSES ---------------------------
+.teardrop {
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 90px;
+	transform: rotate(-45deg);
+}
 .circled {
 	border-radius:100%;
 }
 %circled {
 	border-radius:100%;
+}
+.brushstroke {
+	background:url(../images/brushstroke.svg) top center;
+	  background-size: 100% 220%;
+	  background-position:-50px -400px;
+	  padding-top:1rem;
 }
 .right {
 	float:right;
@@ -142,6 +150,6 @@ a:hover, .nav-item.current {
   right: 0;
 	border-radius:10px 0 0 10px;
 }
-@import "portfolios";
-@import "rss";
-@import "media-queries";
+.border {
+	border:2px solid #d;
+}

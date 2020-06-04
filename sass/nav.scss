@@ -1,10 +1,28 @@
 @import "compass/css3";
-// FOOTER STYLES ----------------------------
-.footer {
-	width:100%;
-	text-align:center;
+// NAV STYLES ----------------------------
+.nav {
+	background:#003151;
 }
-.footer ul {
+.nav-item {
+	display:block;
+	padding:3px 10px;
+	margin:0 1vw 1vw 1vw;
+	font-family:'Rock Salt', sans-serif;
+	font-size:1.5em;
+	background-color:#FFF;
+	border:1px solid rgba(17,57,104,.25);
+	border-width:1px;
+}
+.nav .email svg {
+	display:block;
+	top:-5px;
+	width:38px;
+	fill:#4576AE;
+}
+.nav .email:hover svg {
+	fill:#fff;
+}
+.nav ul {
 	height:300px;
 	display:flex;
 	align-items:flex-start;
@@ -16,11 +34,11 @@
 	@include filter-gradient(#333333, #253950, vertical); // IE6-9
 	@include background-image(linear-gradient(top, #333333 0%,#253950 100%));
 }
-.footer li {
+.nav li {
 	display:inline-block;
 	padding:0;
 }
-.footer a {
+.nav a {
 	display:flex;
 	height:100px;
 	width:100px;
@@ -36,28 +54,27 @@
 	text-align:center;
 	
 }
-.footer a:hover {
+.nav a:hover {
 	box-shadow:none;
 	border-radius:none;
 	padding:0;
 	background-color:transparent;
 	border-radius:100%;
+	background:#fff;
+	fill:black;
 }
-.footer a:hover .tooltip {
+.nav a:hover .tooltip {
 	display:block;
 }
-.footer svg {
+.nav svg {
 	display:inline-block;
 	height:50px;
 	margin:0 auto;
+	fill:#1179fe;
 }
-.sketchup svg {
+.linkedin svg {
 	height:35px;
 }
-.footer .email {
-	fill:#61abff;
-}
-.footer a:hover {
-	fill:black;
-	background:#fff;
+.nav-item.current {
+	
 }
