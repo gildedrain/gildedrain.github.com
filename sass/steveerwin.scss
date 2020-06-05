@@ -9,8 +9,17 @@ font-weight:300;
 margin-top:3rem;
 }
 // CORE TYPOGRAPHY ---------------------------
+.section {
+	padding-top:2rem;
+	padding-bottom:2rem;
+	width:70%;
+	margin:0 auto;
+	font-size:1.15rem;
+}
 .intro {
 	font-size:1.5rem;
+	width:70%;
+	margin:0 auto;
 }
 .hello {
 	display:block; 
@@ -18,14 +27,10 @@ margin-top:3rem;
 	margin:0 auto 0 auto;
 }
 .intro p {
-	width:35%;
-	line-height:1.25;
+	width:90%;
+	line-height:1.5;
 	margin:1rem auto 1rem auto;
 	clear:both;
-}
-.offset {
-	width:45%;
-	margin:0 auto;
 }
 h1 {
 	font-size:3rem;
@@ -44,9 +49,9 @@ h3 {
 .underline {
 	display:inline-block;
 	background-repeat:no-repeat;
-	background-position:0 25px;
-	background-size:120%;
-	padding-bottom:15px;
+	background-position:0 30px;
+	background-size:150% 30%;
+	padding-bottom:5px;
 	background-image:url(../images/underline3.gif);
 }
 a {
@@ -64,26 +69,16 @@ a:hover {
 // ------------------------------- // 
 hr {
 	display:block;
-	margin:5em 0 0em 0;
+	margin:0;
 	border-color: rgba(17,57,104,.25);
 	border-width:5px 0 0 0;
 	border-style:dotted;
 }
 // ------------------------------- // 
 
-.section {
-	padding-top:2rem;
-	padding-bottom:2rem;
-	width:45%;
-	margin:0 auto;
-	font-size:1.15rem;
-}
 .subsection {
 	display:flex;
 	flex-flow:row nowrap;
-}
-.section p {
-	line-height:1.4;
 }
 .left {
 	display:block;
