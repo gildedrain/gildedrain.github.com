@@ -15,16 +15,6 @@ font-weight:300;
 	margin:0 auto;
 	font-size:1.15rem;
 }
-.section-wrapper-1 {
-	background:url(../images/occ.png) no-repeat center 0;
-	background-size:100% auto;
-	padding-top:500px;
-}
-.section-wrapper-2 {
-	background:url(../images/businessprocess.gif) no-repeat center 0;
-	background-size:100% auto;
-	padding-top:500px;
-}
 .intro {
 	font-size:1.5rem;
 	width:70%;
@@ -74,7 +64,25 @@ a:hover {
 	border-bottom-width:2px;
 	padding-bottom:0px;
 }
-
+.iam, .iwant, .imready {
+	background-position:0 0;
+	background-repeat:no-repeat;
+	padding-left:65px;
+	padding-top:7px;
+	height:50px;
+	margin-left:-50px;
+	margin-bottom:-10px;
+	background-size:50px;
+}
+.iam {
+	background-image:url(../images/iam.png);
+}
+.iwant {
+	background-image:url(../images/iwant.png);
+}
+.imready {
+	background-image:url(../images/imready.png);
+}
 // ------------------------------- // 
 hr {
 	display:block;
@@ -84,6 +92,12 @@ hr {
 	border-style:dotted;
 }
 // ------------------------------- // 
+.stretch-1 {
+	width:100%;
+}
+.stretch-2 {
+	width:100%;
+}
 
 .subsection {
 	display:flex;
