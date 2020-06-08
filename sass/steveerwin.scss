@@ -86,22 +86,23 @@ a:hover {
 // ------------------------------- // 
 hr {
 	display:block;
-	margin:0;
+	margin-top:2rem;
 	border-color: rgba(17,57,104,.25);
 	border-width:5px 0 0 0;
 	border-style:dotted;
 }
 // ------------------------------- // 
-.stretch-1 {
+.stretch {
 	width:100%;
 }
-.stretch-2 {
-	width:100%;
-}
-
 .subsection {
 	display:flex;
 	flex-flow:row nowrap;
+}
+.subsection img {
+	margin-right:1em;
+	margin-bottom:1em;
+	width:40%;
 }
 .left {
 	display:block;
@@ -148,10 +149,6 @@ ul {
 	  background-size: 100% 220%;
 	  background-position:-50px -400px;
 	  padding-top:1rem;
-}
-.right {
-	float:right;
-	margin-left:1em;
 }
 .left {
 	float:left;
