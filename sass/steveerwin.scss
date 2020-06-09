@@ -6,6 +6,7 @@ background:#fff;
 color:#222;
 font-family:'Averia Serif Libre', sans-serif;
 font-weight:300;
+padding-bottom:15rem;
 }
 // CORE TYPOGRAPHY ---------------------------
 .hello {
@@ -113,6 +114,21 @@ ul {
 }
 li {
 	line-height:1.5;
+}
+.awards.flexrow {
+	flex-flow:row wrap;
+}
+.awards img {
+	height:125px;
+	width:125px;
+}
+.section hr {
+	border-style:dashed;
+	border-width:2px 0 0 0;
+}
+.footer {
+	text-align:center;
+	padding-top:3rem;
 }
 @media (max-width: 1240px) {
 	.intro.flexrow {
