@@ -70,7 +70,7 @@ h2 {
 h2 .underline {
 	background-position:0 30px;
 }
-.iam, .iwant, .imready {
+.iam, .imdriven, .imready {
 	background-position:0 0;
 	background-repeat:no-repeat;
 	padding-left:65px;
@@ -83,7 +83,7 @@ h2 .underline {
 .iam {
 	background-image:url(../images/iam.png);
 }
-.iwant {
+.imdriven {
 	background-image:url(../images/imdriven.png);
 }
 .imready {
@@ -203,5 +203,16 @@ li {
 	.subsection img {
 		width:100%;
 		height:auto;
+	}
+	.iam, .imdriven, .imready {
+		text-align:center;
+		background-position:top center;
+		background-repeat:no-repeat;
+		padding-left:0px;
+		padding-top:65px;
+		height:50px;
+		margin-top:1em;
+		margin-bottom:10px;
+		background-size:50px;
 	}
 }
