@@ -50,12 +50,10 @@ h1 {
 	padding-left:15px;
 	margin:.25em 0 0 0;
 }
-.underline {
+.highlight {
 	display:inline-block;
-	background-repeat:no-repeat;
-	background-position:0 23px;
-	background-size:150% 30%;
-	background-image:url(../images/underline.gif);	
+	padding:0 .25em 0 .25em;
+	background:#fff587;
 }
 .section {
 	width:80%;
@@ -97,7 +95,7 @@ h2 .underline {
 h3 {
 	margin:0rem 0 .5rem 0;
 	font-size:1.75rem;
-	font-family:'Nothing You Could Do', sans-serif;
+	font-family:'Antic', sans-serif;
 	clear:both;
 	font-weight:400;
 	color:#4576AE;
