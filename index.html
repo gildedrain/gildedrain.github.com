@@ -17,30 +17,43 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-	<img class="hello" src="images/hello.png" alt="hello" height="200" width="200" />
-	<h1>I'm Steve.</h1>
-	<div class="intro flexrow">
-		<div class="col1">
-			<h2 class="iam">I am&hellip;</h2>
-			<p>a designer &amp; product manager.</p>
-			<p>a visual thinker &amp; communicator.</p>
-			<p>a craftsman & team leader.</p>
-		</div>
-		<div class="col2">
-			<h2 class="imdriven">I'm driven&hellip;</h2>
-			<p>to <span class='highlight'>make great user experiences.</span></p>
-			<p>to <span class='highlight'>add my strengths</span> to your team.</p>
-			<p>to help you <span class="highlight">build really cool stuff.</span></p>
-		</div>
-		<div class="col3">
-			<h2 class="imready">I'm ready.</h2>	
-			<p>Check out <a href="#mywork" class="scroll button">my work.</a></p>
-			<p>Take a look at <a href="#myresume" class="scroll button">my resume.</a></p>
-			<p><a href="mailto:steve@petrock.org" class="button">Let's talk.</a></p>
+	<ul class="nav">
+		<li><a href="#top" class="scroll">Hello, I'm Steve.</a></li>
+		<li><a href="#myapproach" class="scroll">My Approach</a></li>
+		<li><a href="#mywork" class="scroll">My Work</a></li>
+		<li><a href="#myresume" class="scroll">My Resume</a></li>
+		<li><a href="mailto:steve@petrock.org" class="circle">Let's chat.</a></li>
+	</ul>
+
+	<div id="top">
+		<img class="hello" src="images/hello.png" alt="hello" height="200" width="200" />
+		<h1>I'm Steve.</h1>
+		<div class="intro flexrow">
+			<div class="col1">
+				<h2 class="iam">I am&hellip;</h2>
+				<p>a designer &amp; product manager.</p>
+				<p>a visual thinker &amp; communicator.</p>
+				<p>a craftsman & team leader.</p>
+			</div>
+			<div class="col2">
+				<h2 class="imdriven">I'm driven&hellip;</h2>
+				<p>to <span class='highlight'>make great user experiences.</span></p>
+				<p>to <span class='highlight'>add my strengths</span> to your team.</p>
+				<p>to help you <span class="highlight">build really cool stuff.</span></p>
+			</div>
+			<div class="col3">
+				<h2 class="imready">I'm ready.</h2>	
+				<p>Check out <a href="#mywork" class="scroll button">my work.</a></p>
+				<p>Take a look at <a href="#myresume" class="scroll button">my resume.</a></p>
+				<p><a href="mailto:steve@petrock.org" class="button">Let's chat.</a></p>
+			</div>
 		</div>
 	</div>
 
+	<a class="scroll" id="myapproach" name="myapproach"></a>
+
 	<hr />
+
 	<div class="section">
 		<h2>Here's my approach.</h2>
 		<div class="subsection flexrow">
@@ -111,7 +124,7 @@
 	</div>
 	<img class="stretch" src="images/occ.png" alt=" "/>
 
-	<hr class="flourish" />
+	<hr />
 
 	<div class="section">
 		<h3>Reimagined the entire business process to create a better UX</h3>
@@ -119,7 +132,7 @@
 	</div>
 	<img class="stretch" src="images/businessprocess.gif" alt=" "/>				
 
-	<hr class="flourish" />
+	<hr />
 
 	<div class="section">
 		<h3>Keeping busy with side hustles</h3>
@@ -194,10 +207,11 @@
 	  </div>
     </div><!-- END resume -->
 	
-	<hr />
 	
-	<div class="section footer">
-		<h2>I'm <span class="highlight">certain</span> my skills can help your business. <span class="circle"><a class="button" href="mailto:steve@petrock.org">Let's chat.</a></span></h2>
+	<div class="footer">
+		<div class="section">
+			<h2>I'm <span class="highlight">certain</span> my skills can help your business. <span class="circle"><a class="button" href="mailto:steve@petrock.org">Let's chat.</a></span></h2>
+		</div>
 	</div>
 <script>
 			(function() {

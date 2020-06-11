@@ -1,30 +1,22 @@
 @import "compass/css3";
 
-// MAIN STRUCTURE ----------------------------
+// #STRUCTURE STYLES --------------------------------------------------------------- //
 body {
-margin:0 auto;
-background:#fff;
-color:#222;
-font-family:'Averia Serif Libre', sans-serif;
-font-weight:300;
-padding-bottom:15rem;
+	background:#fff;
+	color:#222;
+	font-family:'Averia Serif Libre', sans-serif;
+	font-weight:300;
+	padding:0;
+	margin:0;
 }
-// CORE TYPOGRAPHY ---------------------------
-.hello {
-	display:block; 
-	margin:0 auto;
-}
-h1 {
-	font-size:3rem;
-	text-align:center;
-	margin:0 0 2rem 0;
-}
-.center {
-	margin:0 auto;
-}
-.flexrow {
-	display:flex;
-	flex-flow:row nowrap;	
+#top {
+	position:relative;
+	background:#FFF;
+	z-index:9;
+	box-shadow:0 0 20px 20px #FFF;
+	outline:0;
+//	padding-bottom:2rem;
+//	margin-bottom:1.5rem;
 }
 .intro {
 	font-size:1.2rem;
@@ -33,7 +25,15 @@ h1 {
 	margin:2em auto 0 auto;
 	justify-content:center;
 }
-.intro div {
+.section {
+	width:80%;
+	max-width:1000px;
+	margin:0 auto;
+	font-size:1.15rem;
+}
+.flexrow {
+	display:flex;
+	flex-flow:row nowrap;	
 }
 .col1 {
 	width:33%;
@@ -43,6 +43,41 @@ h1 {
 }
 .col3 {
 	width:27%;
+}
+.footer {
+	text-align:center;
+	padding:2rem 0 0 0;
+	margin:3rem 0 0 0;
+    background-color: #9e0b0f; // Old browsers
+    @include filter-gradient(#9e0b0f, #cc0000, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  #9e0b0f 0%,#cc0000 100%));
+	color:#FFF;
+}
+
+// #TEXT & IMAGE STYLES ---------------------------------------------------------------- //
+.hello {
+	display:block; 
+	margin:0 auto;
+}
+h1 {
+	font-size:3rem;
+	text-align:center;
+	margin:0 0 2rem 0;
+}
+h2 {
+	font-size:2rem;
+	margin:0 0 3rem 0;
+}
+h3 {
+	margin:0rem 0 .5rem 0;
+	font-size:1.75rem;
+	font-family:'Antic', sans-serif;
+	clear:both;
+	font-weight:400;
+	color:#4576AE;
+}
+h4 {
+	font-size:1.5rem;
 }
 .intro p {
 	line-height:1.55;
@@ -54,19 +89,6 @@ h1 {
 	display:inline-block;
 	padding:0 .25em 0 .25em;
 	background:#fff587;
-}
-.section {
-	width:80%;
-	max-width:1000px;
-	margin:0 auto;
-	font-size:1.15rem;
-}
-h2 {
-	font-size:2rem;
-	margin:0 0 3rem 0;
-}
-h2 .underline {
-	background-position:0 30px;
 }
 .iam, .imdriven, .imready {
 	background-position:0 0;
@@ -87,22 +109,55 @@ h2 .underline {
 .imready {
 	background-image:url(../images/imready.png);
 }
+hr {
+	display:block;
+	border-width:0;
+	background:url(../images/flourish3.png) no-repeat center center;
+	height:21px;
+	background-size:90% 60%;
+	margin-top:2rem;
+	margin-bottom:2rem;
+	opacity:1;
+}
+.section hr {
+	background-image:url(../images/flourish.png);
+	background-size:90% 20%;
+}
+.section ul {
+	padding-left:2rem;
+}
+.section li {
+	line-height:1.5;
+	list-style-image: url(../images/box.png);
+}
 .subsection img {
 	margin-right:1em;
 	margin-bottom:1em;
-	
 }
-h3 {
-	margin:0rem 0 .5rem 0;
-	font-size:1.75rem;
-	font-family:'Antic', sans-serif;
-	clear:both;
-	font-weight:400;
-	color:#4576AE;
+.stretch {
+	display:block;
+	width:100%;
+	max-width:1500px;
+	max-height:1000px;
+	margin:0;
 }
-h4 {
-	font-size:1.5rem;
+.resume li {
+	list-style-image: url(../images/check.png);
 }
+.awards.flexrow {
+	flex-flow:row wrap;
+}
+.awards img {
+	height:125px;
+	width:125px;
+}
+.footer .highlight {
+	background:#000;
+}
+.footer h2 {
+	margin-bottom:0;
+}
+// #LINK STYLES ----------------------------------------------------------------- //
 a {
 	position:relative;
 	display:inline-block;
@@ -110,6 +165,7 @@ a {
 	text-decoration:none;
 	top:0px;
   	transition: top .033s ease;
+	text-shadow:0 2px 2px rgba(0,0,0,.25);
 }
 a:hover {
 	text-decoration:underline;
@@ -127,20 +183,34 @@ a:hover {
 	padding-right:5px;
 	border-radius:5px;
 	box-shadow:0px 2px 2px rgba(0,0,0,.25);
+	border:1px solid rgba(255,255,255,.3);
 }
-hr {
+.nav {
+    background-color: #9e0b0f; // Old browsers
+    @include filter-gradient(#9e0b0f, #cc0000, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  #9e0b0f 0%,#cc0000 100%));
+	color:#FFF;
+	position:fixed;
+	z-index:2;
+	top:0px;
+	width:100%;
+	box-shadow:0 2px 3px rgba(0,0,0,.75);
+	margin:0;
+	text-align:center;
+}
+.nav li {
+	display:inline-block;
+	margin:10px;
+	font-size:1.25em;
+}
+.nav a {
+	padding:.25em;
+	color:#FFF;
+	text-shadow:0 2px 2px rgba(0,0,0,.25);
+}
+#myapproach, #mywork, #myresume {
 	display:block;
-	border-width:0;
-	background:url(../images/flourish3.png) no-repeat center center;
-	height:21px;
-	background-size:90% 60%;
-	margin-top:3rem;
-	margin-bottom:2rem;
-	opacity:1;
-}
-.section hr {
-	background-image:url(../images/flourish.png);
-	background-size:90% 20%;
+	margin:0 0 5.5rem 0;
 }
 .circle {
 	display:inline-block;
@@ -149,34 +219,14 @@ hr {
 	padding-top:50px;
 	background:url(../images/circle.png) no-repeat center 8px;
 }
-.stretch {
-	display:block;
-	width:100%;
-	max-width:1500px;
-	max-height:1000px;
-	margin:0;
+.nav .circle {
+		height:auto;
+		width:auto;
+		padding:20px 10px 20px 10px;
+		background:url(../images/circle.png) no-repeat center 8px;
+		background-size:100%;
 }
-ul {
-	padding-left:2rem;
-}
-li {
-	line-height:1.5;
-	list-style-image: url(../images/box.png);
-}
-.resume li {
-	list-style-image: url(../images/check.png);
-}
-.awards.flexrow {
-	flex-flow:row wrap;
-}
-.awards img {
-	height:125px;
-	width:125px;
-}
-.footer {
-	text-align:center;
-	padding-top:3rem;
-}
+// MEDIA QUERIES -----------------------------------------------------------//
 @media (max-width: 1240px) {
 	.intro.flexrow {
 		display:block;
