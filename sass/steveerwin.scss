@@ -13,7 +13,6 @@ body {
 	position:relative;
 	background:#FFF;
 	z-index:9;
-//	box-shadow:0 0 20px 20px #FFF;
 	outline:0;
 }
 .intro {
@@ -51,7 +50,6 @@ body {
     @include background-image(linear-gradient(top,  #9e0b0f 0%,#cc0000 100%));
 	color:#FFF;
 }
-
 // #TEXT & IMAGE STYLES ---------------------------------------------------------------- //
 .hello {
 	display:block; 
@@ -194,6 +192,7 @@ a:hover {
 	width:100%;
 	box-shadow:0 2px 3px rgba(0,0,0,.75);
 	margin:0;
+	padding:0;
 	text-align:center;
 }
 .nav li {
@@ -260,5 +259,9 @@ a:hover {
 		margin-top:1em;
 		margin-bottom:10px;
 		background-size:50px;
+	}
+	.nav li {
+		font-size:1em;
+		margin:5px;
 	}
 }
