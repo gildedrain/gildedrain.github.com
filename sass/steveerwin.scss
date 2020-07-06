@@ -13,6 +13,30 @@ body {
 h1, h2, h3, h4, h5, h6, p, li, a {
 	text-shadow:0 2px 2px #000;
 }
+
+h1 {
+   animation: fadein 3s;
+}
+.intro {
+   animation: fadein 3s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.frame1, .frame2, .frame3 {
+	display:none;
+}
+.frame1:target, .frame2:target, .frame3:target {
+	display:block;
+	animation: fadein 3s;
+}
+#frame1, #frame2, #frame3 {
+	display:block;
+	margin:0 0 5.5rem 0;
+	padding-top:100px;
+}
 .intro {
 	font-size:1.75rem;
 	width:80%;
@@ -148,6 +172,32 @@ hr {
 	margin-bottom:0;
 }
 // #LINK STYLES ----------------------------------------------------------------- //
+.nav {
+	text-align:center;
+	z-index:999999;
+	width:60%;
+	list-style:none;
+	margin:0 auto;
+	padding:0;
+}
+.nav li {
+	display:inline-block;
+	margin:1rem;
+	font-size:2em;
+}
+.to-top {
+	text-indent:-1000em;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background:rgba(0,40,60,1);
+  box-shadow:0 2px 4px rgba(0,0,0,.25);
+}
+.sticky .to-top {
+	text-indent:0;
+}
 a {
 	position:relative;
 	display:inline-block;
@@ -173,10 +223,6 @@ a:hover {
 	border-radius:5px;
 	box-shadow:0px 2px 2px rgba(0,0,0,.25);
 	border:1px solid rgba(255,255,255,.3);
-}
-#myapproach, #mywork, #myresume {
-	display:block;
-	margin:0 0 5.5rem 0;
 }
 .circle {
 	display:inline-block;
